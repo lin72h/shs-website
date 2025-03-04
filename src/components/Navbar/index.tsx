@@ -103,7 +103,7 @@ export default function Navbar() {
                                 : "/"
                             }
                             onClick={navigationHandler}
-                            className={`${pathUrl === `/${item?.href}` ? "text-primary" : ""} flex py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
+                            className={`${pathUrl === `/${item?.href}` ? "text-primary" : ""} flex py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-poppins ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
                           >
                             {item?.title}
                           </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
                               onClick={() =>
                                 setDropdownToggler(!dropdownToggler)
                               }
-                              className="flex w-full items-center justify-between py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex w-full items-center justify-between py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-poppins"
                             >
                               {item?.title}
 

@@ -28,6 +28,9 @@ const config: Config = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
