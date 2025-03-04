@@ -30,7 +30,6 @@ export default function Home() {
       <Team />
       <Testimonial />
       <About />
-      <Contact />
     </>
   );
 }
