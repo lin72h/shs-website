@@ -185,7 +185,7 @@ export default function Navbar() {
                   href="/contact"
                   className="rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-signUp md:px-9 lg:px-8 xl:px-9"
                 >
-                  Get a Quote
+                  Contact Us
                 </Link>
               </div>
             </div>
