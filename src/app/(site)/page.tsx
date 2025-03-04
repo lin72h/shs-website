@@ -23,15 +23,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
       <Service />
       <Portfolio />
       <Brands />
       <Newsletter />
       <Team />
-      <Pricing />
       <Testimonial />
-      {integrations?.isSanityEnabled && <HomeBlogSection />}
+      <About />
       <Contact />
     </>
   );
