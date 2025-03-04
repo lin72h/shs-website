@@ -56,8 +56,10 @@ export default function Navbar() {
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={175}
-                  height={40}
+                  className="w-full h-auto max-w-[180px] min-w-[100px]"
+                  width={180}
+                  height={72}
+                  priority
                 />
               </Link>
             </div>
