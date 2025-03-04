@@ -4,31 +4,25 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "About",
-    href: "#about",
+    title: "Charter Engineering",
+    href: "#charter-engineering",
     external: false,
   },
   {
     id: uuid(),
-    title: "Services",
-    href: "#services",
+    title: "Project Management",
+    href: "#project-management",
+    external: false,
+  },
+  {
+    id: uuid(),
+    title: "Civil Works",
+    href: "#civil-works",
     external: false,
   },
   {
     id: uuid(),
     title: "Portfolio",
-    href: "#portfolio",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Pricing",
-    href: "#pricing",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Pages",
     submenu: [
       {
         id: uuid(),
@@ -83,5 +77,11 @@ export const navbarData: NavbarItem[] = [
         external: false,
       },
     ],
+  },
+  {
+    id: uuid(),
+    title: "About",
+    href: "#about",
+    external: false,
   },
 ];
