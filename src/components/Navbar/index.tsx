@@ -13,6 +13,7 @@ export default function Navbar() {
   const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const pathUrl = usePathname();
 
@@ -30,19 +31,27 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    setMounted(true);
     window.addEventListener("scroll", handleStickyMenu);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleStickyMenu);
+    };
+  }, []);
 
   // ==== onePage nav active ====
   useEffect(() => {
-    if (window.location.pathname === "/") {
+    if (mounted && window.location.pathname === "/") {
       window.addEventListener("scroll", onScroll);
     }
 
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  }, []);
+  }, [mounted]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <>

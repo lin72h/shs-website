@@ -1,5 +1,4 @@
 import { Portfolio } from "@/types/portfolio";
-import { v4 as uuid } from "uuid";
 
 const portfolioDetails = (
   <div>
@@ -56,7 +55,7 @@ const portfolioDetails = (
 
 export const portfolioData: Portfolio[] = [
   {
-    id: uuid(),
+    id: "1",
     title: "Startup landing page",
     slug: "startup-landing-page",
     sortDescription:
@@ -67,7 +66,7 @@ export const portfolioData: Portfolio[] = [
     details: portfolioDetails,
   },
   {
-    id: uuid(),
+    id: "2",
     title: "Job portal landing page",
     slug: "job-portal-landing-page",
     sortDescription:
@@ -77,7 +76,7 @@ export const portfolioData: Portfolio[] = [
     details: portfolioDetails,
   },
   {
-    id: uuid(),
+    id: "3",
     title: "SaaS landing page",
     slug: "saas-landing-page",
     sortDescription:
@@ -87,7 +86,7 @@ export const portfolioData: Portfolio[] = [
     details: portfolioDetails,
   },
   {
-    id: uuid(),
+    id: "4",
     title: "Business & corporate template",
     slug: "business-corporate-template",
     sortDescription:

@@ -1,6 +1,15 @@
+"use client";
+
 import { footerSocialLinks } from "@/static-data/footer";
+import { useEffect, useState } from "react";
 
 export default function FooterBottom() {
+  const [year, setYear] = useState("");
+
+  useEffect(() => {
+    setYear(new Date().getFullYear().toString());
+  }, []);
+
   return (
     <>
       <div className="mt-10 border-t border-white border-opacity-10 pt-12">
@@ -19,7 +28,7 @@ export default function FooterBottom() {
           ))}
         </div>
         <p className="text-center text-base font-medium text-body-color">
-        Next.js Site Template for Agency and Portfolio - &copy; {new Date().getFullYear()}
+          Next.js Site Template for Agency and Portfolio - &copy; {year}
         </p>
       </div>
     </>

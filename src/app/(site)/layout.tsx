@@ -1,13 +1,8 @@
-"use client";
-
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
-import { ThemeProvider } from "next-themes";
 import { Inter, Poppins } from "next/font/google";
-import NextTopLoader from "nextjs-toploader";
-import AuthProvider from "../context/AuthContext";
-import ToasterContext from "../context/ToastContext";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ 
@@ -24,25 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.variable}`}>
-        <NextTopLoader
-          color="#006BFF"
-          crawlSpeed={300}
-          showSpinner={false}
-          shadow="none"
-          zIndex={9999999}
-        />
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
-          <AuthProvider>
-            <ToasterContext />
-            <Navbar />
-            {children}
-            <Footer />
-          </AuthProvider>
-        </ThemeProvider>
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
