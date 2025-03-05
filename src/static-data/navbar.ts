@@ -16,8 +16,8 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Civil Works",
-    href: "#civil-works",
+    title: "Civil Work",
+    href: "civil-work",
     external: false,
   },
   {
@@ -26,14 +26,14 @@ export const navbarData: NavbarItem[] = [
     submenu: [
       {
         id: uuid(),
-        title: "Project 1",
-        href: "/project-1",
+        title: "Don Buck Civil",
+        href: "don-buck-civil",
         external: false,
       },
       {
         id: uuid(),
-        title: "Project 2",
-        href: "/project-2",
+        title: "Upper Harbour Drive",
+        href: "upper-harbour-drive",
         external: false,
       },
     ],
