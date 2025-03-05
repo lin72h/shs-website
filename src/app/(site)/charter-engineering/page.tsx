@@ -1,4 +1,7 @@
 import PageTitle from "@/components/Common/PageTitle";
+import SectionTitle from "@/components/Common/SectionTitle";
+import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME;
@@ -16,154 +19,191 @@ export default function CharterEngineering() {
         pageDescription="Expert engineering solutions tailored to your needs. We provide comprehensive charter engineering services with a focus on innovation and excellence."
       />
 
-      <section className="pb-[120px] pt-[110px]">
+      {/* Main Engineering Services Section */}
+      <section className="pb-24 pt-[110px]">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {/* Main Content */}
-            <div className="flex flex-col space-y-6">
-              <h2 className="text-3xl font-bold text-dark">Our Charter Engineering Services</h2>
-              <p className="text-base text-body-color">
-                We specialize in providing comprehensive charter engineering services
-                that combine technical expertise with innovative solutions. Our team
-                of experienced engineers works closely with clients to deliver
-                exceptional results across various industries.
-              </p>
-              
-              <div className="mt-8">
-                <h3 className="mb-4 text-xl font-semibold text-dark">Key Features</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
-                      ✓
-                    </span>
-                    <div>
-                      <h4 className="font-medium text-dark">Technical Excellence</h4>
-                      <p className="text-body-color">
-                        Industry-leading expertise in engineering design and analysis
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
-                      ✓
-                    </span>
-                    <div>
-                      <h4 className="font-medium text-dark">Custom Solutions</h4>
-                      <p className="text-body-color">
-                        Tailored engineering services to meet specific project requirements
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="mr-4 mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
-                      ✓
-                    </span>
-                    <div>
-                      <h4 className="font-medium text-dark">Quality Assurance</h4>
-                      <p className="text-body-color">
-                        Rigorous quality control and project management processes
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="relative h-[400px] overflow-hidden rounded-lg">
-              <img
-                src="/images/charter-engineering.jpg"
-                alt="Charter Engineering Services"
-                className="h-full w-full object-cover"
-              />
-            </div>
+          <div className="mb-16">
+            <SectionTitle
+              mainTitle="OUR EXPERTISE"
+              title="Engineering Excellence in Every Project"
+              paragraph="Our team delivers innovative engineering solutions across multiple disciplines, with specialized focus in two key areas."
+              center={true}
+            />
           </div>
 
-          {/* Services Grid */}
-          <div className="mt-20">
-            <h2 className="mb-10 text-center text-3xl font-bold text-dark">
-              Our Engineering Expertise
-            </h2>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Service 1 */}
-              <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                  <svg
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                    ></path>
-                  </svg>
+          {/* Two-Column Services Cards */}
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            {/* Civil Infrastructure Card */}
+            <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="relative h-[300px] w-full overflow-hidden">
+                <Image
+                  src="/images/services/service-01.jpg"
+                  alt="Civil Infrastructure"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-primary/40"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h3 className="text-4xl font-bold text-white">Civil Infrastructure</h3>
                 </div>
-                <h3 className="mb-4 text-xl font-bold text-dark">
-                  Structural Engineering
+              </div>
+              
+              <div className="p-8">
+                <p className="mb-6 text-base text-body-color">
+                  Our civil infrastructure engineering services provide comprehensive solutions for 
+                  public and private infrastructure development, focusing on sustainability and long-term value.
+                </p>
+                
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Transportation Systems</h4>
+                      <p className="text-body-color">Roads, highways, bridges, and traffic management systems.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Water Management</h4>
+                      <p className="text-body-color">Water supply, stormwater, and wastewater systems.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Public Facilities</h4>
+                      <p className="text-body-color">Schools, hospitals, and government buildings.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <Link 
+                  href="/contact" 
+                  className="group inline-flex items-center text-base font-semibold text-primary transition-all hover:text-dark"
+                >
+                  Learn More
+                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
+                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.0583 0.208332L19.5833 4.73333L15.0583 9.25833L13.8083 8.00833L16.0667 5.75L0.416656 5.75L0.416656 3.71667L16.0667 3.71667L13.8083 1.45833L15.0583 0.208332Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Land Development Card */}
+            <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="relative h-[300px] w-full overflow-hidden">
+                <Image
+                  src="/images/services/service-02.jpg"
+                  alt="Land Development"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-primary/40"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h3 className="text-4xl font-bold text-white">Land Development</h3>
+                </div>
+              </div>
+              
+              <div className="p-8">
+                <p className="mb-6 text-base text-body-color">
+                  Our land development engineering expertise helps transform raw land into vibrant 
+                  communities and commercial centers with efficient infrastructure and sustainable design.
+                </p>
+                
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Residential Development</h4>
+                      <p className="text-body-color">Single-family neighborhoods, apartments, and planned communities.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Commercial Projects</h4>
+                      <p className="text-body-color">Retail centers, office parks, and mixed-use developments.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Site Planning</h4>
+                      <p className="text-body-color">Grading, drainage, utilities, and site layout optimization.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <Link 
+                  href="/contact" 
+                  className="group inline-flex items-center text-base font-semibold text-primary transition-all hover:text-dark"
+                >
+                  Learn More
+                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
+                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.0583 0.208332L19.5833 4.73333L15.0583 9.25833L13.8083 8.00833L16.0667 5.75L0.416656 5.75L0.416656 3.71667L16.0667 3.71667L13.8083 1.45833L15.0583 0.208332Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
+        <div className="container">
+          <div className="flex flex-wrap items-center justify-between">
+            <div className="w-full lg:w-2/3">
+              <div className="mb-8 lg:mb-0">
+                <h3 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+                  Ready to Start Your Next Engineering Project?
                 </h3>
-                <p className="text-body-color">
-                  Comprehensive structural analysis and design services for
-                  buildings, bridges, and infrastructure projects.
+                <p className="text-lg font-medium text-white opacity-80">
+                  Our team is ready to bring your vision to life with expert engineering solutions.
                 </p>
               </div>
-
-              {/* Service 2 */}
-              <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                  <svg
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="mb-4 text-xl font-bold text-dark">
-                  Mechanical Systems
-                </h3>
-                <p className="text-body-color">
-                  Design and optimization of mechanical systems for industrial
-                  and commercial applications.
-                </p>
-              </div>
-
-              {/* Service 3 */}
-              <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                  <svg
-                    className="h-8 w-8 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="mb-4 text-xl font-bold text-dark">
-                  Process Engineering
-                </h3>
-                <p className="text-body-color">
-                  Optimization of industrial processes and manufacturing
-                  systems for maximum efficiency.
-                </p>
+            </div>
+            <div className="w-full lg:w-1/3">
+              <div className="flex flex-wrap justify-center lg:justify-end">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-center text-base font-semibold text-primary transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg"
+                >
+                  Contact Our Engineers
+                </Link>
               </div>
             </div>
           </div>
