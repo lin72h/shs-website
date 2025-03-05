@@ -2,7 +2,7 @@
 import { Portfolio } from "@/types/portfolio";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -13,13 +13,38 @@ export default function SinglePortfolio({
   portfolio: Portfolio;
 }) {
   const [open, setOpen] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Return a placeholder with the same dimensions during SSR
+  if (!mounted) {
+    return (
+      <div className="mb-4">
+        <div className="group relative mb-8 aspect-[518/291] overflow-hidden rounded-md shadow-service bg-gray-100" />
+        <div className="mt-6">
+          <div className="mb-3 h-6 w-3/4 bg-gray-200 rounded" />
+          <div className="h-4 w-full bg-gray-200 rounded" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
       <div className="mb-4">
         <div className="group relative mb-8 aspect-[518/291] overflow-hidden rounded-md shadow-service">
-          <Image src={portfolio?.image} alt="image" fill className="w-full" />
-          <div className="invisible absolute left-0 top-0 flex h-full w-full items-center justify-center bg-primary bg-opacity-[17%] opacity-0 transition group-hover:visible group-hover:opacity-100">
+          <Image 
+            src={portfolio?.image} 
+            alt={portfolio?.title || "Portfolio image"} 
+            fill 
+            className="w-full object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          <div className="invisible absolute inset-0 flex items-center justify-center bg-primary bg-opacity-[17%] opacity-0 transition group-hover:visible group-hover:opacity-100">
             <button
               onClick={() => setOpen(true)}
               className="glightbox flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white"
@@ -55,6 +80,7 @@ export default function SinglePortfolio({
         slides={[
           {
             src: portfolio?.image as string,
+            alt: portfolio?.title || "Portfolio image"
           },
         ]}
       />
