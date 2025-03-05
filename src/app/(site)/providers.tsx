@@ -2,7 +2,6 @@
 
 import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
-import AuthProvider from "../context/AuthContext";
 import ToasterContext from "../context/ToastContext";
 import { useEffect, useState } from "react";
 
@@ -49,10 +48,8 @@ export default function Providers({
         defaultTheme="light"
         disableTransitionOnChange
       >
-        <AuthProvider>
-          <ToasterContext />
-          {children}
-        </AuthProvider>
+        <ToasterContext />
+        {children}
       </ThemeProvider>
     </>
   );
