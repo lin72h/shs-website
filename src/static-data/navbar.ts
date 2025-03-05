@@ -11,7 +11,7 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Project Management",
-    href: "#project-management",
+    href: "project-management",
     external: false,
   },
   {
@@ -26,54 +26,14 @@ export const navbarData: NavbarItem[] = [
     submenu: [
       {
         id: uuid(),
-        title: "Home Page",
-        href: "/",
+        title: "Project 1",
+        href: "/project-1",
         external: false,
       },
       {
         id: uuid(),
-        title: "Services Page",
-        href: "/service",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Portfolio Page",
-        href: "/portfolio",
-      },
-      {
-        id: uuid(),
-        title: "Blog Page",
-        href: "/blog",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Contact Page",
-        href: "/contact",
-      },
-      {
-        id: uuid(),
-        title: "Docs",
-        href: "/docs",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign in",
-        href: "/auth/signin",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Sign up",
-        href: "/auth/signup",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Error 404",
-        href: "/404",
+        title: "Project 2",
+        href: "/project-2",
         external: false,
       },
     ],
