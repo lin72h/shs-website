@@ -17,6 +17,7 @@ export default function CharterEngineering() {
       <PageTitle
         pageTitle="Charter Engineering"
         pageDescription="Expert engineering solutions tailored to your needs. We provide comprehensive charter engineering services with a focus on innovation and excellence."
+        breadcrumbTitle="Engineering"
       />
 
       {/* Main Engineering Services Section */}

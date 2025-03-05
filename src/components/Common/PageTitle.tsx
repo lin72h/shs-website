@@ -3,26 +3,17 @@ import Link from "next/link";
 type Props = {
   pageTitle: string;
   pageDescription: string;
+  breadcrumbTitle?: string;
 };
 
-export default function PageTitle({ pageTitle, pageDescription }: Props) {
+export default function PageTitle({ pageTitle, pageDescription, breadcrumbTitle }: Props) {
   return (
     <section className="relative z-10 overflow-hidden bg-white pb-[50px] pt-[150px]">
       <div className="container">
         <div className="mx-[-16px] flex flex-wrap items-center">
           <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-            <div className="mb-12 max-w-[570px] md:mb-0">
-              <h1 className="mb-5 text-2xl font-bold text-black sm:text-3xl">
-                {pageTitle}
-              </h1>
-              <p className="text-base font-medium leading-relaxed text-body-color">
-                {pageDescription}
-              </p>
-            </div>
-          </div>
-          <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-            <div className="text-end">
-              <ul className="flex items-center md:justify-end">
+            <div className="mb-4">
+              <ul className="flex items-center">
                 <li className="flex items-center">
                   <Link
                     href="/"
@@ -33,10 +24,22 @@ export default function PageTitle({ pageTitle, pageDescription }: Props) {
                   <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                 </li>
                 <li className="text-base font-medium text-primary">
-                  {pageTitle}
+                  {breadcrumbTitle || pageTitle}
                 </li>
               </ul>
             </div>
+            
+            <div className="mb-12 max-w-[570px] md:mb-0">
+              <h1 className="mb-5 text-2xl font-bold text-black sm:text-3xl">
+                {pageTitle}
+              </h1>
+              <p className="text-base font-medium leading-relaxed text-body-color">
+                {pageDescription}
+              </p>
+            </div>
+          </div>
+          <div className="w-full px-4 md:w-4/12 lg:w-5/12">
+            {/* Remove the old breadcrumb from here */}
           </div>
         </div>
       </div>
