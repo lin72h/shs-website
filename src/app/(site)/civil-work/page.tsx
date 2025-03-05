@@ -35,7 +35,7 @@ export default function CivilWorkPage() {
               </p>
               <p className="text-base leading-relaxed text-body-color">
                 With 40 years of civil engineering experience, we understand the need to balance commercial and environmental concerns. 
-                Our civil engineers work throughout Auckland and Northland, and are among the country's most adept industrial problem solvers. 
+                Our civil engineers work throughout Auckland and Northland, and are among the country&apos;s most adept industrial problem solvers. 
                 That means, clients can be confident in our ability to assess, design and go beyond expectations to deliver creative and 
                 inspired solutions. We are always looking for measurable ways to add value to projects.
               </p>

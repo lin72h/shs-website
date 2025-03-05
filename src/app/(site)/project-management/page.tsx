@@ -109,7 +109,7 @@ export default function ProjectManagement() {
               <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Development Teams</h3>
               <p className="mb-6 text-body-color">
                 We arrange and manage comprehensive development teams, bringing together specialists in 
-                engineering, architecture, planning, and construction to ensure your project's success.
+                engineering, architecture, planning, and construction to ensure your project&apos;s success.
               </p>
               <ul className="space-y-2 text-sm text-body-color">
                 <li className="flex items-center space-x-2">
