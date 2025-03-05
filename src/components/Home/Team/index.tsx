@@ -12,7 +12,7 @@ export default function Team() {
                 Our Team
               </h2>
               <p className="text-base text-body-color">
-              Our diverse teams of planners, engineers, surveyors, urban designers, and urban architects are
+              Our diverse teams of planners, engineers, urban designers, and software engineer are
               uniquely positioned to offer a range of perspectives and skills for any project
               </p>
             </div>

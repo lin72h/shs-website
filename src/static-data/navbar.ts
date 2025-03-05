@@ -5,7 +5,7 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Charter Engineering",
-    href: "#charter-engineering",
+    href: "charter-engineering",
     external: false,
   },
   {
