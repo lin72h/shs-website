@@ -4,26 +4,29 @@ import { v4 as uuid } from "uuid";
 export const teamData: Team[] = [
   {
     id: uuid(),
-    name: "Coriss Ambady",
-    designation: "Web Developer",
-    image: "/images/team/image-01.jpg",
+    name: "Vincent Shao",
+    designation: "Director",
+    gradient: {
+      from: "#4F46E5",
+      to: "#13C296"
+    }
   },
   {
     id: uuid(),
-    name: "Glorius Cristian",
-    designation: "App Developer",
-    image: "/images/team/image-02.jpg",
+    name: "Adam Jones",
+    designation: "Chartered Civil Engineer ",
+    gradient: {
+      from: "#FF6B6B",
+      to: "#4ECDC4"
+    }
   },
   {
     id: uuid(),
-    name: "Jackie Sanders",
-    designation: "UI/UX Designer",
-    image: "/images/team/image-03.jpg",
-  },
-  {
-    id: uuid(),
-    name: "Nikolas Brooten",
-    designation: "Sales Manager",
-    image: "/images/team/image-04.jpg",
+    name: "Lin Zhu",
+    designation: "Software Engineer",
+    gradient: {
+      from: "#845EC2",
+      to: "#D65DB1"
+    }
   },
 ];
