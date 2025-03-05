@@ -1,19 +1,23 @@
 "use client";
 
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import Graphic from "./Graphic";
 
 export default function Newsletter() {
+  const [mounted, setMounted] = useState(false);
   const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!email || email == "") {
       toast.error("Please enter your email address.");
-
       return;
     }
 
@@ -31,6 +35,40 @@ export default function Newsletter() {
       toast.error(error?.response?.data);
     }
   };
+
+  if (!mounted) {
+    return (
+      <section className="mt-[-160px] bg-white">
+        <div className="container">
+          <div className="relative z-10 overflow-hidden rounded-[20px] bg-primary px-8 py-16 sm:p-12 lg:px-8 lg:py-24 xl:p-16">
+            <div className="mx-auto max-w-[600px] text-center">
+              <h2 className="mb-8 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight">
+                Subscribe to our Newsletter
+              </h2>
+              <p className="mb-8 text-base leading-relaxed text-white">
+                Subscribe to our newsletter to get the latest updates and news.
+              </p>
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="h-[60px] w-full rounded-md bg-white px-4 text-dark outline-none"
+                  />
+                  <button
+                    type="submit"
+                    className="inline-flex h-[60px] items-center justify-center rounded-md bg-white px-8 text-base font-semibold text-primary transition duration-300 ease-in-out hover:bg-opacity-90"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="mt-[-160px] bg-white">

@@ -1,5 +1,5 @@
 import algoliasearch from "algoliasearch";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Hits, InstantSearch, SearchBox } from "react-instantsearch";
 import CustomHits from "./CustomHits";
 import { integrations, messages } from "../../../integrations.config";
@@ -17,6 +17,11 @@ type Props = {
 
 const GlobalSearchModal = (props: Props) => {
   const { searchModalOpen, setSearchModalOpen } = props;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     // closing modal while clicking outside
@@ -34,6 +39,27 @@ const GlobalSearchModal = (props: Props) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [searchModalOpen, setSearchModalOpen]);
+
+  if (!mounted) {
+    return (
+      <div className="fixed inset-0 z-[999999] flex items-center justify-center bg-black bg-opacity-50">
+        <div className="relative h-[calc(100vh-70px)] w-full max-w-[800px] rounded-lg bg-white">
+          <div className="flex h-full max-h-[calc(100vh-70px)] flex-col overflow-y-auto">
+            <div className="sticky top-0 z-[999] border-b">
+              <input
+                type="text"
+                placeholder="Search Entire Site | Products, Docs, Pages ..."
+                className="h-[74px] w-full bg-white rounded-t-lg pl-[60px] pr-5 text-dark outline-none"
+              />
+            </div>
+            <div className="h-full rounded-b-lg bg-white">
+              <p className="text-center">{messages?.algolia}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

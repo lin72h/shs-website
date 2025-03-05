@@ -1,7 +1,7 @@
 "use client";
 
 import { portfolioData } from "@/static-data/portfolio";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import SectionTitle from "../Common/SectionTitle";
 import SinglePortfolio from "./SinglePortfolio";
@@ -9,6 +9,11 @@ import SinglePortfolio from "./SinglePortfolio";
 export default function Portfolio() {
   const [activeTag, setActiveTag] = useState("All");
   const [items, setItems] = useState(portfolioData);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const allTag = Array.from(
     new Set(portfolioData.flatMap((item) => item.tags)),
@@ -61,13 +66,21 @@ export default function Portfolio() {
 
         <div className="portfolio-container -mx-4 flex justify-center">
           <div className="w-full px-4 xl:w-10/12">
-            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
-              <Masonry gutter="30px">
+            {mounted ? (
+              <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2 }}>
+                <Masonry gutter="30px">
+                  {items.map((portfolio) => (
+                    <SinglePortfolio key={portfolio?.id} portfolio={portfolio} />
+                  ))}
+                </Masonry>
+              </ResponsiveMasonry>
+            ) : (
+              <div className="grid gap-8 md:grid-cols-2 2xl:grid-cols-3">
                 {items.map((portfolio) => (
                   <SinglePortfolio key={portfolio?.id} portfolio={portfolio} />
                 ))}
-              </Masonry>
-            </ResponsiveMasonry>
+              </div>
+            )}
           </div>
         </div>
       </div>

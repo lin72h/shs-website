@@ -4,11 +4,37 @@ import { footerSocialLinks } from "@/static-data/footer";
 import { useEffect, useState } from "react";
 
 export default function FooterBottom() {
+  const [mounted, setMounted] = useState(false);
   const [year, setYear] = useState("");
 
   useEffect(() => {
+    setMounted(true);
     setYear(new Date().getFullYear().toString());
   }, []);
+
+  if (!mounted) {
+    return (
+      <div className="mt-10 border-t border-white border-opacity-10 pt-12">
+        <div className="mb-5 flex items-center justify-center">
+          {footerSocialLinks.map((link) => (
+            <a
+              key={link?.id}
+              href={link?.href}
+              aria-label="social-link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              className="mx-2 flex h-8 w-8 items-center justify-center rounded-full bg-body-color text-dark duration-200 hover:bg-primary hover:text-white"
+            >
+              {link?.icon}
+            </a>
+          ))}
+        </div>
+        <p className="text-center text-base font-medium text-body-color">
+          Next.js Site Template for Agency and Portfolio - &copy; {new Date().getFullYear()}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>

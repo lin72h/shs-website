@@ -32,8 +32,15 @@ const copyIcon = (
 );
 
 const CodeWithCopy = ({ code }: any) => {
+  const [mounted, setMounted] = useState(false);
   const [copyText, setCopyText] = useState("Copy");
   const [coping, setCoping] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    Prism.highlightAll();
+  }, [code]);
+
   const notify = () => {
     setCopyText("Copied");
     setCoping(true);
@@ -44,9 +51,21 @@ const CodeWithCopy = ({ code }: any) => {
     }, 1000);
   };
 
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [code]);
+  if (!mounted) {
+    return (
+      <pre
+        className={`relative language-${code?.language ? code?.language : "html"}`}
+        data-language={code?.language || ""}
+      >
+        <code className={`language-${code?.language ? code?.language : "html"}`}>
+          {code?.code}
+        </code>
+        <div className="absolute right-2 top-2 z-10 flex h-9 items-center justify-center rounded-lg border border-solid bg-stroke px-5 text-sm text-black duration-300 hover:border-primary hover:bg-primary hover:text-white dark:bg-white dark:hover:bg-primary">
+          {copyIcon} <span className="pl-3">Copy</span>
+        </div>
+      </pre>
+    );
+  }
 
   return (
     <pre

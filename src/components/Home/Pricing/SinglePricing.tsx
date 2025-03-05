@@ -4,8 +4,15 @@ import SingleOffer from "./SingleOffer";
 import SinglePricingGraphic from "./SinglePricingGraphic";
 import { integrations, messages } from "../../../../integrations.config";
 import toast from "react-hot-toast";
+import { useState, useEffect } from "react";
 
 export default function SinglePricing({ price }: any) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const handleSubscription = async (e: any) => {
     e.preventDefault();
 
@@ -26,6 +33,37 @@ export default function SinglePricing({ price }: any) {
     );
     window.location.assign(data);
   };
+
+  if (!mounted) {
+    return (
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+        <div className="relative z-10 mb-10 overflow-hidden rounded-xl border border-primary border-opacity-20 bg-white px-8 py-10 shadow-pricing sm:p-12 lg:px-6 lg:py-10 xl:px-10 2xl:p-12">
+          <span className="mb-4 block text-lg font-semibold text-primary">
+            {price?.nickname}
+          </span>
+          <h2 className="mb-5 text-[42px] font-bold text-dark">
+            $
+            {(price.unit_amount / 100).toLocaleString("en-US", {
+              currency: "USD",
+            })}{" "}
+            <span className="text-base font-medium text-body-color">
+              {" "}
+              / year{" "}
+            </span>
+          </h2>
+          <p className="mb-8 border-b border-[#F2F2F2] pb-8 text-base text-body-color">
+            Perfect for using in a personal website or a client project.
+          </p>
+          <button
+            onClick={handleSubscription}
+            className="block w-full rounded-md bg-primary p-4 text-center text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-90"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
