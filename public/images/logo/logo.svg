@@ -3,12 +3,12 @@
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#4a6cf6" />
-      <stop offset="100%" stop-color="#3a5ce6" />
+      <stop offset="100%" stop-color="#4a6cf6" />
     </linearGradient>
     
     <!-- Gear shapes for engineering theme -->
     <pattern id="gearPattern" patternUnits="userSpaceOnUse" width="100" height="100" patternTransform="scale(0.2) rotate(45)">
-      <path d="M45,0 L55,0 L55,25 L70,30 L85,15 L95,25 L80,40 L85,55 L100,55 L100,65 L85,65 L80,80 L95,95 L85,105 L70,90 L55,95 L55,110 L45,110 L45,95 L30,90 L15,105 L5,95 L20,80 L15,65 L0,65 L0,55 L15,55 L20,40 L5,25 L15,15 L30,30 L45,25 Z" fill="#5a7cf6" fill-opacity="0.15" />
+      <path d="M45,0 L55,0 L55,25 L70,30 L85,15 L95,25 L80,40 L85,55 L100,55 L100,65 L85,65 L80,80 L95,95 L85,105 L70,90 L55,95 L55,110 L45,110 L45,95 L30,90 L15,105 L5,95 L20,80 L15,65 L0,65 L0,55 L15,55 L20,40 L5,25 L15,15 L30,30 L45,25 Z" fill="#5a7cf6" fill-opacity="0.1" />
     </pattern>
   </defs>
   
