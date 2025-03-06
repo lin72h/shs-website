@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="relative bg-gradient-to-b from-slate-50 to-white min-h-screen flex flex-col justify-center px-4 pb-8 pt-[80px] sm:pt-[90px]"
+      className="relative bg-gradient-to-b from-slate-50 to-white min-h-screen flex flex-col justify-center px-4 pb-8 pt-[120px] sm:pt-[140px] md:pt-[160px]"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] pointer-events-none"></div>
@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 max-w-[1200px] mx-auto mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 max-w-[900px] mx-auto mt-8">
           {/* Charter Engineering Section */}
           <Link 
             href="/charter-engineering"
@@ -118,49 +118,36 @@ export default function Hero() {
             </div>
           </Link>
           
-          {/* Portfolio Section - Dropdown */}
-          <div className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
+          {/* Building Construction Section */}
+          <Link 
+            href="/building-construction"
+            className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
             {/* Using local project images */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-04.jpg" 
-                alt="Portfolio" 
+                src="/images/portfolio/portfolio-01.jpg" 
+                alt="Building Construction" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-800/70 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/90 via-indigo-800/70 to-transparent"></div>
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-              <h3 className="font-bold text-xl md:text-2xl mb-2">Portfolio</h3>
-              <p className="text-sm text-white/90 mb-3">View our completed projects and engineering success stories</p>
-              
-              <div className="flex flex-col space-y-2">
-                <Link href="/portfolio/don-buck-civil" className="flex items-center group/item">
-                  <span className="text-sm font-medium group-hover/item:text-primary-light transition-colors">Don Buck Civil</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-                
-                <Link href="/portfolio/upper-harbour-drive" className="flex items-center group/item">
-                  <span className="text-sm font-medium group-hover/item:text-primary-light transition-colors">Upper Harbour Drive</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-                
-                <Link href="/portfolio" className="flex items-center group/item mt-1">
-                  <span className="text-sm font-medium text-primary/90 group-hover/item:text-primary transition-colors">View All Projects</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+              <h3 className="font-bold text-xl md:text-2xl mb-2">Building Construction</h3>
+              <p className="text-sm text-white/90 mb-4">Comprehensive construction services for residential, commercial and industrial projects</p>
+              <div className="flex items-center">
+                <span className="text-sm font-medium">Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </div>
-          </div>
+          </Link>
+          
         </div>
         
         <div className="flex justify-center mt-12">

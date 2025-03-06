@@ -8,7 +8,7 @@ type Props = {
 
 export default function PageTitle({ pageTitle, pageDescription, breadcrumbTitle }: Props) {
   return (
-    <section className="relative z-10 overflow-hidden bg-white pb-[50px] pt-[150px]">
+    <section className="relative z-10 overflow-hidden bg-white pb-[50px] pt-[180px] sm:pt-[200px] md:pt-[220px]">
       <div className="container">
         <div className="mx-[-16px] flex flex-wrap items-center">
           <div className="w-full px-4 md:w-8/12 lg:w-7/12">
