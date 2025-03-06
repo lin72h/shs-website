@@ -38,7 +38,7 @@ export default function CharterEngineering() {
             <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-01.jpg"
+                  src="/images/news/news-2.jpg"
                   alt="Civil Infrastructure"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -111,7 +111,7 @@ export default function CharterEngineering() {
             <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-02.jpg"
+                  src="/images/news/news-5.jpg"
                   alt="Land Development"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"

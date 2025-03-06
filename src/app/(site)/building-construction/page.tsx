@@ -70,7 +70,7 @@ export default function BuildingConstructionPage() {
             {/* Image Column */}
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image 
-                src="/images/services/service-01.jpg"
+                src="/images/news/news-1.jpg"
                 alt="Building Construction Services"
                 fill
                 className="object-cover object-center"

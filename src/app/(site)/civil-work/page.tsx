@@ -71,7 +71,7 @@ export default function CivilWorkPage() {
             {/* Image Column */}
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image 
-                src="/images/services/service-01.jpg"
+                src="/images/news/news-4.jpg"
                 alt="Civil Engineering Services"
                 fill
                 className="object-cover object-center"

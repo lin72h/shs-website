@@ -76,7 +76,7 @@ export default function ProjectManagement() {
             {/* Image Column */}
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image 
-                src="/images/services/service-01.jpg"
+                src="/images/news/news-3.jpg"
                 alt="Land Development Project Management"
                 fill
                 className="object-cover object-center"
@@ -286,7 +286,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-02.jpg"
+                  src="/images/news/news-1.jpg"
                   alt="Urban Subdivision"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -305,7 +305,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-03.jpg"
+                  src="/images/news/news-2.jpg"
                   alt="Rural Subdivision"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -324,7 +324,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-01.jpg"
+                  src="/images/news/news-3.jpg"
                   alt="Housing Developments"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -343,7 +343,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-03.jpg"
+                  src="/images/news/news-4.jpg"
                   alt="Business Developments"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -362,7 +362,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-02.jpg"
+                  src="/images/news/news-5.jpg"
                   alt="New/Changed Land Uses"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -381,7 +381,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-01.jpg"
+                  src="/images/news/news-6.jpg"
                   alt="Existing Use Rights"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -400,7 +400,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-03.jpg"
+                  src="/images/news/news-7.jpg"
                   alt="Private Plan Changes"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -419,7 +419,7 @@ export default function ProjectManagement() {
             <div className="group relative overflow-hidden rounded-lg">
               <div className="relative h-[250px] w-full overflow-hidden">
                 <Image
-                  src="/images/services/service-02.jpg"
+                  src="/images/news/news-8.jpg"
                   alt="Due Diligence"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
