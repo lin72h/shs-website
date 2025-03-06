@@ -33,10 +33,10 @@ export default function Hero() {
             href="/charter-engineering"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using service images that better represent charter engineering */}
+            {/* Using charter engineering specific image */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/services/service-01.jpg" 
+                src="/images/services/charter_engineering.jpg.webp" 
                 alt="Charter Engineering" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
