@@ -8,10 +8,16 @@ export default function FooterContact() {
         Contact Info
       </h3>
       <p className="mb-1 text-base font-medium text-body-color">
-        closerpage@email.com
+        info@shsengineering.co.nz
       </p>
       <p className="mb-1 text-base font-medium text-body-color">
-        12 Hilton St, Manchester M1 1JF
+        110 Carlton Gore Road
+      </p>
+      <p className="mb-1 text-base font-medium text-body-color">
+        Newmarket, Auckland 1023
+      </p>
+      <p className="mb-1 text-base font-medium text-body-color">
+        New Zealand
       </p>
       <p className="mb-1 text-base font-medium text-body-color">
         +44 012 34 5678

@@ -4,26 +4,26 @@ import { v4 as uuid } from "uuid";
 export const footerLinks: FooterLink[] = [
   {
     id: uuid(),
-    title: "The Studio",
-    href: "#",
+    title: "Charter Engineering",
+    href: "/charter-engineering",
     external: false,
   },
   {
     id: uuid(),
-    title: "Sponsoring",
-    href: "#",
+    title: "Project Management",
+    href: "/project-management",
     external: false,
   },
   {
     id: uuid(),
-    title: "Newsletter",
-    href: "#",
+    title: "Civil Work",
+    href: "/civil-work",
     external: false,
   },
   {
     id: uuid(),
-    title: "Contact Us",
-    href: "/contact",
+    title: "Building Construction",
+    href: "/building-construction",
     external: false,
   },
 ];

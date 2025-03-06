@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="w-full px-4 md:w-1/2 lg:w-3/12">
             <div className="mb-10">
               <h3 className="mb-9 text-xl font-semibold text-white">
-                What I Do?
+                Our Services
               </h3>
               <ul className="space-y-3">
                 {footerLinks.map((linkItem) => (
