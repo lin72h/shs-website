@@ -13,10 +13,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] pointer-events-none"></div>
       
       <div className="container max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-14">
-          <span className="mb-3 inline-block text-lg font-semibold tracking-wider text-primary px-5 py-2 bg-primary/5 rounded-full">
-            What we do
-          </span>
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center justify-center">
+            <span className="relative inline-block text-sm font-bold uppercase tracking-[0.2em] text-primary px-4 py-1 mb-0 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-full before:bg-primary/30 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-10 after:-translate-x-1/2 after:bg-primary">
+              What we do
+            </span>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-[940px] mx-auto mt-10">
