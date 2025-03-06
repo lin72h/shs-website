@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="container max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-14">
           <span className="mb-3 inline-block text-lg font-semibold tracking-wider text-primary px-5 py-2 bg-primary/5 rounded-full">
-            SHS Engineering Solutions
+            What we do
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mt-5 mb-4 leading-tight">
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
