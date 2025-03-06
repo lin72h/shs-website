@@ -17,14 +17,6 @@ export default function Hero() {
           <span className="mb-3 inline-block text-lg font-semibold tracking-wider text-primary px-5 py-2 bg-primary/5 rounded-full">
             What we do
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mt-5 mb-4 leading-tight">
-            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              NZ Civil Engineering Experts
-            </span>
-          </h1>
-          <p className="mt-6 mx-auto max-w-[700px] text-slate-600 text-xl leading-relaxed">
-            We&apos;re a NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-[940px] mx-auto mt-10">
@@ -150,7 +142,18 @@ export default function Hero() {
           
         </div>
         
-        <div className="flex justify-center mt-16">
+        <div className="text-center mt-16 mb-12 mx-auto max-w-[700px]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+              NZ Civil Engineering Experts
+            </span>
+          </h1>
+          <p className="text-slate-600 text-xl leading-relaxed">
+            We&apos;re a NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.
+          </p>
+        </div>
+        
+        <div className="flex justify-center mt-8">
           <Link
             href="/contact"
             className="group inline-flex items-center justify-center rounded-lg bg-primary px-10 py-5 text-center font-bold text-lg text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:bg-primary/90"
