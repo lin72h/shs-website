@@ -145,8 +145,8 @@ export default function Hero() {
         </div>
         
         <div className="text-center mt-16 mb-12 mx-auto max-w-[700px]">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-[4.5rem] mb-8 leading-[1.1] tracking-tight">
+            <span className="inline-block py-2 bg-[linear-gradient(135deg,#0a2463,#3e92cc,#2667ff,#3e92cc)] bg-clip-text text-transparent bg-[length:300%_100%] animate-gradient">
               NZ Civil Engineering Experts
             </span>
           </h1>
@@ -168,10 +168,26 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Add subtle background grid pattern */}
+      {/* Add subtle background grid pattern and animations */}
       <style jsx global>{`
         .bg-grid-slate-100 {
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(226 232 240 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+        }
+        
+        @keyframes gradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        
+        .animate-gradient {
+          animation: gradient 8s ease infinite;
         }
       `}</style>
     </div>
