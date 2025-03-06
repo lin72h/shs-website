@@ -187,7 +187,7 @@ export default function BuildingConstructionPage() {
             <div className="group">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/portfolio/portfolio-01.jpg" 
+                  src="/images/news/news-6.jpg" 
                   alt="Modern Residential Complex"
                   width={400}
                   height={280}
@@ -209,7 +209,7 @@ export default function BuildingConstructionPage() {
             <div className="group">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/portfolio/portfolio-02.jpg" 
+                  src="/images/news/news-7.jpg" 
                   alt="Corporate Office Building"
                   width={400}
                   height={280}
@@ -231,7 +231,7 @@ export default function BuildingConstructionPage() {
             <div className="group">
               <div className="relative mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/portfolio/portfolio-03.jpg" 
+                  src="/images/news/news-8.jpg" 
                   alt="Distribution Center"
                   width={400}
                   height={280}
