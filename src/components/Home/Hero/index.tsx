@@ -63,10 +63,10 @@ export default function Hero() {
             href="/project-management"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using service images that better represent project management */}
+            {/* Using specific project management image */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/services/service-02.jpg" 
+                src="/images/services/project_management.jpeg" 
                 alt="Project Management" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
@@ -93,10 +93,10 @@ export default function Hero() {
             href="/civil-work"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using service images that better represent civil work */}
+            {/* Using specific civil work image */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/services/service-03.jpg" 
+                src="/images/services/civil_work.jpg" 
                 alt="Civil Work" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
@@ -123,10 +123,10 @@ export default function Hero() {
             href="/building-construction"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using portfolio image that better represents building construction */}
+            {/* Using specific building construction sunset image */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-04.jpg" 
+                src="/images/services/building-construction-sunset.jpg" 
                 alt="Building Construction" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
