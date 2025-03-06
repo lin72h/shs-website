@@ -8,7 +8,7 @@ const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `Charter Engineering Services | ${siteName}`,
-  description: "Professional charter engineering services for your projects",
+  description: "Expert charter engineering services delivering innovative solutions for civil infrastructure and land development projects with technical precision and quality assurance.",
 };
 
 export default function CharterEngineering() {
@@ -16,7 +16,7 @@ export default function CharterEngineering() {
     <>
       <PageTitle
         pageTitle="Charter Engineering"
-        pageDescription="Expert engineering solutions tailored to your needs. We provide comprehensive charter engineering services with a focus on innovation and excellence."
+        pageDescription="Comprehensive engineering solutions delivered by qualified professionals with expertise in civil infrastructure, technical design, and project implementation to stringent industry standards."
         breadcrumbTitle="Engineering"
       />
 

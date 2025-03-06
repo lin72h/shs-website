@@ -8,7 +8,7 @@ const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
   title: `Building Construction Services | ${siteName}`,
-  description: "Professional building construction services specializing in residential, commercial, and industrial construction with a focus on quality and sustainability",
+  description: "Technical construction services specializing in structural engineering, commercial and industrial building systems, and quality-controlled implementation with adherence to technical standards.",
 };
 
 export default function BuildingConstructionPage() {
@@ -16,7 +16,7 @@ export default function BuildingConstructionPage() {
     <>
       <PageTitle
         pageTitle="Building Construction"
-        pageDescription="Comprehensive building construction solutions delivered by our experienced team of qualified professionals, focusing on quality craftsmanship, sustainable practices, and client satisfaction."
+        pageDescription="Professional building construction solutions with technical precision in structural engineering, materials science, and construction methodologies, delivered by a team of highly qualified engineers and construction specialists."
         breadcrumbTitle="Building Construction"
       />
 

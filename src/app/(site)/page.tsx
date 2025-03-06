@@ -6,7 +6,7 @@ const siteName = process.env.SITE_NAME || "SHS Engineering";
 
 export const metadata: Metadata = {
   title: `SHS Engineering - Civil Engineering Experts | ${siteName}`,
-  description: "NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.",
+  description: "New Zealand owned civil engineering consultancy specializing in land development, infrastructure design, and technical engineering solutions with precision and quality.",
 };
 
 export default function Home() {

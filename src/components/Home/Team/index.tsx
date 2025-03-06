@@ -9,11 +9,10 @@ export default function Team() {
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center">
               <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
-                Our Team
+                Our Engineering Team
               </h2>
               <p className="text-base text-body-color">
-              Our diverse teams of planners, engineers, urban designers, and software engineer are
-              uniquely positioned to offer a range of perspectives and skills for any project
+              Our specialized team of engineers, planners, and technical specialists brings decades of combined experience to deliver precise, innovative solutions for complex projects.
               </p>
             </div>
           </div>

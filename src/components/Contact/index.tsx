@@ -6,8 +6,8 @@ export default function Contact() {
       <div className="container">
         <SectionTitle
           mainTitle="CONTACT"
-          title="Have an Project in Mind?"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Engineering Solutions for Your Projects"
+          paragraph="Our team of qualified engineers is ready to assist with your infrastructure, development, and construction projects."
           center
         />
         <div className="-mx-4 flex justify-center">
@@ -19,7 +19,7 @@ export default function Contact() {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Enter your name"
+                      placeholder="Full name"
                       className="input-field"
                     />
                   </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                     <input
                       type="text"
                       name="company"
-                      placeholder="Company (Optional)"
+                      placeholder="Organization"
                       className="input-field"
                     />
                   </div>
@@ -39,7 +39,7 @@ export default function Contact() {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Enter your email"
+                      placeholder="Email address"
                       className="input-field"
                     />
                   </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                     <textarea
                       rows={4}
                       name="message"
-                      placeholder="Tell me about your project"
+                      placeholder="Project details and requirements"
                       className="input-field resize-none"
                     ></textarea>
                   </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                 <div className="w-full px-4">
                   <div className="pt-4 text-center">
                     <button className="mx-auto inline-flex items-center justify-center rounded-full bg-primary px-9 py-4 font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-signUp">
-                      Send Message
+                      Submit Inquiry
                     </button>
                   </div>
                 </div>
