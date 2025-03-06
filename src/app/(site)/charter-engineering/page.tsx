@@ -21,7 +21,7 @@ export default function CharterEngineering() {
       />
 
       {/* Main Engineering Services Section */}
-      <section className="pb-24 pt-[110px]">
+      <section className="pb-16 pt-16">
         <div className="container">
           <div className="mb-16">
             <SectionTitle

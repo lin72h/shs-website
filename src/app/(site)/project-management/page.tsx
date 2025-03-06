@@ -21,7 +21,7 @@ export default function ProjectManagement() {
       />
 
       {/* Hero Section with Overview */}
-      <section className="pb-20 pt-[110px]">
+      <section className="pb-16 pt-16">
         <div className="container">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {/* Content Column */}
@@ -87,8 +87,8 @@ export default function ProjectManagement() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="bg-gray-50 pb-24 pt-24">
+      {/* Core Services Section */}
+      <section className="bg-gray-50 pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="OUR SERVICES"
@@ -271,7 +271,7 @@ export default function ProjectManagement() {
       </section>
 
       {/* Development Types Section */}
-      <section className="pb-24 pt-24">
+      <section className="pb-16 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="PROJECT TYPES"

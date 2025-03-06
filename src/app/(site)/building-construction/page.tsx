@@ -21,7 +21,7 @@ export default function BuildingConstructionPage() {
       />
 
       {/* Hero Section with Overview */}
-      <section className="pb-20 pt-[110px]">
+      <section className="pb-16 pt-16">
         <div className="container">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {/* Content Column */}
@@ -82,7 +82,7 @@ export default function BuildingConstructionPage() {
       </section>
 
       {/* Core Services Section */}
-      <section className="bg-gray-50 pb-24 pt-24">
+      <section className="bg-gray-50 pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="OUR EXPERTISE"
@@ -172,7 +172,7 @@ export default function BuildingConstructionPage() {
       </section>
 
       {/* Project Showcase Section */}
-      <section className="pb-20 pt-24">
+      <section className="pb-16 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECTS"
@@ -253,7 +253,7 @@ export default function BuildingConstructionPage() {
       </section>
 
       {/* Process Section */}
-      <section className="bg-gray-50 pb-24 pt-24">
+      <section className="bg-gray-50 pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="OUR APPROACH"
@@ -318,7 +318,7 @@ export default function BuildingConstructionPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="pb-24 pt-24">
+      <section className="pb-20 pt-16">
         <div className="container">
           <div className="relative overflow-hidden rounded-lg bg-primary">
             <div className="absolute right-0 top-0 -z-10 h-full w-full opacity-10">
