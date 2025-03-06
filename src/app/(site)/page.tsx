@@ -1,4 +1,5 @@
 import Hero from "@/components/Home/Hero";
+import Team from "@/components/Home/Team";
 import { Metadata } from "next";
 
 const siteName = process.env.SITE_NAME || "SHS Engineering";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Team />
     </>
   );
 }
