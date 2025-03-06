@@ -31,49 +31,13 @@ export const footerLinks: FooterLink[] = [
 export const footerNewsData: FooterLink[] = [
   {
     id: uuid(),
-    title: "Hot Stuff",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Perfect Place",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Vintage",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Products",
-    href: "#",
+    title: "Blog",
+    href: "/blog",
     external: false,
   },
 ];
 
 export const footerQuickLinks: FooterLink[] = [
-  {
-    id: uuid(),
-    title: "Style",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Health",
-    href: "#",
-    external: false,
-  },
-  {
-    id: uuid(),
-    title: "Relationship",
-    href: "#",
-    external: false,
-  },
   {
     id: uuid(),
     title: "Legal & Privacy",
