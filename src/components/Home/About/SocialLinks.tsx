@@ -63,8 +63,8 @@ export default function SocialLinks() {
           href={social?.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-[#E5E8F2] text-body-color hover:border-primary hover:bg-primary hover:text-white"
-          aria-label="social-link"
+          className="mr-4 flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 text-body-color transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white hover:shadow-md"
+          aria-label={`${social?.name} social link`}
         >
           {social?.icon}
         </a>

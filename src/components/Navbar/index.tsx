@@ -56,12 +56,12 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`${stickyMenu ? "sticky-navbar" : ""} header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent transition`}
+        className={`${stickyMenu ? "sticky-navbar shadow-lg bg-white/95 backdrop-blur-sm" : ""} header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent transition-all duration-300`}
       >
-        <div className="mx-auto w-full px-4 xl:container">
-          <div className="relative mx-[-16px] flex items-center justify-between">
+        <div className="mx-auto w-full px-6 xl:container">
+          <div className="relative flex items-center justify-between">
             <div className="w-52 max-w-full px-4 xl:w-60">
-              <Link href="/" className="header-logo block w-full py-6 xl:py-8">
+              <Link href="/" className="header-logo block w-full py-6 xl:py-7">
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
@@ -81,20 +81,20 @@ export default function Navbar() {
                   className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 xl:hidden"
                 >
                   <span
-                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark ${navigationOpen ? "top-[7px] rotate-45" : ""}`}
+                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark transition-all duration-300 ${navigationOpen ? "top-[7px] rotate-45" : ""}`}
                   ></span>
                   <span
-                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark ${navigationOpen ? "opacity-0" : ""}`}
+                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark transition-all duration-300 ${navigationOpen ? "opacity-0" : ""}`}
                   ></span>
                   <span
-                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark ${navigationOpen ? "top-[-8px] rotate-[135deg]" : ""}`}
+                    className={`relative my-[6px] block h-[2px] w-[30px] bg-dark transition-all duration-300 ${navigationOpen ? "top-[-8px] rotate-[135deg]" : ""}`}
                   ></span>
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`${!navigationOpen ? "hidden xl:block" : ""} absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white p-5 py-5 shadow-lg max-xl:max-h-[350px] max-xl:overflow-y-auto xl:static xl:block xl:w-full xl:max-w-full xl:bg-transparent xl:px-4 xl:py-0 xl:shadow-none 2xl:px-6`}
+                  className={`${!navigationOpen ? "hidden xl:block" : ""} absolute right-4 top-full w-full max-w-[280px] rounded-xl bg-white p-6 py-6 shadow-xl max-xl:max-h-[400px] max-xl:overflow-y-auto xl:static xl:block xl:w-full xl:max-w-full xl:bg-transparent xl:px-4 xl:py-0 xl:shadow-none 2xl:px-6`}
                 >
-                  <ul className="block xl:flex xl:items-center xl:space-x-[18px]">
+                  <ul className="block xl:flex xl:items-center xl:space-x-[22px]">
                     {navbarData.map((item) => (
                       <li
                         key={item?.id}
@@ -112,7 +112,7 @@ export default function Navbar() {
                                 : "/"
                             }
                             onClick={navigationHandler}
-                            className={`${pathUrl === `/${item?.href}` ? "text-primary" : ""} flex py-2 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 font-poppins ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
+                            className={`${pathUrl === `/${item?.href}` ? "text-primary font-bold" : ""} flex py-2.5 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-7 font-medium transition-colors duration-300 ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
                           >
                             {item?.title}
                           </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
                               onClick={() =>
                                 setDropdownToggler(!dropdownToggler)
                               }
-                              className="flex w-full items-center justify-between py-2 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 font-poppins"
+                              className="flex w-full items-center justify-between py-2.5 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-7 font-medium transition-colors duration-300"
                             >
                               {item?.title}
 
@@ -139,14 +139,14 @@ export default function Navbar() {
                             </button>
                             {item?.submenu && (
                               <ul
-                                className={`${dropdownToggler ? "" : "hidden xl:block"} submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[250px] xl:p-4 xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full`}
+                                className={`${dropdownToggler ? "" : "hidden xl:block"} submenu relative left-0 top-full rounded-xl bg-white transition-all duration-300 group-hover:opacity-100 xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[260px] xl:p-5 xl:opacity-0 xl:shadow-xl xl:group-hover:visible xl:group-hover:top-full`}
                               >
                                 {item?.submenu.map((item) => (
                                   <li key={item?.id}>
                                     <Link
                                       href={item?.external ? item.href : `/portfolio/${item.href}`}
                                       onClick={navigationHandler}
-                                      className={`block rounded px-4 py-[10px] text-sm ${pathUrl === `/portfolio/${item?.href}` ? "text-primary" : "text-black hover:text-primary"}`}
+                                      className={`block rounded-lg px-4 py-3 text-sm transition-colors duration-300 ${pathUrl === `/portfolio/${item?.href}` ? "text-primary font-bold" : "text-black hover:text-primary"}`}
                                     >
                                       {item?.title}
                                     </Link>
@@ -162,14 +162,14 @@ export default function Navbar() {
                 </nav>
               </div>
 
-              <div className="hidden items-center justify-end gap-4 pr-16 sm:flex xl:pr-0">
+              <div className="hidden items-center justify-end gap-5 pr-16 sm:flex xl:pr-0">
                 <button
                   onClick={() => setSearchModalOpen(true)}
-                  className="hidden h-10 w-10 items-center justify-center rounded-full text-body-color sm:flex"
+                  className="hidden h-11 w-11 items-center justify-center rounded-full text-body-color hover:bg-gray-100 transition-colors duration-300 sm:flex"
                 >
                   <svg
-                    width="24"
-                    height="24"
+                    width="22"
+                    height="22"
                     viewBox="0 0 18 18"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +194,7 @@ export default function Navbar() {
                 </button>
                 <Link
                   href="/contact"
-                  className="rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-signUp md:px-9 xl:px-9"
+                  className="rounded-lg bg-primary px-8 py-3.5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg md:px-9 xl:px-10"
                 >
                   Contact Us
                 </Link>
