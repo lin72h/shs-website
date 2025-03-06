@@ -33,10 +33,10 @@ export default function Hero() {
             href="/charter-engineering"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using local project images */}
+            {/* Using service images that better represent charter engineering */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-01.jpg" 
+                src="/images/services/service-01.jpg" 
                 alt="Charter Engineering" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
@@ -63,10 +63,10 @@ export default function Hero() {
             href="/project-management"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using local project images */}
+            {/* Using service images that better represent project management */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-02.jpg" 
+                src="/images/services/service-02.jpg" 
                 alt="Project Management" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
@@ -93,10 +93,10 @@ export default function Hero() {
             href="/civil-work"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using local project images */}
+            {/* Using service images that better represent civil work */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-03.jpg" 
+                src="/images/services/service-03.jpg" 
                 alt="Civil Work" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
@@ -123,10 +123,10 @@ export default function Hero() {
             href="/building-construction"
             className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
-            {/* Using local project images */}
+            {/* Using portfolio image that better represents building construction */}
             <div className="absolute inset-0">
               <Image 
-                src="/images/portfolio/portfolio-01.jpg" 
+                src="/images/portfolio/portfolio-04.jpg" 
                 alt="Building Construction" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
