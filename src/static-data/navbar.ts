@@ -22,8 +22,8 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: uuid(),
-    title: "Building Construction ",
-    href: "building-construction ",
+    title: "Building Construction",
+    href: "building-construction",
     external: false,
   },
 ];
