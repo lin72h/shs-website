@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="mx-auto w-full px-4 xl:container">
           <div className="relative mx-[-16px] flex items-center justify-between">
             <div className="w-52 max-w-full px-4 xl:w-60">
-              <Link href="/" className="header-logo block w-full py-6 lg:py-8">
+              <Link href="/" className="header-logo block w-full py-6 xl:py-8">
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
@@ -78,7 +78,7 @@ export default function Navbar() {
                   onClick={navigationHandler}
                   name="navbarToggler"
                   aria-label="navbarToggler"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 xl:hidden"
                 >
                   <span
                     className={`relative my-[6px] block h-[2px] w-[30px] bg-dark ${navigationOpen ? "top-[7px] rotate-45" : ""}`}
@@ -92,13 +92,13 @@ export default function Navbar() {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`${!navigationOpen ? "hidden lg:block" : ""} absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white p-5 py-5 shadow-lg max-lg:max-h-[350px] max-lg:overflow-y-auto lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none xl:px-6`}
+                  className={`${!navigationOpen ? "hidden xl:block" : ""} absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white p-5 py-5 shadow-lg max-xl:max-h-[350px] max-xl:overflow-y-auto xl:static xl:block xl:w-full xl:max-w-full xl:bg-transparent xl:px-4 xl:py-0 xl:shadow-none 2xl:px-6`}
                 >
-                  <ul className="block lg:flex">
+                  <ul className="block xl:flex xl:items-center xl:space-x-[18px]">
                     {navbarData.map((item) => (
                       <li
                         key={item?.id}
-                        className={`group relative lg:px-5 ${item?.submenu ? "submenu-item" : ""}`}
+                        className={`group relative xl:px-4 whitespace-nowrap ${item?.submenu ? "submenu-item" : ""}`}
                       >
                         {item?.href ? (
                           <Link
@@ -112,7 +112,7 @@ export default function Navbar() {
                                 : "/"
                             }
                             onClick={navigationHandler}
-                            className={`${pathUrl === `/${item?.href}` ? "text-primary" : ""} flex py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-poppins ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
+                            className={`${pathUrl === `/${item?.href}` ? "text-primary" : ""} flex py-2 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 font-poppins ${item?.href?.startsWith("#") ? "menu-scroll" : ""}`}
                           >
                             {item?.title}
                           </Link>
@@ -122,7 +122,7 @@ export default function Navbar() {
                               onClick={() =>
                                 setDropdownToggler(!dropdownToggler)
                               }
-                              className="flex w-full items-center justify-between py-2 text-base text-black group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-poppins"
+                              className="flex w-full items-center justify-between py-2 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-6 font-poppins"
                             >
                               {item?.title}
 
@@ -131,7 +131,7 @@ export default function Navbar() {
                                   width="14"
                                   height="8"
                                   viewBox="0 0 14 8"
-                                  className={`fill-current duration-200 lg:group-hover:-scale-y-100 ${dropdownToggler ? "max-lg:-scale-y-100" : ""}`}
+                                  className={`fill-current duration-200 xl:group-hover:-scale-y-100 ${dropdownToggler ? "max-xl:-scale-y-100" : ""}`}
                                 >
                                   <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
                                 </svg>
@@ -139,7 +139,7 @@ export default function Navbar() {
                             </button>
                             {item?.submenu && (
                               <ul
-                                className={`${dropdownToggler ? "" : "hidden lg:block"} submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full`}
+                                className={`${dropdownToggler ? "" : "hidden xl:block"} submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[250px] xl:p-4 xl:opacity-0 xl:shadow-lg xl:group-hover:visible xl:group-hover:top-full`}
                               >
                                 {item?.submenu.map((item) => (
                                   <li key={item?.id}>
@@ -162,7 +162,7 @@ export default function Navbar() {
                 </nav>
               </div>
 
-              <div className="hidden items-center justify-end gap-4 pr-16 sm:flex lg:pr-0">
+              <div className="hidden items-center justify-end gap-4 pr-16 sm:flex xl:pr-0">
                 <button
                   onClick={() => setSearchModalOpen(true)}
                   className="hidden h-10 w-10 items-center justify-center rounded-full text-body-color sm:flex"
@@ -194,7 +194,7 @@ export default function Navbar() {
                 </button>
                 <Link
                   href="/contact"
-                  className="rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-signUp md:px-9 lg:px-8 xl:px-9"
+                  className="rounded-full bg-primary px-8 py-3 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-signUp md:px-9 xl:px-9"
                 >
                   Contact Us
                 </Link>
