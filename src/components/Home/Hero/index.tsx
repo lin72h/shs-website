@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] pointer-events-none"></div>
       
-      <div className="container max-w-7xl mx-auto relative z-10">
+      <div className="container max-w-7xl mx-auto relative z-10 px-0 sm:px-4">
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center">
             <span className="relative inline-block text-sm font-bold uppercase tracking-[0.2em] text-primary px-4 py-1 mb-0 before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-full before:bg-primary/30 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-10 after:-translate-x-1/2 after:bg-primary">
@@ -21,11 +21,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-[940px] mx-auto mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-[940px] mx-auto mt-10">
           {/* Charter Engineering Section */}
           <Link 
             href="/charter-engineering"
-            className="group relative h-72 sm:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group relative h-64 sm:h-72 md:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Using charter engineering specific image */}
             <div className="absolute inset-0">
@@ -40,11 +40,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-800/70 to-transparent"></div>
             </div>
             
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="font-bold text-2xl md:text-3xl mb-3">Charter Engineering</h3>
-              <p className="text-base text-white/95 mb-5 leading-relaxed">Expert engineering design consultancy for comprehensive infrastructure projects</p>
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
+              <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-3">Charter Engineering</h3>
+              <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Expert engineering design consultancy for comprehensive infrastructure projects</p>
               <div className="flex items-center">
-                <span className="text-base font-medium">Learn More</span>
+                <span className="text-sm sm:text-base font-medium">Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Project Management Section */}
           <Link 
             href="/project-management"
-            className="group relative h-72 sm:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group relative h-64 sm:h-72 md:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Using specific project management image */}
             <div className="absolute inset-0">
@@ -70,11 +70,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-800/70 to-transparent"></div>
             </div>
             
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="font-bold text-2xl md:text-3xl mb-3">Project Management</h3>
-              <p className="text-base text-white/95 mb-5 leading-relaxed">Complete oversight of complex engineering and development projects</p>
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
+              <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-3">Project Management</h3>
+              <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Complete oversight of complex engineering and development projects</p>
               <div className="flex items-center">
-                <span className="text-base font-medium">Learn More</span>
+                <span className="text-sm sm:text-base font-medium">Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -85,7 +85,7 @@ export default function Hero() {
           {/* Civil Work Section */}
           <Link 
             href="/civil-work"
-            className="group relative h-72 sm:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group relative h-64 sm:h-72 md:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Using specific civil work image */}
             <div className="absolute inset-0">
@@ -100,11 +100,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/90 via-amber-800/70 to-transparent"></div>
             </div>
             
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="font-bold text-2xl md:text-3xl mb-3">Civil Work</h3>
-              <p className="text-base text-white/95 mb-5 leading-relaxed">Specialized infrastructure development and land engineering solutions</p>
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
+              <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-3">Civil Work</h3>
+              <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Specialized infrastructure development and land engineering solutions</p>
               <div className="flex items-center">
-                <span className="text-base font-medium">Learn More</span>
+                <span className="text-sm sm:text-base font-medium">Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -115,7 +115,7 @@ export default function Hero() {
           {/* Building Construction Section */}
           <Link 
             href="/building-construction"
-            className="group relative h-72 sm:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+            className="group relative h-64 sm:h-72 md:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Using specific building construction sunset image */}
             <div className="absolute inset-0">
@@ -130,11 +130,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/90 via-indigo-800/70 to-transparent"></div>
             </div>
             
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="font-bold text-2xl md:text-3xl mb-3">Building Construction</h3>
-              <p className="text-base text-white/95 mb-5 leading-relaxed">Comprehensive construction services for residential, commercial and industrial projects</p>
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
+              <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-3">Building Construction</h3>
+              <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Comprehensive construction services for residential, commercial and industrial projects</p>
               <div className="flex items-center">
-                <span className="text-base font-medium">Learn More</span>
+                <span className="text-sm sm:text-base font-medium">Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
