@@ -23,10 +23,6 @@
   .input-field {
     @apply w-full rounded-sm border-b-2 border-transparent bg-[#f8f8f9] px-8 py-4 text-base font-medium text-body-color placeholder-body-color outline-none transition focus:border-primary focus-visible:shadow-none;
   }
-
-  .portfolio-buttons button.active {
-    @apply bg-primary text-white;
-  }
 }
 
 #supportCheckbox:checked ~ div span {

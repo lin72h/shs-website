@@ -176,7 +176,7 @@ export default function BuildingConstructionPage() {
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECTS"
-            title="Our Construction Portfolio"
+            title="Our Construction Showcase"
             paragraph="Discover some of our most impressive building construction projects"
             center={true}
             marginBottom="60px"
@@ -323,7 +323,7 @@ export default function BuildingConstructionPage() {
           <div className="relative overflow-hidden rounded-lg bg-primary">
             <div className="absolute right-0 top-0 -z-10 h-full w-full opacity-10">
               <Image 
-                src="/images/portfolio/portfolio-details.jpg"
+                src="/images/services/building-construction-sunset.jpg"
                 alt="Background Pattern"
                 width={1000}
                 height={600}
@@ -344,12 +344,6 @@ export default function BuildingConstructionPage() {
                     className="rounded-md bg-white px-6 py-3 text-base font-semibold text-primary transition hover:bg-opacity-90 md:px-9"
                   >
                     Get in Touch
-                  </Link>
-                  <Link
-                    href="/portfolio"
-                    className="rounded-md border border-white px-6 py-3 text-base font-semibold text-white transition hover:bg-white hover:text-primary md:px-9"
-                  >
-                    View Portfolio
                   </Link>
                 </div>
               </div>

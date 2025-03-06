@@ -23,7 +23,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="mt-6 mx-auto max-w-[700px] text-slate-600 text-xl leading-relaxed">
-            We're a NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.
+            We&apos;re a NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.
           </p>
         </div>
 
