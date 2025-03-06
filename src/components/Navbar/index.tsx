@@ -144,9 +144,9 @@ export default function Navbar() {
                                 {item?.submenu.map((item) => (
                                   <li key={item?.id}>
                                     <Link
-                                      href={item?.href}
+                                      href={item?.external ? item.href : `/portfolio/${item.href}`}
                                       onClick={navigationHandler}
-                                      className={`block rounded px-4 py-[10px] text-sm ${pathUrl === item?.href ? "text-primary" : "text-black hover:text-primary"}`}
+                                      className={`block rounded px-4 py-[10px] text-sm ${pathUrl === `/portfolio/${item?.href}` ? "text-primary" : "text-black hover:text-primary"}`}
                                     >
                                       {item?.title}
                                     </Link>

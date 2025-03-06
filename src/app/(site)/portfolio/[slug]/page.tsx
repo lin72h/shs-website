@@ -3,17 +3,17 @@ import { portfolioData } from "@/static-data/portfolio";
 import Image from "next/image";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 export async function generateMetadata(props: Props) {
-  const params = await props.params;
+  const { slug } = props.params;
   const siteURL = process.env.SITE_URL;
   const siteName = process.env.SITE_NAME;
   const authorName = process.env.AUTHOR_NAME;
 
   const project = portfolioData.find(
-    (portfolio) => portfolio?.slug === params?.slug,
+    (portfolio) => portfolio?.slug === slug,
   );
 
   if (project) {
@@ -61,17 +61,24 @@ export async function generateMetadata(props: Props) {
   }
 }
 
-export default async function PortfolioSlugPage(props: Props) {
-  const params = await props.params;
+// Generate static params for all portfolio items
+export function generateStaticParams() {
+  return portfolioData.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+export default function PortfolioSlugPage(props: Props) {
+  const { slug } = props.params;
   const project = portfolioData.find(
-    (portfolio) => portfolio?.slug === params?.slug,
+    (portfolio) => portfolio?.slug === slug,
   );
 
   return (
     <>
       <PageTitle
-        pageTitle="Portfolio Details"
-        pageDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus"
+        pageTitle={project?.title || "Portfolio Details"}
+        pageDescription="View details of our completed engineering projects, showcasing our expertise in civil infrastructure, stormwater management, and land development."
       />
 
       <section className="bg-white pb-20 pt-[90px]">

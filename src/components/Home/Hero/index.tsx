@@ -118,11 +118,8 @@ export default function Hero() {
             </div>
           </Link>
           
-          {/* Portfolio Section */}
-          <Link 
-            href="/portfolio"
-            className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-          >
+          {/* Portfolio Section - Dropdown */}
+          <div className="group relative h-64 sm:h-80 overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
             {/* Using local project images */}
             <div className="absolute inset-0">
               <Image 
@@ -138,15 +135,32 @@ export default function Hero() {
             
             <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
               <h3 className="font-bold text-xl md:text-2xl mb-2">Portfolio</h3>
-              <p className="text-sm text-white/90 mb-4">View our completed projects and engineering success stories</p>
-              <div className="flex items-center">
-                <span className="text-sm font-medium">View Projects</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+              <p className="text-sm text-white/90 mb-3">View our completed projects and engineering success stories</p>
+              
+              <div className="flex flex-col space-y-2">
+                <Link href="/portfolio/don-buck-civil" className="flex items-center group/item">
+                  <span className="text-sm font-medium group-hover/item:text-primary-light transition-colors">Don Buck Civil</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                
+                <Link href="/portfolio/upper-harbour-drive" className="flex items-center group/item">
+                  <span className="text-sm font-medium group-hover/item:text-primary-light transition-colors">Upper Harbour Drive</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                
+                <Link href="/portfolio" className="flex items-center group/item mt-1">
+                  <span className="text-sm font-medium text-primary/90 group-hover/item:text-primary transition-colors">View All Projects</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 transform transition-transform duration-300 group-hover/item:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
         
         <div className="flex justify-center mt-12">

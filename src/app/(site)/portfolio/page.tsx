@@ -7,17 +7,16 @@ import { Metadata } from "next";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Portfolio Page | ${siteName}`,
-  description: "This is Portfolio page description",
-  // other metadata
+  title: `Engineering Projects Portfolio | ${siteName}`,
+  description: "Explore our portfolio of civil engineering projects across Auckland, including infrastructure development, stormwater management, and residential subdivisions.",
 };
 
 export default function PortfolioPage() {
   return (
     <>
       <PageTitle
-        pageTitle="Portfolio Page"
-        pageDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero. "
+        pageTitle="Engineering Projects Portfolio"
+        pageDescription="Browse our completed civil engineering and infrastructure projects across Auckland. Each project showcases our commitment to quality, innovation, and sustainable development."
       />
 
       <section className="bg-white pb-20 pt-[90px]">
