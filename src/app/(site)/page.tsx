@@ -1,35 +1,17 @@
-import HomeBlogSection from "@/components/Blog/HomeBlogSection";
-import Brands from "@/components/Brands";
-import Contact from "@/components/Contact";
-import About from "@/components/Home/About";
 import Hero from "@/components/Home/Hero";
-import Newsletter from "@/components/Home/Newsletter";
-import Pricing from "@/components/Home/Pricing";
-import Service from "@/components/Home/Service";
-import Team from "@/components/Home/Team";
-import Testimonial from "@/components/Home/Testimonial";
-import Portfolio from "@/components/Portfolio";
 import { Metadata } from "next";
-import { integrations } from "../../../integrations.config";
 
-const siteName = process.env.SITE_NAME;
+const siteName = process.env.SITE_NAME || "SHS Engineering";
 
 export const metadata: Metadata = {
-  title: `Next.js Portfolio and Agency Site Template | ${siteName}`,
-  description: "This is home page description",
+  title: `SHS Engineering - Civil Engineering Experts | ${siteName}`,
+  description: "NZ owned civil engineering design consultancy based in Auckland, specialising in comprehensive land development and infrastructure projects.",
 };
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Service />
-      <Portfolio />
-      <Brands />
-      <Newsletter />
-      <Team />
-      <Testimonial />
-      <About />
     </>
   );
 }
