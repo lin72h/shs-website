@@ -21,12 +21,6 @@ const nextConfig = {
       },
     ],
   },
-  server: {
-    https: {
-      key: fs.readFileSync(path.join(__dirname, 'ssl/privkey.pem')),
-      cert: fs.readFileSync(path.join(__dirname, 'ssl/fullchain.pem')),
-    },
-  }
 };
 
 export default nextConfig;
