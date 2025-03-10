@@ -453,27 +453,37 @@ export default function CivilWorkPage() {
             <div className="flex flex-col space-y-6">
               <h3 className="text-2xl font-bold text-dark">Project Overview</h3>
               <p className="text-base leading-relaxed text-body-color">
-                Located at 44 Don Buck Road in Massey, this comprehensive civil engineering project 
-                involves significant earthworks operations, infrastructure development, and site preparation. 
-                The project showcases our expertise in managing complex terrain modifications while ensuring 
-                environmental compliance and optimal land utilization.
+                Located at 44 Don Buck Road in Massey, Auckland, this comprehensive civil engineering project 
+                involves significant earthworks operations, infrastructure development, and site preparation for 
+                a mixed-use development. Undertaken for H.S.W HOLDINGS LTD, the project includes a multi-lot subdivision 
+                designed for standalone homes, terraced housing, and duplex multi-unit dwellings, showcasing our ability 
+                to manage complex residential development requirements.
               </p>
               
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="rounded-lg bg-gray-50 p-4">
-                  <h4 className="mb-2 font-semibold text-dark">Location Details</h4>
+                  <h4 className="mb-2 font-semibold text-dark">Project Details</h4>
                   <ul className="space-y-2 text-sm text-body-color">
-                    <li>• Adjacent to Don Buck Primary School</li>
-                    <li>• Near Northwest Shopping Centre</li>
-                    <li>• Accessible via Sturges Rd Train Station</li>
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Client:</span>
+                      <span>H.S.W HOLDINGS LTD</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Location:</span>
+                      <span>44 DON BUCK ROAD, MASSEY</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Development:</span>
+                      <span>Multi-lot subdivision with mixed-use housing</span>
+                    </li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-gray-50 p-4">
-                  <h4 className="mb-2 font-semibold text-dark">Project Scope</h4>
+                  <h4 className="mb-2 font-semibold text-dark">Housing Types</h4>
                   <ul className="space-y-2 text-sm text-body-color">
-                    <li>• Major earthworks operations</li>
-                    <li>• Retaining wall construction</li>
-                    <li>• Infrastructure development</li>
+                    <li>• Standalone residential units</li>
+                    <li>• Terraced housing configurations</li>
+                    <li>• Duplex multi-unit dwellings</li>
                   </ul>
                 </div>
               </div>
