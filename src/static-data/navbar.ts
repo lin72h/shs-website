@@ -17,8 +17,28 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Civil Work",
-    href: "civil-work",
+    href: "",
     external: false,
+    submenu: [
+      {
+        id: uuid(),
+        title: "Overview",
+        href: "civil-work",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Don Buck Road Development",
+        href: "civil-work#don-buck-development",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Upper Harbour Drive",
+        href: "civil-work#upper-harbour-development",
+        external: false,
+      },
+    ],
   },
   {
     id: uuid(),

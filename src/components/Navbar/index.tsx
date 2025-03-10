@@ -10,7 +10,7 @@ import GlobalSearchModal from "../GlobalSearch";
 
 export default function Navbar() {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
+  const [dropdownToggler, setDropdownToggler] = useState<string | null>(null);
   const [stickyMenu, setStickyMenu] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -19,6 +19,15 @@ export default function Navbar() {
 
   const navigationHandler = () => {
     setNavigationOpen(!navigationOpen);
+  };
+
+  // Dropdown toggler handler
+  const dropdownTogglerHandler = (itemId: string) => {
+    if (dropdownToggler === itemId) {
+      setDropdownToggler(null);
+    } else {
+      setDropdownToggler(itemId);
+    }
   };
 
   // Sticky menu
@@ -100,7 +109,44 @@ export default function Navbar() {
                         key={item?.id}
                         className={`group relative xl:px-4 whitespace-nowrap ${item?.submenu ? "submenu-item" : ""}`}
                       >
-                        {item?.href ? (
+                        {item?.submenu ? (
+                          <>
+                            <button
+                              onClick={() =>
+                                dropdownTogglerHandler(item.id as string)
+                              }
+                              className="flex w-full items-center justify-between py-2.5 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-7 font-medium transition-colors duration-300"
+                            >
+                              {item?.title}
+
+                              <span className="pl-3">
+                                <svg
+                                  width="14"
+                                  height="8"
+                                  viewBox="0 0 14 8"
+                                  className={`fill-current duration-200 xl:group-hover:-scale-y-100 ${dropdownToggler === item.id ? "max-xl:-scale-y-100" : ""}`}
+                                >
+                                  <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
+                                </svg>
+                              </span>
+                            </button>
+                            <ul
+                              className={`${dropdownToggler === item.id ? "" : "hidden xl:block"} submenu relative left-0 top-full rounded-xl bg-white transition-all duration-300 group-hover:opacity-100 xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[260px] xl:p-5 xl:opacity-0 xl:shadow-xl xl:group-hover:visible xl:group-hover:top-full`}
+                            >
+                              {item?.submenu.map((submenuItem) => (
+                                <li key={submenuItem?.id}>
+                                  <Link
+                                    href={submenuItem?.external ? submenuItem.href : `/${submenuItem.href}`}
+                                    onClick={navigationHandler}
+                                    className={`block rounded-lg px-4 py-3 text-sm transition-colors duration-300 ${pathUrl === `/${submenuItem?.href}` ? "text-primary font-bold" : "text-black hover:text-primary"}`}
+                                  >
+                                    {submenuItem?.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        ) : (
                           <Link
                             href={
                               item?.href
@@ -116,45 +162,6 @@ export default function Navbar() {
                           >
                             {item?.title}
                           </Link>
-                        ) : (
-                          <>
-                            <button
-                              onClick={() =>
-                                setDropdownToggler(!dropdownToggler)
-                              }
-                              className="flex w-full items-center justify-between py-2.5 text-base text-black group-hover:text-primary xl:mr-0 xl:inline-flex xl:px-0 xl:py-7 font-medium transition-colors duration-300"
-                            >
-                              {item?.title}
-
-                              <span className="pl-3">
-                                <svg
-                                  width="14"
-                                  height="8"
-                                  viewBox="0 0 14 8"
-                                  className={`fill-current duration-200 xl:group-hover:-scale-y-100 ${dropdownToggler ? "max-xl:-scale-y-100" : ""}`}
-                                >
-                                  <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
-                                </svg>
-                              </span>
-                            </button>
-                            {item?.submenu && (
-                              <ul
-                                className={`${dropdownToggler ? "" : "hidden xl:block"} submenu relative left-0 top-full rounded-xl bg-white transition-all duration-300 group-hover:opacity-100 xl:invisible xl:absolute xl:top-[110%] xl:block xl:w-[260px] xl:p-5 xl:opacity-0 xl:shadow-xl xl:group-hover:visible xl:group-hover:top-full`}
-                              >
-                                {item?.submenu.map((item) => (
-                                  <li key={item?.id}>
-                                    <Link
-                                      href={item?.external ? item.href : `/${item.href}`}
-                                      onClick={navigationHandler}
-                                      className={`block rounded-lg px-4 py-3 text-sm transition-colors duration-300 ${pathUrl === `/${item?.href}` ? "text-primary font-bold" : "text-black hover:text-primary"}`}
-                                    >
-                                      {item?.title}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </>
                         )}
                       </li>
                     ))}

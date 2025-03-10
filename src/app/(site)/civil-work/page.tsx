@@ -438,7 +438,7 @@ export default function CivilWorkPage() {
       </section>
 
       {/* Featured Project Section */}
-      <section className="pb-20 pt-16">
+      <section id="don-buck-development" className="pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECT"
@@ -541,7 +541,7 @@ export default function CivilWorkPage() {
       </section>
 
       {/* Upper Harbour Drive Project Section */}
-      <section className="bg-gray-50 pb-20 pt-16">
+      <section id="upper-harbour-development" className="bg-gray-50 pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECT"
