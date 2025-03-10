@@ -540,6 +540,103 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
+      {/* Upper Harbour Drive Project Section */}
+      <section className="bg-gray-50 pb-20 pt-16">
+        <div className="container">
+          <SectionTitle
+            mainTitle="FEATURED PROJECT"
+            title="Upper Harbour Drive Development"
+            paragraph="Complex 16-lot subdivision on challenging terrain in Greenhithe, Auckland"
+            center={true}
+            marginBottom="60px"
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Project Images */}
+            <div className="grid gap-4">
+              <div className="relative h-[300px] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/portfolio/don_buck_4.JPG"
+                  alt="Upper Harbour Drive Development"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/don_buck_5.JPG"
+                    alt="Upper Harbour Drive Earthworks"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/don_buck_6.JPG"
+                    alt="Upper Harbour Drive Construction"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Project Overview */}
+            <div className="flex flex-col space-y-6">
+              <h3 className="text-2xl font-bold text-dark">Project Rescue and Completion</h3>
+              <p className="text-base leading-relaxed text-body-color">
+                This challenging 16-lot subdivision at 236 Upper Harbour Drive in Greenhithe presented 
+                significant technical challenges with its steep topography and complex earthworks requirements. 
+                We were brought in after the client's previous project manager had left the project in a 
+                precarious state with contractors ready to abandon the site and potential sales at risk of falling through.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-white p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Project Details</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Location:</span>
+                      <span>236 Upper Harbour Drive, Greenhithe</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Development:</span>
+                      <span>16-lot subdivision</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="mr-2 font-bold">Site Complexity:</span>
+                      <span>Steep terrain with complex earthworks</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-white p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Our Involvement</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li>• Infrastructure design (water, wastewater)</li>
+                    <li>• Stormwater detention tank design</li>
+                    <li>• Construction project management</li>
+                    <li>• Earthworks construction</li>
+                    <li>• 224c process management</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-primary/10 p-5">
+                <h4 className="mb-3 font-semibold text-dark">Key Achievement</h4>
+                <p className="text-sm leading-relaxed text-body-color">
+                  We rescued this project when it was on the verge of failure. The previous project manager 
+                  had put the client in a difficult position with contractors about to leave the site, which 
+                  would have caused pre-sales to fall through. Through our expertise, we completed the missing 
+                  designs, managed the construction process, and successfully obtained the 224c certificate and 
+                  titles in time for the client's pre-sales to proceed as planned.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
         <div className="container">
