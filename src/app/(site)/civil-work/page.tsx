@@ -589,7 +589,7 @@ export default function CivilWorkPage() {
                 This challenging 16-lot subdivision at 236 Upper Harbour Drive in Greenhithe presented 
                 significant technical challenges with its steep topography, complex site conditions, and historical 
                 geotechnical stability issues. Our engineering team was brought in at a critical moment when the project 
-                was at risk of failure, with contractors threatening to abandon the site and client pre-sales in jeopardy.
+                was at risk of failure, with contractors threatening to abandon the site and client&apos;s pre-sales in jeopardy.
               </p>
               
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -658,7 +658,7 @@ export default function CivilWorkPage() {
                 <p className="text-body-color leading-relaxed">
                   When we took over this project, it was in a critical state. The previous project manager had 
                   created a situation where contractors were prepared to abandon the site, which would have caused 
-                  the client's pre-sales to fall through. The project lacked crucial design elements and was facing 
+                  the client&apos;s pre-sales to fall through. The project lacked crucial design elements and was facing 
                   multiple compliance issues.
                 </p>
                 <div className="mt-4 flex items-start space-x-3">
@@ -673,7 +673,7 @@ export default function CivilWorkPage() {
                       Through our technical expertise, we completed the missing designs, implemented proper project 
                       management protocols, and worked closely with contractors to rebuild confidence in the project. 
                       Our team managed the complex certification process and successfully obtained the 224c certificate 
-                      and titles in time for the client's pre-sales to proceed as planned.
+                      and titles in time for the client&apos;s pre-sales to proceed as planned.
                     </p>
                   </div>
                 </div>
