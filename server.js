@@ -24,7 +24,7 @@ app.prepare().then(() => {
       res.statusCode = 500;
       res.end('Internal Server Error');
     }
-  }).listen(4431, (err) => {
+  }).listen(4436, (err) => {
     if (err) throw err;
     console.log('> Ready on https://localhost:4431');
   });
@@ -38,7 +38,7 @@ app.prepare().then(() => {
       res.statusCode = 500;
       res.end('Internal Server Error');
     }
-  }).listen(8081, (err) => {
+  }).listen(8086, (err) => {
     if (err) throw err;
     console.log('> Ready on http://localhost:8081');
   });
