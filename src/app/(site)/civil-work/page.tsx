@@ -587,50 +587,96 @@ export default function CivilWorkPage() {
               <h3 className="text-2xl font-bold text-dark">Project Rescue and Completion</h3>
               <p className="text-base leading-relaxed text-body-color">
                 This challenging 16-lot subdivision at 236 Upper Harbour Drive in Greenhithe presented 
-                significant technical challenges with its steep topography and complex earthworks requirements. 
-                We were brought in after the client's previous project manager had left the project in a 
-                precarious state with contractors ready to abandon the site and potential sales at risk of falling through.
+                significant technical challenges with its steep topography, complex site conditions, and historical 
+                geotechnical stability issues. Our engineering team was brought in at a critical moment when the project 
+                was at risk of failure, with contractors threatening to abandon the site and client pre-sales in jeopardy.
               </p>
               
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="rounded-lg bg-white p-4">
-                  <h4 className="mb-2 font-semibold text-dark">Project Details</h4>
+                  <h4 className="mb-2 font-semibold text-dark">Project Challenges</h4>
                   <ul className="space-y-2 text-sm text-body-color">
-                    <li className="flex items-start">
-                      <span className="mr-2 font-bold">Location:</span>
-                      <span>236 Upper Harbour Drive, Greenhithe</span>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Steep, complex terrain</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 font-bold">Development:</span>
-                      <span>16-lot subdivision</span>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Historical geotechnical stability issues</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 font-bold">Site Complexity:</span>
-                      <span>Steep terrain with complex earthworks</span>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Previous poor project management</span>
                     </li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-white p-4">
-                  <h4 className="mb-2 font-semibold text-dark">Our Involvement</h4>
+                  <h4 className="mb-2 font-semibold text-dark">Our Comprehensive Services</h4>
                   <ul className="space-y-2 text-sm text-body-color">
-                    <li>• Infrastructure design (water, wastewater)</li>
-                    <li>• Stormwater detention tank design</li>
-                    <li>• Construction project management</li>
-                    <li>• Earthworks construction</li>
-                    <li>• 224c process management</li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Water & wastewater design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Stormwater detention tank design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Construction project & contract management</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Earthworks construction</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>224c process management & certification</span>
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="rounded-lg bg-primary/10 p-5">
-                <h4 className="mb-3 font-semibold text-dark">Key Achievement</h4>
-                <p className="text-sm leading-relaxed text-body-color">
-                  We rescued this project when it was on the verge of failure. The previous project manager 
-                  had put the client in a difficult position with contractors about to leave the site, which 
-                  would have caused pre-sales to fall through. Through our expertise, we completed the missing 
-                  designs, managed the construction process, and successfully obtained the 224c certificate and 
-                  titles in time for the client's pre-sales to proceed as planned.
+                <h4 className="mb-3 font-semibold text-dark">Project Rescue Success Story</h4>
+                <p className="text-body-color leading-relaxed">
+                  When we took over this project, it was in a critical state. The previous project manager had 
+                  created a situation where contractors were prepared to abandon the site, which would have caused 
+                  the client's pre-sales to fall through. The project lacked crucial design elements and was facing 
+                  multiple compliance issues.
                 </p>
+                <div className="mt-4 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Our Solution</h5>
+                    <p className="text-sm text-body-color">
+                      Through our technical expertise, we completed the missing designs, implemented proper project 
+                      management protocols, and worked closely with contractors to rebuild confidence in the project. 
+                      Our team managed the complex certification process and successfully obtained the 224c certificate 
+                      and titles in time for the client's pre-sales to proceed as planned.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
