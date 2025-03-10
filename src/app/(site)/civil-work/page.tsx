@@ -683,6 +683,139 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
+      {/* Tiriwa Drive Project Section */}
+      <section id="tiriwa-drive-development" className="pb-20 pt-16">
+        <div className="container">
+          <SectionTitle
+            mainTitle="FEATURED PROJECT"
+            title="Tiriwa Drive Development"
+            paragraph="Challenging 16-lot subdivision with complex geotechnical requirements in Massey, Auckland"
+            center={true}
+            marginBottom="60px"
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Project Overview */}
+            <div className="flex flex-col space-y-6">
+              <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
+              <p className="text-base leading-relaxed text-body-color">
+                Located at 15-26 Tiriwa Drive in Massey, this challenging 16-lot subdivision required 
+                sophisticated engineering solutions to address the steep topography and complex geotechnical 
+                requirements. Our comprehensive involvement in both design and implementation ensured that all 
+                technical specifications were met while maintaining the highest standards of quality.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Project Specifications</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>16-lot subdivision development</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Steep site with challenging topography</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Specialized geotechnical infrastructure</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Engineering Services</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Comprehensive civil engineering design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Full utility infrastructure design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Earthworks & finished surface design</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Project & construction management</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-primary/10 p-5">
+                <h4 className="mb-3 font-semibold text-dark">Technical Achievement</h4>
+                <div className="mt-2 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Geotechnical Expertise</h5>
+                    <p className="text-body-color leading-relaxed">
+                      The project featured complex geotechnical infrastructure that required specialized oversight 
+                      during construction. Our team managed the construction process to ensure all works were 
+                      executed precisely according to design specifications. We facilitated close collaboration 
+                      between contractors and certifying engineers, resulting in full approval from both the 
+                      Geotechnical Engineer and Civil Engineer. Our careful management of the 224c certification 
+                      process ensured all technical requirements were met for final approval.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Images */}
+            <div className="grid gap-4">
+              <div className="relative h-[300px] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/portfolio/civil_work_new_1.jpg"
+                  alt="Tiriwa Drive Development Overview"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_new_2.jpeg"
+                    alt="Tiriwa Drive Earthworks"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_new_3.jpeg"
+                    alt="Tiriwa Drive Construction"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
         <div className="container">

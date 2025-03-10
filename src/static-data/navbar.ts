@@ -38,6 +38,12 @@ export const navbarData: NavbarItem[] = [
         href: "civil-work#upper-harbour-development",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "Tiriwa Drive Development",
+        href: "civil-work#tiriwa-drive-development",
+        external: false,
+      },
     ],
   },
   {
