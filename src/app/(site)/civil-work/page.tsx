@@ -437,6 +437,99 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
+      {/* Featured Project Section */}
+      <section className="pb-20 pt-16">
+        <div className="container">
+          <SectionTitle
+            mainTitle="FEATURED PROJECT"
+            title="Don Buck Road Development"
+            paragraph="Major earthworks and civil engineering project in Massey, Auckland"
+            center={true}
+            marginBottom="60px"
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Project Overview */}
+            <div className="flex flex-col space-y-6">
+              <h3 className="text-2xl font-bold text-dark">Project Overview</h3>
+              <p className="text-base leading-relaxed text-body-color">
+                Located at 44 Don Buck Road in Massey, this comprehensive civil engineering project 
+                involves significant earthworks operations, infrastructure development, and site preparation. 
+                The project showcases our expertise in managing complex terrain modifications while ensuring 
+                environmental compliance and optimal land utilization.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Location Details</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li>• Adjacent to Don Buck Primary School</li>
+                    <li>• Near Northwest Shopping Centre</li>
+                    <li>• Accessible via Sturges Rd Train Station</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Project Scope</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li>• Major earthworks operations</li>
+                    <li>• Retaining wall construction</li>
+                    <li>• Infrastructure development</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <h4 className="mb-3 font-semibold text-dark">Key Earthwork Volumes</h4>
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                  <div className="rounded-lg bg-primary/10 p-3 text-center">
+                    <span className="block text-lg font-bold text-primary">1,835 m³</span>
+                    <span className="text-sm text-body-color">Largest Cut Volume</span>
+                  </div>
+                  <div className="rounded-lg bg-primary/10 p-3 text-center">
+                    <span className="block text-lg font-bold text-primary">1,605 m³</span>
+                    <span className="text-sm text-body-color">Largest Fill Volume</span>
+                  </div>
+                  <div className="rounded-lg bg-primary/10 p-3 text-center">
+                    <span className="block text-lg font-bold text-primary">5,774 m³</span>
+                    <span className="text-sm text-body-color">Total Earth Movement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Images */}
+            <div className="grid gap-4">
+              <div className="relative h-[300px] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/portfolio/don_buck_1.JPG"
+                  alt="Don Buck Road Development Aerial View"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/don_buck_2.JPG"
+                    alt="Earthworks Progress"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/don_buck_3.JPG"
+                    alt="Construction Progress"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
         <div className="container">
