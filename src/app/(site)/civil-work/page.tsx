@@ -962,6 +962,155 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
+      {/* 88 Cook Street Project Section */}
+      <section id="cook-street" className="pb-20 pt-16">
+        <div className="container">
+          <SectionTitle
+            mainTitle="FEATURED PROJECT"
+            title="88 Cook Street"
+            paragraph="Urban revitalization and mixed-use development in Auckland CBD"
+            center={true}
+            marginBottom="60px"
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Project Overview */}
+            <div className="flex flex-col space-y-6">
+              <h3 className="text-2xl font-bold text-dark">Urban Development Excellence</h3>
+              <p className="text-base leading-relaxed text-body-color">
+                Located at 88 Cook Street in Auckland CBD, this ambitious mixed-use development project 
+                showcases our expertise in urban civil engineering. The project involved transforming an 
+                underutilized inner-city site into a vibrant mixed-use space, requiring significant 
+                infrastructure modifications, stormwater solutions, and careful integration with the 
+                surrounding urban environment.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Project Specifications</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Location: 88 Cook Street, Auckland CBD</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Mixed-use urban development</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Sustainable urban design principles</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Services Provided</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Urban infrastructure assessment</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Stormwater management solutions</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Civil engineering design & implementation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <h4 className="mb-3 text-lg font-semibold text-dark">Urban Redevelopment Challenges</h4>
+                
+                <div className="mt-4 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Complex Urban Context</h5>
+                    <p className="text-sm text-body-color">
+                      The project presented significant challenges due to its central urban location, including 
+                      existing underground infrastructure, confined working spaces, and the need to minimize 
+                      disruption to neighboring properties and businesses. The site also required extensive 
+                      coordination with Auckland Council and utility providers.
+                    </p>
+                  </div>
+                </div>
+              
+                <div className="mt-4 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Innovative Solutions</h5>
+                    <p className="text-sm text-body-color">
+                      Our team developed innovative solutions that addressed the unique urban challenges, including 
+                      advanced stormwater management systems integrated with the building design, carefully 
+                      sequenced construction to minimize disruption, and close collaboration with all stakeholders. 
+                      We implemented sustainable design principles that enhanced the project's environmental performance 
+                      while meeting all regulatory requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Images */}
+            <div className="flex flex-col space-y-6">
+              {/* Main Image */}
+              <div className="relative h-[300px] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/portfolio/civil_work_4.jpg"
+                  alt="88 Cook Street Development Overview"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Additional Images */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_5.jpg"
+                    alt="Cook Street Urban Infrastructure"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_6.jpg"
+                    alt="Cook Street Development Progress"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
         <div className="container">
