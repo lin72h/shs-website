@@ -689,7 +689,7 @@ export default function CivilWorkPage() {
           <SectionTitle
             mainTitle="FEATURED PROJECT"
             title="Weranui Road"
-            paragraph="Challenging 16-lot subdivision with complex geotechnical requirements in Massey, Auckland"
+            paragraph="Development project at 18 Weranui Road, Waiwera completed in October 2017"
             center={true}
             marginBottom="60px"
           />
@@ -699,10 +699,9 @@ export default function CivilWorkPage() {
             <div className="flex flex-col space-y-6">
               <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
               <p className="text-base leading-relaxed text-body-color">
-                Located at 15-26 Weranui Road in Massey, this challenging 16-lot subdivision required 
-                sophisticated engineering solutions to address the steep topography and complex geotechnical 
-                requirements. Our comprehensive involvement in both design and implementation ensured that all 
-                technical specifications were met while maintaining the highest standards of quality.
+                Located at 18 Weranui Road in Waiwera (Lot 3 DP 428671), this development project was completed
+                in October 2017. The project required sophisticated engineering solutions to address the site's
+                specific requirements while maintaining the highest standards of quality.
               </p>
               
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -713,19 +712,19 @@ export default function CivilWorkPage() {
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                       </svg>
-                      <span>16-lot subdivision development</span>
+                      <span>Location: 18 Weranui Road, Waiwera</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                       </svg>
-                      <span>Steep site with challenging topography</span>
+                      <span>Legal Description: Lot 3 DP 428671</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                       </svg>
-                      <span>Specialized geotechnical infrastructure</span>
+                      <span>Completion: October 2017</span>
                     </li>
                   </ul>
                 </div>
