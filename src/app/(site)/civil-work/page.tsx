@@ -683,12 +683,12 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
-      {/* Tiriwa Drive Project Section */}
-      <section id="tiriwa-drive-development" className="pb-20 pt-16">
+      {/* Weranui Road Project Section */}
+      <section id="weranui-road" className="pb-20 pt-16">
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECT"
-            title="Tiriwa Drive Development"
+            title="Weranui Road"
             paragraph="Challenging 16-lot subdivision with complex geotechnical requirements in Massey, Auckland"
             center={true}
             marginBottom="60px"
@@ -699,7 +699,7 @@ export default function CivilWorkPage() {
             <div className="flex flex-col space-y-6">
               <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
               <p className="text-base leading-relaxed text-body-color">
-                Located at 15-26 Tiriwa Drive in Massey, this challenging 16-lot subdivision required 
+                Located at 15-26 Weranui Road in Massey, this challenging 16-lot subdivision required 
                 sophisticated engineering solutions to address the steep topography and complex geotechnical 
                 requirements. Our comprehensive involvement in both design and implementation ensured that all 
                 technical specifications were met while maintaining the highest standards of quality.
@@ -788,7 +788,7 @@ export default function CivilWorkPage() {
               <div className="relative h-[300px] overflow-hidden rounded-lg">
                 <Image
                   src="/images/portfolio/civil_work_new_1.jpg"
-                  alt="Tiriwa Drive Development Overview"
+                  alt="Weranui Road Development Overview"
                   fill
                   className="object-cover"
                 />
@@ -797,7 +797,7 @@ export default function CivilWorkPage() {
                 <div className="relative h-[200px] overflow-hidden rounded-lg">
                   <Image
                     src="/images/portfolio/civil_work_new_2.jpeg"
-                    alt="Tiriwa Drive Earthworks"
+                    alt="Weranui Road Earthworks"
                     fill
                     className="object-cover"
                   />
@@ -805,7 +805,7 @@ export default function CivilWorkPage() {
                 <div className="relative h-[200px] overflow-hidden rounded-lg">
                   <Image
                     src="/images/portfolio/civil_work_new_3.jpeg"
-                    alt="Tiriwa Drive Construction"
+                    alt="Weranui Road Construction"
                     fill
                     className="object-cover"
                   />

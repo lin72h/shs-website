@@ -40,8 +40,8 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
-        title: "Tiriwa Drive Development",
-        href: "civil-work#tiriwa-drive-development",
+        title: "Weranui Road",
+        href: "civil-work#weranui-road",
         external: false,
       },
     ],
