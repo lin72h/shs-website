@@ -815,6 +815,153 @@ export default function CivilWorkPage() {
         </div>
       </section>
 
+      {/* 791 State Highway 16 Project Section */}
+      <section id="state-highway-16" className="bg-gray-50 pb-20 pt-16">
+        <div className="container">
+          <SectionTitle
+            mainTitle="FEATURED PROJECT"
+            title="791 State Highway 16"
+            paragraph="Strategic commercial development with comprehensive infrastructure solutions in Kumeu, Auckland"
+            center={true}
+            marginBottom="60px"
+          />
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Project Overview */}
+            <div className="flex flex-col space-y-6">
+              <h3 className="text-2xl font-bold text-dark">Strategic Commercial Development</h3>
+              <p className="text-base leading-relaxed text-body-color">
+                Located at 791 State Highway 16 in Kumeu, this significant commercial development project 
+                required comprehensive civil engineering solutions to create functional commercial spaces 
+                while addressing the site's specific challenges. Our team delivered innovative solutions for 
+                stormwater management, earthworks, and infrastructure development to meet both regulatory 
+                requirements and client objectives.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Project Specifications</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Location: 791 State Highway 16, Kumeu</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Commercial development project</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      <span>Infrastructure integration with SH16</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-lg bg-gray-50 p-4">
+                  <h4 className="mb-2 font-semibold text-dark">Services Provided</h4>
+                  <ul className="space-y-2 text-sm text-body-color">
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Comprehensive site assessment</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Civil engineering design & planning</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Traffic management solutions</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <h4 className="mb-3 text-lg font-semibold text-dark">Project Challenges & Solutions</h4>
+                
+                <div className="mt-4 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Key Challenges</h5>
+                    <p className="text-sm text-body-color">
+                      The project presented several challenges including highway access requirements, complex 
+                      stormwater management needs, and integration with existing infrastructure. 
+                      Additionally, coordination with NZTA was required for aspects relating to State Highway 16.
+                    </p>
+                  </div>
+                </div>
+              
+                <div className="mt-4 flex items-start space-x-3">
+                  <div className="flex h-10 w-10 min-w-[40px] items-center justify-center rounded-full bg-primary text-white">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="mb-1 text-sm font-semibold text-dark">Our Solution</h5>
+                    <p className="text-sm text-body-color">
+                      Our team developed a comprehensive civil engineering plan that addressed all regulatory 
+                      requirements while optimizing the site's commercial potential. We implemented innovative 
+                      stormwater solutions, designed efficient traffic flow patterns, and worked closely with 
+                      authorities to ensure all highway access requirements were met to the highest standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Images */}
+            <div className="flex flex-col space-y-6">
+              {/* Main Image */}
+              <div className="relative h-[300px] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/portfolio/civil_work_1.jpg"
+                  alt="791 State Highway 16 Development Overview"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              
+              {/* Additional Images */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_2.jpg"
+                    alt="State Highway 16 Site Development"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/portfolio/civil_work_3.jpg"
+                    alt="State Highway 16 Infrastructure"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
         <div className="container">

@@ -44,6 +44,12 @@ export const navbarData: NavbarItem[] = [
         href: "civil-work#weranui-road",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "791 State Highway 16",
+        href: "civil-work#state-highway-16",
+        external: false,
+      },
     ],
   },
   {
