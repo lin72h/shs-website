@@ -442,7 +442,7 @@ export default function CivilWorkPage() {
         <div className="container">
           <SectionTitle
             mainTitle="FEATURED PROJECT"
-            title="Don Buck Road Development"
+            title="Don Buck"
             paragraph="Major earthworks and civil engineering project in Massey, Auckland"
             center={true}
             marginBottom="60px"
@@ -512,7 +512,7 @@ export default function CivilWorkPage() {
               <div className="relative h-[300px] overflow-hidden rounded-lg">
                 <Image
                   src="/images/portfolio/don_buck_1.JPG"
-                  alt="Don Buck Road Development Aerial View"
+                  alt="Don Buck Aerial View"
                   fill
                   className="object-cover"
                 />

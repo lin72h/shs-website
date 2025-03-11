@@ -28,7 +28,7 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
-        title: "Don Buck Road Development",
+        title: "Don Buck",
         href: "civil-work#don-buck-development",
         external: false,
       },
