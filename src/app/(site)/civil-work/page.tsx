@@ -917,7 +917,7 @@ export default function CivilWorkPage() {
                     <h5 className="mb-1 text-sm font-semibold text-dark">Our Solution</h5>
                     <p className="text-sm text-body-color">
                       Our team developed a comprehensive civil engineering plan that addressed all regulatory 
-                      requirements while optimizing the site's commercial potential. We implemented innovative 
+                      requirements while optimizing the site&apos;s commercial potential. We implemented innovative 
                       stormwater solutions, designed efficient traffic flow patterns, and worked closely with 
                       authorities to ensure all highway access requirements were met to the highest standards.
                     </p>
@@ -1067,7 +1067,7 @@ export default function CivilWorkPage() {
                       Our team developed innovative solutions that addressed the unique urban challenges, including 
                       advanced stormwater management systems integrated with the building design, carefully 
                       sequenced construction to minimize disruption, and close collaboration with all stakeholders. 
-                      We implemented sustainable design principles that enhanced the project's environmental performance 
+                      We implemented sustainable design principles that enhanced the project&apos;s environmental performance 
                       while meeting all regulatory requirements.
                     </p>
                   </div>
