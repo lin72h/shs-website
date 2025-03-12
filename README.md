@@ -38,11 +38,11 @@ When all integrations are done, then you can start the project on the developeme
 npm run dev
 ```
 
-It’ll start the template on http://localhost:3000
+It'll start the template on http://localhost:3000
 
 ### Deploying on PaaS
 
-If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
+If you are using a GitHub repo then you can go with free-of-cost and easy-to-use options like [Vercel](https://vercel.com/), or [Netlify](https://netlify.com/) they offer decent-free tiers for Next.js hosting.
 
 Make sure to edit build command like this when deploying to Vercel.
 
@@ -60,3 +60,37 @@ November 13 2024
 - Integrated Zod for Form validation
 - Added Stripe webhook
 - Added integrations enable disable features
+
+## Email Configuration for Contact Form
+
+To enable email functionality for the contact form:
+
+1. Create a `.env.local` file in the root directory (if it doesn't exist already)
+2. Add the following environment variables to the file:
+
+```
+EMAIL_SERVER_HOST="smtp.your-email-provider.com"
+EMAIL_SERVER_PORT=587
+EMAIL_SERVER_USER="your-email-username"
+EMAIL_SERVER_PASSWORD="your-email-password"
+EMAIL_FROM="info@shsengineering.co.nz"
+```
+
+3. Replace the values with your SMTP email service provider details
+
+For Gmail, you could use:
+- EMAIL_SERVER_HOST="smtp.gmail.com"
+- EMAIL_SERVER_PORT=587
+- EMAIL_SERVER_USER="your-gmail-address@gmail.com"
+- EMAIL_SERVER_PASSWORD="your-app-password" (requires app password, not your regular Google password)
+
+For a service like [Resend.com](https://resend.com/) (recommended):
+- EMAIL_SERVER_HOST="smtp.resend.com"
+- EMAIL_SERVER_PORT=465
+- EMAIL_SERVER_USER="resend"
+- EMAIL_SERVER_PASSWORD="your-api-key"
+- EMAIL_FROM="info@shsengineering.co.nz"
+
+After setting these up, restart your development server for the changes to take effect.
+
+Contact form submissions will be sent to info@shsengineering.co.nz.
