@@ -38,6 +38,8 @@ export default function Contact() {
     setSubmitStatus({});
 
     try {
+      console.log("Submitting form data:", formData);
+      
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -49,10 +51,12 @@ export default function Contact() {
       const data = await response.json();
 
       if (!response.ok) {
+        console.error("Server response error:", data);
         throw new Error(data.error || "Failed to send message");
       }
 
       // Success
+      console.log("Form submission successful:", data);
       setSubmitStatus({ success: data.message || "Message sent successfully!" });
       // Reset form
       setFormData({
@@ -63,9 +67,15 @@ export default function Contact() {
         message: "",
       });
     } catch (error) {
-      console.error("Submission error:", error);
+      console.error("Submission error details:", error);
+      
+      let errorMessage = "Failed to send message. Please try again.";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      
       setSubmitStatus({
-        error: error instanceof Error ? error.message : "Failed to send message. Please try again.",
+        error: errorMessage,
       });
     } finally {
       setIsSubmitting(false);

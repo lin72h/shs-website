@@ -74,6 +74,7 @@ EMAIL_SERVER_PORT=587
 EMAIL_SERVER_USER="your-email-username"
 EMAIL_SERVER_PASSWORD="your-email-password"
 EMAIL_FROM="info@shsengineering.co.nz"
+EMAIL_TO="recipient-email@example.com"
 ```
 
 3. Replace the values with your SMTP email service provider details
