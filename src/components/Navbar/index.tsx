@@ -201,7 +201,7 @@ export default function Navbar() {
                 </button>
                 <Link
                   href="/contact"
-                  className="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white whitespace-nowrap transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3 lg:px-9 xl:px-10"
+                  className="rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-white whitespace-nowrap transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg sm:text-base sm:px-6 md:px-7 md:py-3 lg:rounded-lg lg:px-8 xl:px-9"
                 >
                   Contact Us
                 </Link>
