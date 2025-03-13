@@ -35,24 +35,27 @@ export default function ImageGallery({ images, isOpen, onClose, initialImageInde
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, images.length, onClose]);
 
+  // Handle click outside to close gallery
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4">
-      {/* Close button */}
-      <button
-        onClick={onClose}
-        className="absolute right-4 top-4 z-50 rounded-full bg-white p-2 text-black hover:bg-gray-200"
-      >
-        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+      onClick={handleBackdropClick}
+    >
       {/* Navigation buttons */}
       <button
-        onClick={() => setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1))}
-        className="absolute left-4 z-50 rounded-full bg-white p-2 text-black hover:bg-gray-200"
+        onClick={(e) => {
+          e.stopPropagation();
+          setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
+        }}
+        className="absolute left-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/90 p-2 text-black shadow-lg hover:bg-white"
       >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -60,8 +63,11 @@ export default function ImageGallery({ images, isOpen, onClose, initialImageInde
       </button>
 
       <button
-        onClick={() => setCurrentImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0))}
-        className="absolute right-4 z-50 rounded-full bg-white p-2 text-black hover:bg-gray-200"
+        onClick={(e) => {
+          e.stopPropagation();
+          setCurrentImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+        }}
+        className="absolute right-4 top-1/2 z-50 -translate-y-1/2 rounded-full bg-white/90 p-2 text-black shadow-lg hover:bg-white"
       >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -69,7 +75,10 @@ export default function ImageGallery({ images, isOpen, onClose, initialImageInde
       </button>
 
       {/* Main image */}
-      <div className="relative h-full w-full">
+      <div 
+        className="relative h-full w-full"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="absolute left-1/2 top-1/2 h-[80vh] w-[80vw] -translate-x-1/2 -translate-y-1/2">
           <Image
             src={images[currentImageIndex].src}
@@ -81,8 +90,27 @@ export default function ImageGallery({ images, isOpen, onClose, initialImageInde
         </div>
       </div>
 
+      {/* Image counter */}
+      <div className="absolute left-1/2 top-4 z-50 -translate-x-1/2 rounded-full bg-black/75 px-4 py-2 text-sm text-white">
+        {currentImageIndex + 1} / {images.length}
+      </div>
+
+      {/* Close button - circular cross */}
+      <button
+        onClick={onClose}
+        className="absolute bottom-24 left-1/2 z-50 -translate-x-1/2 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-black shadow-lg transition-all hover:bg-white"
+        aria-label="Close gallery"
+      >
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
       {/* Thumbnail strip */}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2 overflow-x-auto bg-black bg-opacity-50 p-2">
+      <div 
+        className="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2 overflow-x-auto rounded-lg bg-black/75 p-2"
+        onClick={(e) => e.stopPropagation()}
+      >
         {images.map((image, index) => (
           <button
             key={image.src}
