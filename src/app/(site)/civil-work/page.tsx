@@ -492,16 +492,16 @@ export default function CivilWorkPage() {
                 <h4 className="mb-3 font-semibold text-dark">Key Earthwork Volumes</h4>
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
                   <div className="rounded-lg bg-primary/10 p-3 text-center">
-                    <span className="block text-lg font-bold text-primary">1,835 m³</span>
-                    <span className="text-sm text-body-color">Largest Cut Volume</span>
+                    <span className="block text-lg font-bold text-primary">6,842 m³</span>
+                    <span className="text-sm text-body-color">Cut Volume</span>
                   </div>
                   <div className="rounded-lg bg-primary/10 p-3 text-center">
-                    <span className="block text-lg font-bold text-primary">1,605 m³</span>
-                    <span className="text-sm text-body-color">Largest Fill Volume</span>
+                    <span className="block text-lg font-bold text-primary">5,420 m³</span>
+                    <span className="text-sm text-body-color">Fill Volume</span>
                   </div>
                   <div className="rounded-lg bg-primary/10 p-3 text-center">
-                    <span className="block text-lg font-bold text-primary">5,774 m³</span>
-                    <span className="text-sm text-body-color">Total Earth Movement</span>
+                    <span className="block text-lg font-bold text-primary">5,630 m³</span>
+                    <span className="text-sm text-body-color">On-Engineer Material</span>
                   </div>
                 </div>
               </div>
