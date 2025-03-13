@@ -43,11 +43,30 @@ const donBuckImages = [
   { src: '/images/portfolio/Project-1/don_buck_6.JPG', alt: 'Don Buck Infrastructure Work' },
 ];
 
+// Project-3 images configuration (Weranui Road)
+const weranuiImages = [
+  // Prioritized images (x_ prefix)
+  { src: '/images/portfolio/Project-3/xx_1261741642199_.pic.jpg', alt: 'Weranui Road Development Overview' },
+  { src: '/images/portfolio/Project-3/x_951741642154_.pic.jpg', alt: 'Weranui Road Construction Progress' },
+  { src: '/images/portfolio/Project-3/x_921741642150_.pic.jpg', alt: 'Weranui Road Site Development' },
+  { src: '/images/portfolio/Project-3/x_941741642152_.pic.jpg', alt: 'Weranui Road Infrastructure Work' },
+  { src: '/images/portfolio/Project-3/x_901741642147_.pic.jpg', alt: 'Weranui Road Earthworks' },
+  // Additional images
+  { src: '/images/portfolio/Project-3/x_1251741642198_.pic.jpg', alt: 'Weranui Road Additional View 1' },
+  { src: '/images/portfolio/Project-3/x_1261741642199_.pic.jpg', alt: 'Weranui Road Additional View 2' },
+  { src: '/images/portfolio/Project-3/x_1241741642197_.pic.jpg', alt: 'Weranui Road Additional View 3' },
+  { src: '/images/portfolio/Project-3/x_1211741642192_.pic.jpg', alt: 'Weranui Road Additional View 4' },
+  { src: '/images/portfolio/Project-3/x_1171741642186_.pic.jpg', alt: 'Weranui Road Additional View 5' },
+  // More images can be added as needed
+];
+
 export default function CivilWorkPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
   const [isDonBuckGalleryOpen, setIsDonBuckGalleryOpen] = useState(false);
   const [donBuckInitialImageIndex, setDonBuckInitialImageIndex] = useState(0);
+  const [isWeranuiGalleryOpen, setIsWeranuiGalleryOpen] = useState(false);
+  const [weranuiInitialImageIndex, setWeranuiInitialImageIndex] = useState(0);
 
   const openGallery = (index: number) => {
     setInitialImageIndex(index);
@@ -57,6 +76,11 @@ export default function CivilWorkPage() {
   const openDonBuckGallery = (index: number) => {
     setDonBuckInitialImageIndex(index);
     setIsDonBuckGalleryOpen(true);
+  };
+
+  const openWeranuiGallery = (index: number) => {
+    setWeranuiInitialImageIndex(index);
+    setIsWeranuiGalleryOpen(true);
   };
 
   return (
@@ -895,36 +919,75 @@ export default function CivilWorkPage() {
 
             {/* Project Images */}
             <div className="grid gap-4">
-              <div className="relative h-[300px] overflow-hidden rounded-lg">
+              {/* Main Featured Image */}
+              <div 
+                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openWeranuiGallery(0)}
+              >
                 <Image
-                  src="/images/portfolio/civil_work_new_1.jpg"
-                  alt="Weranui Road Development Overview"
+                  src={weranuiImages[0].src}
+                  alt={weranuiImages[0].alt}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                  <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openWeranuiGallery(1)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_new_2.jpeg"
-                    alt="Weranui Road Earthworks"
+                    src={weranuiImages[1].src}
+                    alt={weranuiImages[1].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openWeranuiGallery(2)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_new_3.jpeg"
-                    alt="Weranui Road Construction"
+                    src={weranuiImages[2].src}
+                    alt={weranuiImages[2].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Weranui Road Image Gallery */}
+      <ImageGallery
+        images={weranuiImages}
+        isOpen={isWeranuiGalleryOpen}
+        onClose={() => setIsWeranuiGalleryOpen(false)}
+        initialImageIndex={weranuiInitialImageIndex}
+      />
 
       {/* 791 State Highway 16 Project Section */}
       <section id="state-highway-16" className="bg-gray-50 pb-20 pt-16">
