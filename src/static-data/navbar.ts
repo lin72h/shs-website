@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
-    title: "Charter Engineering",
+    title: "Chartered Civil Engineering",
     href: "charter-engineering",
     external: false,
   },
