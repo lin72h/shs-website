@@ -22,16 +22,16 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-[940px] mx-auto mt-10">
-          {/* Charter Engineering Section */}
+          {/* Chartered Civil Engineering Section */}
           <Link 
             href="/charter-engineering"
             className="group relative h-64 sm:h-72 md:h-96 overflow-hidden rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
           >
-            {/* Using charter engineering specific image */}
+            {/* Using chartered civil engineering specific image */}
             <div className="absolute inset-0">
               <Image 
                 src="/images/services/charter_engineering.jpg.webp" 
-                alt="Charter Engineering" 
+                alt="Chartered Civil Engineering" 
                 fill 
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -41,7 +41,7 @@ export default function Hero() {
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
-              <h3 className="font-bold text-lg sm:text-2xl md:text-3xl mb-1 sm:mb-3">Charter Engineering</h3>
+              <h3 className="font-bold text-base sm:text-xl md:text-2xl mb-1 sm:mb-3 whitespace-nowrap">Chartered Civil Engineering</h3>
               <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Expert engineering design consultancy for comprehensive infrastructure projects</p>
               <div className="flex items-center">
                 <span className="text-sm sm:text-base font-medium">Learn More</span>

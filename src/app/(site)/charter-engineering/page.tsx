@@ -7,15 +7,15 @@ import { Metadata } from "next";
 const siteName = process.env.SITE_NAME;
 
 export const metadata: Metadata = {
-  title: `Charter Engineering Services | ${siteName}`,
-  description: "Expert charter engineering services delivering innovative solutions for civil infrastructure and land development projects with technical precision and quality assurance.",
+  title: `Chartered Civil Engineering Services | ${siteName}`,
+  description: "Expert chartered civil engineering services delivering innovative solutions for civil infrastructure and land development projects with technical precision and quality assurance.",
 };
 
 export default function CharterEngineering() {
   return (
     <>
       <PageTitle
-        pageTitle="Charter Engineering"
+        pageTitle="Chartered Civil Engineering"
         pageDescription="Comprehensive engineering solutions delivered by qualified professionals with expertise in civil infrastructure, technical design, and project implementation to stringent industry standards."
         breadcrumbTitle="Engineering"
       />

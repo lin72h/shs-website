@@ -30,7 +30,7 @@ export default function PageTitle({ pageTitle, pageDescription, breadcrumbTitle 
             </div>
             
             <div className="mb-12 max-w-[600px] md:mb-0">
-              <h1 className="mb-6 text-3xl font-bold text-black sm:text-4xl md:text-5xl leading-tight tracking-tight">
+              <h1 className="mb-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl leading-tight tracking-tight whitespace-nowrap">
                 {pageTitle}
               </h1>
               <p className="text-lg font-medium leading-relaxed text-body-color">
