@@ -1,17 +1,47 @@
+'use client';
+
 import PageTitle from "@/components/Common/PageTitle";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
+import { useState } from 'react';
+import ImageGallery from '@/components/ImageGallery';
 
-const siteName = process.env.SITE_NAME;
-
-export const metadata: Metadata = {
-  title: `Civil Engineering Services | ${siteName}`,
-  description: "Expert civil engineering services for land development, infrastructure, and flood assessments with 40 years of experience",
-};
+// Project-2 images configuration
+const upperHarbourImages = [
+  // Prioritized images (x_ prefix)
+  { src: '/images/portfolio/Project-2/x_571741642098_.pic.jpg', alt: 'Upper Harbour Drive Development Aerial View' },
+  { src: '/images/portfolio/Project-2/x_521741642091_.pic.jpg', alt: 'Upper Harbour Drive Construction Progress' },
+  { src: '/images/portfolio/Project-2/x_501741642088_.pic.jpg', alt: 'Upper Harbour Drive Site Development' },
+  { src: '/images/portfolio/Project-2/x_461741642083_.pic.jpg', alt: 'Upper Harbour Drive Infrastructure Work' },
+  { src: '/images/portfolio/Project-2/x_421741642079_.pic.jpg', alt: 'Upper Harbour Drive Earthworks' },
+  { src: '/images/portfolio/Project-2/x_411741642077_.pic.jpg', alt: 'Upper Harbour Drive Development View' },
+  { src: '/images/portfolio/Project-2/x_361741641712_.pic.jpg', alt: 'Upper Harbour Drive Progress' },
+  { src: '/images/portfolio/Project-2/x_381741642067_.pic.jpg', alt: 'Upper Harbour Drive Construction' },
+  // Additional images
+  { src: '/images/portfolio/Project-2/581741642099_.pic.jpg', alt: 'Upper Harbour Drive Additional View 1' },
+  { src: '/images/portfolio/Project-2/541741642094_.pic.jpg', alt: 'Upper Harbour Drive Additional View 2' },
+  { src: '/images/portfolio/Project-2/561741642097_.pic.jpg', alt: 'Upper Harbour Drive Additional View 3' },
+  { src: '/images/portfolio/Project-2/531741642092_.pic.jpg', alt: 'Upper Harbour Drive Additional View 4' },
+  { src: '/images/portfolio/Project-2/491741642087_.pic.jpg', alt: 'Upper Harbour Drive Additional View 5' },
+  { src: '/images/portfolio/Project-2/511741642090_.pic.jpg', alt: 'Upper Harbour Drive Additional View 6' },
+  { src: '/images/portfolio/Project-2/471741642084_.pic.jpg', alt: 'Upper Harbour Drive Additional View 7' },
+  { src: '/images/portfolio/Project-2/451741642081_.pic.jpg', alt: 'Upper Harbour Drive Additional View 8' },
+  { src: '/images/portfolio/Project-2/431741642080_.pic.jpg', alt: 'Upper Harbour Drive Additional View 9' },
+  { src: '/images/portfolio/Project-2/401741642076_.pic.jpg', alt: 'Upper Harbour Drive Additional View 10' },
+  { src: '/images/portfolio/Project-2/371741641882_.pic.jpg', alt: 'Upper Harbour Drive Additional View 11' },
+  { src: '/images/portfolio/Project-2/391741642074_.pic.jpg', alt: 'Upper Harbour Drive Additional View 12' },
+];
 
 export default function CivilWorkPage() {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [initialImageIndex, setInitialImageIndex] = useState(0);
+
+  const openGallery = (index: number) => {
+    setInitialImageIndex(index);
+    setIsGalleryOpen(true);
+  };
+
   return (
     <>
       <PageTitle
@@ -554,31 +584,48 @@ export default function CivilWorkPage() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Project Images */}
             <div className="grid gap-4">
-              <div className="relative h-[300px] overflow-hidden rounded-lg">
+              {/* Main Featured Image */}
+              <div 
+                className="relative h-[400px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openGallery(0)}
+              >
                 <Image
-                  src="/images/portfolio/don_buck_4.JPG"
-                  alt="Upper Harbour Drive Development"
+                  src={upperHarbourImages[0].src}
+                  alt={upperHarbourImages[0].alt}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                  <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
+              {/* Grid of 4 smaller images */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/portfolio/don_buck_5.JPG"
-                    alt="Upper Harbour Drive Earthworks"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/portfolio/don_buck_6.JPG"
-                    alt="Upper Harbour Drive Construction"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                {[1, 2, 3, 4].map((index) => (
+                  <div
+                    key={index}
+                    className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                    onClick={() => openGallery(index)}
+                  >
+                    <Image
+                      src={upperHarbourImages[index].src}
+                      alt={upperHarbourImages[index].alt}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                      <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                        <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -682,6 +729,14 @@ export default function CivilWorkPage() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery */}
+      <ImageGallery
+        images={upperHarbourImages}
+        isOpen={isGalleryOpen}
+        onClose={() => setIsGalleryOpen(false)}
+        initialImageIndex={initialImageIndex}
+      />
 
       {/* Weranui Road Project Section */}
       <section id="weranui-road" className="pb-20 pt-16">
