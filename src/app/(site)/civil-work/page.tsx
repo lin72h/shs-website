@@ -96,7 +96,7 @@ const weranuiImages = [
 // Project-4 images configuration (791 State Highway 16)
 const stateHighwayImages = [
   // Prioritized images (x_ prefix)
-  { src: '/images/portfolio/Project-4/x_781741642126_.pic.jpg', alt: 'State Highway 16 Development Overview' },
+  { src: '/images/portfolio/Project-4/x_591741642101_.pic.jpg', alt: 'State Highway 16 Development Overview' },
   { src: '/images/portfolio/Project-4/x_821741642132_.pic.jpg', alt: 'State Highway 16 Construction Progress' },
   { src: '/images/portfolio/Project-4/x_741741642121_.pic.jpg', alt: 'State Highway 16 Site Development' },
   { src: '/images/portfolio/Project-4/x_751741642122_.pic.jpg', alt: 'State Highway 16 Infrastructure Work' },
@@ -124,6 +124,31 @@ const stateHighwayImages = [
   { src: '/images/portfolio/Project-4/631741642106_.pic.jpg', alt: 'State Highway 16 Gallery Image 14' },
 ];
 
+// Project-5 images configuration (88 Cook Street)
+const cookStreetImages = [
+  // Prioritized images (xx_ and x_ prefix)
+  { src: '/images/portfolio/Project-5/xx_1301741642206_.pic.jpg', alt: 'Cook Street Development Overview' },
+  { src: '/images/portfolio/Project-5/x_1451741642229_.pic.jpg', alt: 'Cook Street Construction Progress' },
+  { src: '/images/portfolio/Project-5/x_1411741642221_.pic.jpg', alt: 'Cook Street Site Development' },
+  { src: '/images/portfolio/Project-5/x_1441741642226_.pic.jpg', alt: 'Cook Street Infrastructure Work' },
+  { src: '/images/portfolio/Project-5/x_1391741642218_.pic.jpg', alt: 'Cook Street Earthworks' },
+  { src: '/images/portfolio/Project-5/x_1351741642213_.pic.jpg', alt: 'Cook Street Development View' },
+  { src: '/images/portfolio/Project-5/x_1371741642216_.pic.jpg', alt: 'Cook Street Construction' },
+  { src: '/images/portfolio/Project-5/x_1331741642210_.pic.jpg', alt: 'Cook Street Site Planning' },
+  { src: '/images/portfolio/Project-5/x_1341741642211_.pic.jpg', alt: 'Cook Street Engineering Work' },
+  { src: '/images/portfolio/Project-5/x_1321741642209_.pic.jpg', alt: 'Cook Street Development Progress' },
+  { src: '/images/portfolio/Project-5/x_1271741642201_.pic.jpg', alt: 'Cook Street Additional View 1' },
+  { src: '/images/portfolio/Project-5/x_1281741642202_.pic.jpg', alt: 'Cook Street Additional View 2' },
+  // Regular images (without x_ prefix)
+  { src: '/images/portfolio/Project-5/1431741642225_.pic.jpg', alt: 'Cook Street Gallery Image 1' },
+  { src: '/images/portfolio/Project-5/1421741642223_.pic.jpg', alt: 'Cook Street Gallery Image 2' },
+  { src: '/images/portfolio/Project-5/1401741642220_.pic.jpg', alt: 'Cook Street Gallery Image 3' },
+  { src: '/images/portfolio/Project-5/1381741642217_.pic.jpg', alt: 'Cook Street Gallery Image 4' },
+  { src: '/images/portfolio/Project-5/1361741642214_.pic.jpg', alt: 'Cook Street Gallery Image 5' },
+  { src: '/images/portfolio/Project-5/1311741642207_.pic.jpg', alt: 'Cook Street Gallery Image 6' },
+  { src: '/images/portfolio/Project-5/1291741642204_.pic.jpg', alt: 'Cook Street Gallery Image 7' },
+];
+
 export default function CivilWorkPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
@@ -133,6 +158,8 @@ export default function CivilWorkPage() {
   const [weranuiInitialImageIndex, setWeranuiInitialImageIndex] = useState(0);
   const [isStateHighwayGalleryOpen, setIsStateHighwayGalleryOpen] = useState(false);
   const [stateHighwayInitialImageIndex, setStateHighwayInitialImageIndex] = useState(0);
+  const [isCookStreetGalleryOpen, setIsCookStreetGalleryOpen] = useState(false);
+  const [cookStreetInitialImageIndex, setCookStreetInitialImageIndex] = useState(0);
 
   const openGallery = (index: number) => {
     setInitialImageIndex(index);
@@ -152,6 +179,11 @@ export default function CivilWorkPage() {
   const openStateHighwayGallery = (index: number) => {
     setStateHighwayInitialImageIndex(index);
     setIsStateHighwayGalleryOpen(true);
+  };
+
+  const openCookStreetGallery = (index: number) => {
+    setCookStreetInitialImageIndex(index);
+    setIsCookStreetGalleryOpen(true);
   };
 
   return (
@@ -1361,38 +1393,76 @@ export default function CivilWorkPage() {
             {/* Project Images */}
             <div className="flex flex-col space-y-6">
               {/* Main Image */}
-              <div className="relative h-[300px] overflow-hidden rounded-lg">
+              <div 
+                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openCookStreetGallery(0)}
+              >
                 <Image
-                  src="/images/portfolio/civil_work_4.jpg"
-                  alt="88 Cook Street Development Overview"
+                  src={cookStreetImages[0].src}
+                  alt={cookStreetImages[0].alt}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                  <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               
               {/* Additional Images */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openCookStreetGallery(1)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_5.jpg"
-                    alt="Cook Street Urban Infrastructure"
+                    src={cookStreetImages[1].src}
+                    alt={cookStreetImages[1].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openCookStreetGallery(2)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_6.jpg"
-                    alt="Cook Street Development Progress"
+                    src={cookStreetImages[2].src}
+                    alt={cookStreetImages[2].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Cook Street Image Gallery */}
+      <ImageGallery
+        images={cookStreetImages}
+        isOpen={isCookStreetGalleryOpen}
+        onClose={() => setIsCookStreetGalleryOpen(false)}
+        initialImageIndex={cookStreetInitialImageIndex}
+      />
 
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-primary/90 to-primary pb-14 pt-14">
