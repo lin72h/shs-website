@@ -700,7 +700,7 @@ export default function CivilWorkPage() {
               <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
               <p className="text-base leading-relaxed text-body-color">
                 Located at 18 Weranui Road in Waiwera (Lot 3 DP 428671), this development project was completed
-                in October 2017. The project required sophisticated engineering solutions to address the site's
+                in October 2017. The project required sophisticated engineering solutions to address the site&apos;s
                 specific requirements while maintaining the highest standards of quality.
               </p>
               
@@ -833,7 +833,7 @@ export default function CivilWorkPage() {
               <p className="text-base leading-relaxed text-body-color">
                 Located at 791 State Highway 16 in Kumeu, this significant commercial development project 
                 required comprehensive civil engineering solutions to create functional commercial spaces 
-                while addressing the site's specific challenges. Our team delivered innovative solutions for 
+                while addressing the site&apos;s specific challenges. Our team delivered innovative solutions for 
                 stormwater management, earthworks, and infrastructure development to meet both regulatory 
                 requirements and client objectives.
               </p>
