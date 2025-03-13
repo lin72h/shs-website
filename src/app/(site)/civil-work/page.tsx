@@ -33,13 +33,30 @@ const upperHarbourImages = [
   { src: '/images/portfolio/Project-2/391741642074_.pic.jpg', alt: 'Upper Harbour Drive Additional View 12' },
 ];
 
+// Project-1 images configuration (Don Buck)
+const donBuckImages = [
+  { src: '/images/portfolio/Project-1/don_buck_1.JPG', alt: 'Don Buck Aerial View' },
+  { src: '/images/portfolio/Project-1/don_buck_2.JPG', alt: 'Earthworks Progress' },
+  { src: '/images/portfolio/Project-1/don_buck_3.JPG', alt: 'Construction Progress' },
+  { src: '/images/portfolio/Project-1/don_buck_4.JPG', alt: 'Don Buck Development View' },
+  { src: '/images/portfolio/Project-1/don_buck_5.JPG', alt: 'Don Buck Site Development' },
+  { src: '/images/portfolio/Project-1/don_buck_6.JPG', alt: 'Don Buck Infrastructure Work' },
+];
+
 export default function CivilWorkPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
+  const [isDonBuckGalleryOpen, setIsDonBuckGalleryOpen] = useState(false);
+  const [donBuckInitialImageIndex, setDonBuckInitialImageIndex] = useState(0);
 
   const openGallery = (index: number) => {
     setInitialImageIndex(index);
     setIsGalleryOpen(true);
+  };
+
+  const openDonBuckGallery = (index: number) => {
+    setDonBuckInitialImageIndex(index);
+    setIsDonBuckGalleryOpen(true);
   };
 
   return (
@@ -539,36 +556,75 @@ export default function CivilWorkPage() {
 
             {/* Project Images */}
             <div className="grid gap-4">
-              <div className="relative h-[300px] overflow-hidden rounded-lg">
+              {/* Main Featured Image */}
+              <div 
+                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openDonBuckGallery(0)}
+              >
                 <Image
-                  src="/images/portfolio/don_buck_1.JPG"
-                  alt="Don Buck Aerial View"
+                  src={donBuckImages[0].src}
+                  alt={donBuckImages[0].alt}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                  <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openDonBuckGallery(1)}
+                >
                   <Image
-                    src="/images/portfolio/don_buck_2.JPG"
-                    alt="Earthworks Progress"
+                    src={donBuckImages[1].src}
+                    alt={donBuckImages[1].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openDonBuckGallery(2)}
+                >
                   <Image
-                    src="/images/portfolio/don_buck_3.JPG"
-                    alt="Construction Progress"
+                    src={donBuckImages[2].src}
+                    alt={donBuckImages[2].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Don Buck Image Gallery */}
+      <ImageGallery
+        images={donBuckImages}
+        isOpen={isDonBuckGalleryOpen}
+        onClose={() => setIsDonBuckGalleryOpen(false)}
+        initialImageIndex={donBuckInitialImageIndex}
+      />
 
       {/* Upper Harbour Drive Project Section */}
       <section id="upper-harbour-development" className="bg-gray-50 pb-20 pt-16">
