@@ -93,6 +93,37 @@ const weranuiImages = [
   { src: '/images/portfolio/Project-3/1011741642162_.pic.jpg', alt: 'Weranui Road Gallery Image 23' },
 ];
 
+// Project-4 images configuration (791 State Highway 16)
+const stateHighwayImages = [
+  // Prioritized images (x_ prefix)
+  { src: '/images/portfolio/Project-4/x_781741642126_.pic.jpg', alt: 'State Highway 16 Development Overview' },
+  { src: '/images/portfolio/Project-4/x_821741642132_.pic.jpg', alt: 'State Highway 16 Construction Progress' },
+  { src: '/images/portfolio/Project-4/x_741741642121_.pic.jpg', alt: 'State Highway 16 Site Development' },
+  { src: '/images/portfolio/Project-4/x_751741642122_.pic.jpg', alt: 'State Highway 16 Infrastructure Work' },
+  { src: '/images/portfolio/Project-4/x_721741642118_.pic.jpg', alt: 'State Highway 16 Earthworks' },
+  { src: '/images/portfolio/Project-4/x_731741642119_.pic.jpg', alt: 'State Highway 16 Development View' },
+  { src: '/images/portfolio/Project-4/x_621741642105_.pic.jpg', alt: 'State Highway 16 Construction' },
+  { src: '/images/portfolio/Project-4/x_641741642108_.pic.jpg', alt: 'State Highway 16 Site Planning' },
+  { src: '/images/portfolio/Project-4/x_681741642113_.pic.jpg', alt: 'State Highway 16 Engineering Work' },
+  { src: '/images/portfolio/Project-4/x_591741642101_.pic.jpg', alt: 'State Highway 16 Development Progress' },
+  { src: '/images/portfolio/Project-4/x_601741642102_.pic.jpg', alt: 'State Highway 16 Additional View 1' },
+  // Regular images (without x_ prefix)
+  { src: '/images/portfolio/Project-4/811741642131_.pic.jpg', alt: 'State Highway 16 Gallery Image 1' },
+  { src: '/images/portfolio/Project-4/831741642133_.pic.jpg', alt: 'State Highway 16 Gallery Image 2' },
+  { src: '/images/portfolio/Project-4/801741642129_.pic.jpg', alt: 'State Highway 16 Gallery Image 3' },
+  { src: '/images/portfolio/Project-4/771741642125_.pic.jpg', alt: 'State Highway 16 Gallery Image 4' },
+  { src: '/images/portfolio/Project-4/791741642127_.pic.jpg', alt: 'State Highway 16 Gallery Image 5' },
+  { src: '/images/portfolio/Project-4/711741642117_.pic.jpg', alt: 'State Highway 16 Gallery Image 6' },
+  { src: '/images/portfolio/Project-4/761741642123_.pic.jpg', alt: 'State Highway 16 Gallery Image 7' },
+  { src: '/images/portfolio/Project-4/691741642114_.pic.jpg', alt: 'State Highway 16 Gallery Image 8' },
+  { src: '/images/portfolio/Project-4/701741642115_.pic.jpg', alt: 'State Highway 16 Gallery Image 9' },
+  { src: '/images/portfolio/Project-4/661741642110_.pic.jpg', alt: 'State Highway 16 Gallery Image 10' },
+  { src: '/images/portfolio/Project-4/671741642111_.pic.jpg', alt: 'State Highway 16 Gallery Image 11' },
+  { src: '/images/portfolio/Project-4/651741642109_.pic.jpg', alt: 'State Highway 16 Gallery Image 12' },
+  { src: '/images/portfolio/Project-4/611741642103_.pic.jpg', alt: 'State Highway 16 Gallery Image 13' },
+  { src: '/images/portfolio/Project-4/631741642106_.pic.jpg', alt: 'State Highway 16 Gallery Image 14' },
+];
+
 export default function CivilWorkPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
@@ -100,6 +131,8 @@ export default function CivilWorkPage() {
   const [donBuckInitialImageIndex, setDonBuckInitialImageIndex] = useState(0);
   const [isWeranuiGalleryOpen, setIsWeranuiGalleryOpen] = useState(false);
   const [weranuiInitialImageIndex, setWeranuiInitialImageIndex] = useState(0);
+  const [isStateHighwayGalleryOpen, setIsStateHighwayGalleryOpen] = useState(false);
+  const [stateHighwayInitialImageIndex, setStateHighwayInitialImageIndex] = useState(0);
 
   const openGallery = (index: number) => {
     setInitialImageIndex(index);
@@ -114,6 +147,11 @@ export default function CivilWorkPage() {
   const openWeranuiGallery = (index: number) => {
     setWeranuiInitialImageIndex(index);
     setIsWeranuiGalleryOpen(true);
+  };
+
+  const openStateHighwayGallery = (index: number) => {
+    setStateHighwayInitialImageIndex(index);
+    setIsStateHighwayGalleryOpen(true);
   };
 
   return (
@@ -1136,38 +1174,76 @@ export default function CivilWorkPage() {
             {/* Project Images */}
             <div className="flex flex-col space-y-6">
               {/* Main Image */}
-              <div className="relative h-[300px] overflow-hidden rounded-lg">
+              <div 
+                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                onClick={() => openStateHighwayGallery(0)}
+              >
                 <Image
-                  src="/images/portfolio/civil_work_1.jpg"
-                  alt="791 State Highway 16 Development Overview"
+                  src={stateHighwayImages[0].src}
+                  alt={stateHighwayImages[0].alt}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                  <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               
               {/* Additional Images */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openStateHighwayGallery(1)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_2.jpg"
-                    alt="State Highway 16 Site Development"
+                    src={stateHighwayImages[1].src}
+                    alt={stateHighwayImages[1].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openStateHighwayGallery(2)}
+                >
                   <Image
-                    src="/images/portfolio/civil_work_3.jpg"
-                    alt="State Highway 16 Infrastructure"
+                    src={stateHighwayImages[2].src}
+                    alt={stateHighwayImages[2].alt}
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* State Highway 16 Image Gallery */}
+      <ImageGallery
+        images={stateHighwayImages}
+        isOpen={isStateHighwayGalleryOpen}
+        onClose={() => setIsStateHighwayGalleryOpen(false)}
+        initialImageIndex={stateHighwayInitialImageIndex}
+      />
 
       {/* 88 Cook Street Project Section */}
       <section id="cook-street" className="pb-20 pt-16">
