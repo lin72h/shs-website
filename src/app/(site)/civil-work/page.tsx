@@ -213,36 +213,8 @@ export default function CivilWorkPage() {
                 That means, clients can be confident in our ability to assess, design and go beyond expectations to deliver creative and 
                 inspired solutions. We are always looking for measurable ways to add value to projects.
               </p>
-              
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Development Feasibility</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Subdivision & Land Development</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Infrastructure Design</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Flood Assessments & Modelling</span>
-                </div>
-              </div>
             </div>
-            
-            {/* Image Column */}
+
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image 
                 src="/images/news/news-4.jpg"
