@@ -445,7 +445,7 @@ export default function CharterEngineering() {
           />
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {/* Left Column */}
+            {/* Column 1 */}
             <div className="space-y-6">
               <div className="rounded-lg bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-start space-x-4">
@@ -474,10 +474,7 @@ export default function CharterEngineering() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right Column */}
-            <div className="space-y-6">
               <div className="rounded-lg bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-start space-x-4">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -491,7 +488,10 @@ export default function CharterEngineering() {
                   </div>
                 </div>
               </div>
+            </div>
 
+            {/* Column 2 */}
+            <div className="space-y-6">
               <div className="rounded-lg bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-start space-x-4">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -502,6 +502,34 @@ export default function CharterEngineering() {
                   <div>
                     <h3 className="mb-2 text-lg font-bold text-dark">Certification & Documentation</h3>
                     <p className="text-body-color">Providing certification of civil construction works, engineering as-built plans, and preparing comprehensive stormwater management and maintenance plans.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-start space-x-4">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-lg font-bold text-dark">Technical Design Services</h3>
+                    <p className="text-body-color">Detailed engineering design services including 3D modeling, construction drawings, specifications, and comprehensive project documentation to ensure successful implementation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-start space-x-4">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-lg font-bold text-dark">Post-Construction Services</h3>
+                    <p className="text-body-color">Comprehensive post-construction support including maintenance planning, performance monitoring, and ongoing technical assistance to ensure long-term project success.</p>
                   </div>
                 </div>
               </div>
