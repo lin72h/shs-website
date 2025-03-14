@@ -50,6 +50,12 @@ export const navbarData: NavbarItem[] = [
         href: "civil-work#state-highway-16",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "88 Cook Street",
+        href: "civil-work#cook-street",
+        external: false,
+      },
     ],
   },
   {
