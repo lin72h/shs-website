@@ -92,18 +92,6 @@ export default function CharterEngineering() {
                     </div>
                   </div>
                 </div>
-                
-                <Link 
-                  href="/contact" 
-                  className="group inline-flex items-center text-base font-semibold text-primary transition-all hover:text-dark"
-                >
-                  Learn More
-                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.0583 0.208332L19.5833 4.73333L15.0583 9.25833L13.8083 8.00833L16.0667 5.75L0.416656 5.75L0.416656 3.71667L16.0667 3.71667L13.8083 1.45833L15.0583 0.208332Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
 
@@ -165,18 +153,6 @@ export default function CharterEngineering() {
                     </div>
                   </div>
                 </div>
-                
-                <Link 
-                  href="/contact" 
-                  className="group inline-flex items-center text-base font-semibold text-primary transition-all hover:text-dark"
-                >
-                  Learn More
-                  <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
-                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.0583 0.208332L19.5833 4.73333L15.0583 9.25833L13.8083 8.00833L16.0667 5.75L0.416656 5.75L0.416656 3.71667L16.0667 3.71667L13.8083 1.45833L15.0583 0.208332Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
           </div>
