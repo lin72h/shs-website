@@ -28,7 +28,7 @@ export default function CharterEngineering() {
             <div className="flex flex-col space-y-6">
               <h2 className="text-3xl font-bold text-dark">Expert Civil Engineering Solutions</h2>
               <p className="text-base leading-relaxed text-body-color">
-                As a Chartered Civil Engineer with over 13 years' experience in land development design, we specialize in 
+                As a Chartered Civil Engineer with over 13 years&apos; experience in land development design, we specialize in 
                 Subdivision Civil Engineering Design and construction monitoring. Our unique expertise spans both consultancy 
                 and contracting roles, enabling us to provide comprehensive solutions from initial design through to 
                 construction completion.
