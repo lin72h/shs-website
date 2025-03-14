@@ -28,16 +28,21 @@ export default function CharterEngineering() {
             <div className="flex flex-col space-y-6">
               <h2 className="text-3xl font-bold text-dark">Expert Civil Engineering Solutions</h2>
               <p className="text-base leading-relaxed text-body-color">
-                We have a large team of qualified civil engineers, experienced in all aspects of land development. Our engineers 
-                use the latest civil engineering technologies and techniques; we pride ourselves on coming up with innovative 
-                approaches that lead to environmentally-friendly, cost-effective solutions – from relatively simple low impact 
-                design stormwater solutions to more complex value engineering earthworks modelling, we have expertise in them all.
+                As a Chartered Civil Engineer with over 13 years' experience in land development design, we specialize in 
+                Subdivision Civil Engineering Design and construction monitoring. Our unique expertise spans both consultancy 
+                and contracting roles, enabling us to provide comprehensive solutions from initial design through to 
+                construction completion.
               </p>
               <p className="text-base leading-relaxed text-body-color">
-                With 40 years of civil engineering experience, we understand the need to balance commercial and environmental concerns. 
-                Our civil engineers work throughout Auckland and Northland, and are among the country&apos;s most adept industrial problem solvers. 
-                That means, clients can be confident in our ability to assess, design and go beyond expectations to deliver creative and 
-                inspired solutions. We are always looking for measurable ways to add value to projects.
+                Our distinctive strength lies in our ability to undertake the full civil engineering design of subdivisions 
+                while also possessing the expertise to lead construction teams through project execution. We have developed 
+                a particular specialization in rehabilitating projects that have faced challenges due to poor management or 
+                design inadequacies. Through strategic intervention and expert oversight, we transform these challenging 
+                situations into highly profitable outcomes.
+              </p>
+              <p className="text-base leading-relaxed text-body-color">
+                This dual perspective of design and construction, combined with our proven track record in project recovery, 
+                ensures that we deliver practical, efficient, and commercially viable solutions for every project we undertake.
               </p>
             </div>
 
