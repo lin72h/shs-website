@@ -306,6 +306,66 @@ export default function CharterEngineering() {
                 </li>
               </ul>
             </div>
+
+            {/* Service Card 5 */}
+            <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Stormwater Management</h3>
+              <p className="mb-6 text-body-color">
+                Innovative stormwater solutions including attenuation systems, treatment wetlands, 
+                ponds, and specialized devices to manage water flow and minimize environmental impact.
+              </p>
+              <ul className="space-y-2 text-sm text-body-color">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Treatment wetland design</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Low impact design solutions</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Stormwater maintenance plans</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Service Card 6 */}
+            <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">
+                <Link href="/flood-assessments" className="hover:text-primary">Flood Assessments & Modelling</Link>
+              </h3>
+              <p className="mb-6 text-body-color">
+                Expert flood risk assessment and advanced hydraulic modelling to identify flood hazards, 
+                develop mitigation strategies, and ensure development safety.
+              </p>
+              <ul className="space-y-2 text-sm text-body-color">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Hydraulic modelling and analysis</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Flood hazard mapping</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>
+                    <Link href="/flood-reports" className="hover:text-primary">Comprehensive flood hazard reports</Link>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
