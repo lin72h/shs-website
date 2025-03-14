@@ -427,67 +427,6 @@ export default function CharterEngineering() {
 
           {/* Two-Column Services Cards */}
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-            {/* Civil Infrastructure Card */}
-            <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
-              <div className="relative h-[300px] w-full overflow-hidden">
-                <Image
-                  src="/images/news/news-2.jpg"
-                  alt="Civil Infrastructure"
-                  fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-primary/40"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-4xl font-bold text-white">Civil Infrastructure</h3>
-                </div>
-              </div>
-              
-              <div className="p-8">
-                <p className="mb-6 text-base text-body-color">
-                  Our civil infrastructure engineering services provide comprehensive solutions for 
-                  public and private infrastructure development, focusing on sustainability and long-term value.
-                </p>
-                
-                <div className="mb-8 space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-dark">Transportation Systems</h4>
-                      <p className="text-body-color">Roads, highways, bridges, and traffic management systems.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-dark">Water Management</h4>
-                      <p className="text-body-color">Water supply, stormwater, and wastewater systems.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-dark">Public Facilities</h4>
-                      <p className="text-body-color">Schools, hospitals, and government buildings.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Land Development Card */}
             <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="relative h-[300px] w-full overflow-hidden">
@@ -543,6 +482,67 @@ export default function CharterEngineering() {
                     <div>
                       <h4 className="text-lg font-semibold text-dark">Site Planning</h4>
                       <p className="text-body-color">Grading, drainage, utilities, and site layout optimization.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Civil Infrastructure Card */}
+            <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="relative h-[300px] w-full overflow-hidden">
+                <Image
+                  src="/images/news/news-2.jpg"
+                  alt="Civil Infrastructure"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-primary/40"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h3 className="text-4xl font-bold text-white">Civil Infrastructure</h3>
+                </div>
+              </div>
+              
+              <div className="p-8">
+                <p className="mb-6 text-base text-body-color">
+                  Our civil infrastructure engineering services provide comprehensive solutions for 
+                  public and private infrastructure development, focusing on sustainability and long-term value.
+                </p>
+                
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Transportation Systems</h4>
+                      <p className="text-body-color">Roads, highways, bridges, and traffic management systems.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Water Management</h4>
+                      <p className="text-body-color">Water supply, stormwater, and wastewater systems.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+                      <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-dark">Public Facilities</h4>
+                      <p className="text-body-color">Schools, hospitals, and government buildings.</p>
                     </div>
                   </div>
                 </div>
