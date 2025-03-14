@@ -234,7 +234,7 @@ export default function CivilWorkPage() {
                   </div>
                   <div className="rounded-lg bg-primary/10 p-3 text-center">
                     <span className="block text-lg font-bold text-primary">5,630 m³</span>
-                    <span className="text-sm text-body-color">On-Engineer Material</span>
+                    <span className="text-sm text-body-color">Non-Engineer Material</span>
                   </div>
                 </div>
               </div>
