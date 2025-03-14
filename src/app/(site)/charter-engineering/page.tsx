@@ -16,9 +16,43 @@ export default function CharterEngineering() {
     <>
       <PageTitle
         pageTitle="Chartered Civil Engineering"
-        pageDescription="Comprehensive engineering solutions delivered by qualified professionals with expertise in civil infrastructure, technical design, and project implementation to stringent industry standards."
+        pageDescription="Expert civil engineering solutions delivered by qualified professionals with expertise in civil infrastructure, technical design, and project implementation to stringent industry standards."
         breadcrumbTitle="Engineering"
       />
+
+      {/* Expert Civil Engineering Solutions Section */}
+      <section className="pb-16 pt-16">
+        <div className="container">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            {/* Content Column */}
+            <div className="flex flex-col space-y-6">
+              <h2 className="text-3xl font-bold text-dark">Expert Civil Engineering Solutions</h2>
+              <p className="text-base leading-relaxed text-body-color">
+                We have a large team of qualified civil engineers, experienced in all aspects of land development. Our engineers 
+                use the latest civil engineering technologies and techniques; we pride ourselves on coming up with innovative 
+                approaches that lead to environmentally-friendly, cost-effective solutions – from relatively simple low impact 
+                design stormwater solutions to more complex value engineering earthworks modelling, we have expertise in them all.
+              </p>
+              <p className="text-base leading-relaxed text-body-color">
+                With 40 years of civil engineering experience, we understand the need to balance commercial and environmental concerns. 
+                Our civil engineers work throughout Auckland and Northland, and are among the country&apos;s most adept industrial problem solvers. 
+                That means, clients can be confident in our ability to assess, design and go beyond expectations to deliver creative and 
+                inspired solutions. We are always looking for measurable ways to add value to projects.
+              </p>
+            </div>
+
+            <div className="relative h-[400px] overflow-hidden rounded-lg">
+              <Image 
+                src="/images/news/news-4.jpg"
+                alt="Civil Engineering Services"
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-primary/20"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Civil Engineering Services Section */}
       <section className="bg-gray-50 pb-20 pt-16">
