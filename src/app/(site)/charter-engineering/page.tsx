@@ -572,7 +572,7 @@ export default function CharterEngineering() {
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-center text-base font-semibold text-primary transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg"
                 >
-                  Contact Our Engineers
+                  Contact Our Team
                 </Link>
               </div>
             </div>
