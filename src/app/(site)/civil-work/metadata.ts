@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-const siteName = process.env.SITE_NAME;
+const siteName = process.env.SITE_NAME || 'SHS';
 
 export const metadata: Metadata = {
   title: `Civil Engineering Services | ${siteName}`,
