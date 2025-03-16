@@ -122,8 +122,8 @@ export default function CookStreetPage() {
               <div className="mt-4">
                 <h4 className="mb-3 font-semibold text-dark">Urban Revitalization Impact</h4>
                 <p className="text-base leading-relaxed text-body-color">
-                  This development has contributed significantly to the revitalization of Auckland's urban core, 
-                  creating a vibrant mixed-use environment that enhances the city's livability and economic 
+                  This development has contributed significantly to the revitalization of Auckland&apos;s urban core, 
+                  creating a vibrant mixed-use environment that enhances the city&apos;s livability and economic 
                   vitality. Our engineering solutions seamlessly integrated modern infrastructure with urban 
                   design principles to create a sustainable, functional space that serves multiple purposes.
                 </p>
@@ -240,7 +240,7 @@ export default function CookStreetPage() {
                   disruption to the surrounding community.
                 </p>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
-                  Our team implemented sophisticated urban stormwater management systems that address Auckland's 
+                  Our team implemented sophisticated urban stormwater management systems that address Auckland&apos;s 
                   specific climate considerations and regulatory requirements. The project incorporated sustainable 
                   design principles, including water-sensitive urban design features that enhance both functionality 
                   and aesthetic appeal within the urban context.

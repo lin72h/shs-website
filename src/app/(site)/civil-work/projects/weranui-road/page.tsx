@@ -236,7 +236,7 @@ export default function WeranuiRoadPage() {
                 <h3 className="mb-6 text-2xl font-bold text-dark">Technical Challenges & Solutions</h3>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
                   The Weranui Road development presented several significant technical challenges that required 
-                  innovative engineering solutions. The site's steep terrain and complex geotechnical conditions 
+                  innovative engineering solutions. The site&apos;s steep terrain and complex geotechnical conditions 
                   demanded a carefully considered approach to ensure long-term stability and safety.
                 </p>
                 <p className="mb-6 text-base leading-relaxed text-body-color">

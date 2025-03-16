@@ -70,7 +70,7 @@ export default function UpperHarbourDrivePage() {
             <div className="flex flex-col space-y-6">
               <h3 className="text-2xl font-bold text-dark">Project Overview</h3>
               <p className="text-base leading-relaxed text-body-color">
-                The Upper Harbour Drive development is a significant infrastructure project located in Auckland's 
+                The Upper Harbour Drive development is a significant infrastructure project located in Auckland&apos;s 
                 growing North Shore area. This comprehensive civil engineering project involved extensive site 
                 preparation, earthworks, and infrastructure development to create a foundation for future commercial 
                 and residential growth in this strategic location.
@@ -126,12 +126,12 @@ export default function UpperHarbourDrivePage() {
               </div>
 
               <div className="mt-4">
-                <h4 className="mb-3 font-semibold text-dark">Project Impact</h4>
+                <h4 className="mb-3 font-semibold text-dark">Project Achievements</h4>
                 <p className="text-base leading-relaxed text-body-color">
-                  This development has significantly enhanced the infrastructure capacity of the Upper Harbour area, 
-                  providing essential services for future growth while addressing environmental considerations. 
-                  Our engineering solutions have created a sustainable foundation for the area's ongoing development, 
-                  supporting Auckland's broader regional growth strategy.
+                  The Upper Harbour Drive commercial development provides essential services to Auckland&apos;s 
+                  northern suburbs while demonstrating our ability to deliver complex civil engineering projects 
+                  on schedule and within budget. Our engineering solutions have created a foundation for 
+                  sustainable commercial growth in the area.
                 </p>
               </div>
             </div>
@@ -240,15 +240,16 @@ export default function UpperHarbourDrivePage() {
               <div className="col-span-2">
                 <h3 className="mb-6 text-2xl font-bold text-dark">Engineering Approach & Innovations</h3>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
-                  Our approach to the Upper Harbour Drive development involved a comprehensive integration of 
-                  multiple civil engineering disciplines. The project's complexity required innovative solutions 
-                  for stormwater management, given the site's topography and proximity to sensitive watershed areas.
+                  The Upper Harbour Drive commercial development presented several unique challenges due to the site&apos;s 
+                  topography and proximity to sensitive environmental areas. Our engineering team developed innovative 
+                  solutions that balanced commercial requirements with environmental considerations, ensuring 
+                  a sustainable outcome that meets the needs of all stakeholders.
                 </p>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
-                  We implemented advanced geotechnical solutions to address the site's diverse soil conditions and 
-                  ensure long-term stability for future structures. Our engineering team utilized digital terrain 
-                  modeling and sophisticated software to optimize earthworks operations, minimizing environmental 
-                  impact while achieving project objectives.
+                  Careful management of earthworks and site preparation was essential to create a stable platform for the 
+                  development while minimizing environmental impact. Our engineering approach incorporated advanced 
+                  stormwater management techniques to protect the nearby harbour&apos;s water quality, demonstrating our 
+                  commitment to environmentally responsible development practices.
                 </p>
               </div>
               <div>

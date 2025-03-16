@@ -146,7 +146,7 @@ export default function CivilWorkPage() {
                   </Link>
                 </h3>
                 <p className="mb-4 text-base text-body-color">
-                  Strategic infrastructure development project located in Auckland's growing North Shore area.
+                  Strategic infrastructure development project located in Auckland&apos;s growing North Shore area.
                 </p>
                 <Link
                   href="/civil-work/projects/upper-harbour-drive"
@@ -212,7 +212,7 @@ export default function CivilWorkPage() {
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-bold text-dark">88 Cook Street</h3>
                   <p className="mb-4 text-body-color">
-                    Urban revitalization and mixed-use development in Auckland CBD with innovative engineering solutions.
+                    Urban revitalization and mixed-use development in Auckland&apos;s CBD with innovative engineering solutions.
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-primary">
                     View Project Details
