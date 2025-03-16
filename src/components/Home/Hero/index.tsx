@@ -41,7 +41,7 @@ export default function Hero() {
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white">
-              <h3 className="font-bold text-base sm:text-xl md:text-2xl mb-1 sm:mb-3 whitespace-nowrap">Chartered Civil Engineering</h3>
+              <h3 className="font-bold text-base sm:text-xl md:text-2xl mb-1 sm:mb-3">Chartered Civil Engineering</h3>
               <p className="text-xs sm:text-base text-white/95 mb-2 sm:mb-5 leading-tight sm:leading-relaxed">Expert engineering design consultancy for comprehensive infrastructure projects</p>
               <div className="flex items-center">
                 <span className="text-sm sm:text-base font-medium">Learn More</span>
