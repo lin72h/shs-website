@@ -21,63 +21,77 @@ export default function CharterEngineering() {
       />
 
       {/* Expert Civil Engineering Solutions Section */}
-      <section className="pb-16 pt-16">
+      <section className="pb-12 pt-12">
         <div className="container">
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-10 text-center">
-              <h2 className="mb-6 text-4xl font-bold text-dark lg:text-5xl">Expert Civil Engineering Solutions</h2>
-              <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-primary"></div>
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-8 text-center">
+              <h2 className="mb-4 text-4xl font-bold text-dark lg:text-5xl">Expert Civil Engineering Solutions</h2>
+              <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-primary"></div>
+              <p className="mx-auto max-w-3xl text-lg text-body-color">
+                Delivering comprehensive civil engineering solutions with over 13 years of expertise in land development 
+                and infrastructure projects across New Zealand.
+              </p>
             </div>
             
-            <div className="space-y-8">
-              <div className="rounded-lg bg-white p-8 shadow-lg">
-                <div className="mb-6 flex items-center space-x-3">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="rounded-lg bg-white p-6 shadow-lg">
+                <div className="mb-4 flex items-center space-x-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-dark">Expertise & Experience</h3>
+                  <h3 className="text-xl font-semibold text-dark">Design & Development Expertise</h3>
                 </div>
-                <p className="text-lg leading-relaxed text-body-color">
-                  As a Chartered Civil Engineer with over 13 years&apos; experience in land development design, we specialize in 
-                  Subdivision Civil Engineering Design and construction monitoring. Our unique expertise spans both consultancy 
-                  and contracting roles, enabling us to provide comprehensive solutions from initial design through to 
-                  construction completion.
+                <p className="mb-4 text-body-color">
+                  As a Chartered Civil Engineer, we specialize in comprehensive civil engineering design and construction 
+                  monitoring, from initial concept through to project completion. Our expertise spans both consultancy 
+                  and contracting roles, ensuring practical and efficient solutions.
                 </p>
+                <ul className="space-y-2 text-sm text-body-color">
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Full subdivision and infrastructure design</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Construction monitoring and quality assurance</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Innovative and sustainable solutions</span>
+                  </li>
+                </ul>
               </div>
 
-              <div className="rounded-lg bg-white p-8 shadow-lg">
-                <div className="mb-6 flex items-center space-x-3">
+              <div className="rounded-lg bg-white p-6 shadow-lg">
+                <div className="mb-4 flex items-center space-x-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-dark">Our Distinctive Strength</h3>
+                  <h3 className="text-xl font-semibold text-dark">Project Recovery & Management</h3>
                 </div>
-                <p className="text-lg leading-relaxed text-body-color">
-                  Our distinctive strength lies in our ability to undertake the full civil engineering design of subdivisions 
-                  while also possessing the expertise to lead construction teams through project execution. We have developed 
-                  a particular specialization in rehabilitating projects that have faced challenges due to poor management or 
-                  design inadequacies. Through strategic intervention and expert oversight, we transform these challenging 
-                  situations into highly profitable outcomes.
+                <p className="mb-4 text-body-color">
+                  Our distinctive strength lies in rehabilitating challenging projects and providing expert project 
+                  management. Through strategic intervention and collaborative approaches, we transform complex 
+                  situations into successful outcomes.
                 </p>
-              </div>
-
-              <div className="rounded-lg bg-white p-8 shadow-lg">
-                <div className="mb-6 flex items-center space-x-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-dark">Comprehensive Solutions</h3>
-                </div>
-                <p className="text-lg leading-relaxed text-body-color">
-                  This dual perspective of design and construction, combined with our proven track record in project recovery, 
-                  ensures that we deliver practical, efficient, and commercially viable solutions for every project we undertake.
-                </p>
+                <ul className="space-y-2 text-sm text-body-color">
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Project turnaround and risk management</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Stakeholder coordination and communication</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Efficient project delivery and oversight</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
