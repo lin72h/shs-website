@@ -14,7 +14,6 @@ const upperHarbourImages = [
   { src: '/images/portfolio/Project-3/x_951741642154_.pic.jpg', alt: 'Upper Harbour Drive Construction Progress' },
   { src: '/images/portfolio/Project-3/x_921741642150_.pic.jpg', alt: 'Upper Harbour Drive Site Development' },
   { src: '/images/portfolio/Project-3/x_941741642152_.pic.jpg', alt: 'Upper Harbour Drive Infrastructure Work' },
-  { src: '/images/portfolio/Project-3/x_901741642147_.pic.jpg', alt: 'Upper Harbour Drive Earthworks' },
   { src: '/images/portfolio/Project-3/x_961741642155_.pic.jpg', alt: 'Upper Harbour Drive Development View' },
   { src: '/images/portfolio/Project-3/x_911741642149_.pic.jpg', alt: 'Upper Harbour Drive Construction' },
   { src: '/images/portfolio/Project-3/x_841741642135_.pic.jpg', alt: 'Upper Harbour Drive Site Planning' },
