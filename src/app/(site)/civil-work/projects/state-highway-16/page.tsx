@@ -14,6 +14,21 @@ const stateHighwayImages = [
   { src: '/images/portfolio/Project-4/x_741741642121_.pic.jpg', alt: 'State Highway 16 Construction Progress' },
   { src: '/images/portfolio/Project-4/x_751741642122_.pic.jpg', alt: 'State Highway 16 Infrastructure Development' },
   { src: '/images/portfolio/Project-4/x_721741642118_.pic.jpg', alt: 'State Highway 16 Engineering Works' },
+  { src: '/images/portfolio/Project-4/x_731741642119_.pic.jpg', alt: 'State Highway 16 Development' },
+  { src: '/images/portfolio/Project-4/x_621741642105_.pic.jpg', alt: 'State Highway 16 Progress' },
+  { src: '/images/portfolio/Project-4/x_641741642108_.pic.jpg', alt: 'State Highway 16 Construction' },
+  { src: '/images/portfolio/Project-4/x_681741642113_.pic.jpg', alt: 'State Highway 16 Site View' },
+  { src: '/images/portfolio/Project-4/x_591741642101_.pic.jpg', alt: 'State Highway 16 Development Stage' },
+  { src: '/images/portfolio/Project-4/x_601741642102_.pic.jpg', alt: 'State Highway 16 Construction Site' },
+  { src: '/images/portfolio/Project-4/811741642131_.pic.jpg', alt: 'State Highway 16 Project View' },
+  { src: '/images/portfolio/Project-4/831741642133_.pic.jpg', alt: 'State Highway 16 Development Progress' },
+  { src: '/images/portfolio/Project-4/801741642129_.pic.jpg', alt: 'State Highway 16 Aerial Perspective' },
+  { src: '/images/portfolio/Project-4/771741642125_.pic.jpg', alt: 'State Highway 16 Construction Work' },
+  { src: '/images/portfolio/Project-4/791741642127_.pic.jpg', alt: 'State Highway 16 Project Development' },
+  { src: '/images/portfolio/Project-4/711741642117_.pic.jpg', alt: 'State Highway 16 Site Development' },
+  { src: '/images/portfolio/Project-4/761741642123_.pic.jpg', alt: 'State Highway 16 Engineering Progress' },
+  { src: '/images/portfolio/Project-4/691741642114_.pic.jpg', alt: 'State Highway 16 Construction Phase' },
+  { src: '/images/portfolio/Project-4/701741642115_.pic.jpg', alt: 'State Highway 16 Development Project' }
 ];
 
 export default function StateHighwayPage() {

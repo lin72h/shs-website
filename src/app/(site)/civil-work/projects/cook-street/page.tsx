@@ -14,6 +14,20 @@ const cookStreetImages = [
   { src: '/images/portfolio/Project-5/x_1441741642226_.pic.jpg', alt: 'Cook Street Construction Progress' },
   { src: '/images/portfolio/Project-5/x_1391741642218_.pic.jpg', alt: 'Cook Street Mixed-Use Complex' },
   { src: '/images/portfolio/Project-5/x_1351741642213_.pic.jpg', alt: 'Cook Street Infrastructure Work' },
+  { src: '/images/portfolio/Project-5/x_1451741642229_.pic.jpg', alt: 'Cook Street Development' },
+  { src: '/images/portfolio/Project-5/x_1371741642216_.pic.jpg', alt: 'Cook Street Construction Site' },
+  { src: '/images/portfolio/Project-5/x_1331741642210_.pic.jpg', alt: 'Cook Street Project Progress' },
+  { src: '/images/portfolio/Project-5/x_1341741642211_.pic.jpg', alt: 'Cook Street Urban Complex' },
+  { src: '/images/portfolio/Project-5/x_1321741642209_.pic.jpg', alt: 'Cook Street Development View' },
+  { src: '/images/portfolio/Project-5/x_1271741642201_.pic.jpg', alt: 'Cook Street Construction Phase' },
+  { src: '/images/portfolio/Project-5/x_1281741642202_.pic.jpg', alt: 'Cook Street Project Development' },
+  { src: '/images/portfolio/Project-5/1431741642225_.pic.jpg', alt: 'Cook Street Site Work' },
+  { src: '/images/portfolio/Project-5/1421741642223_.pic.jpg', alt: 'Cook Street Construction Detail' },
+  { src: '/images/portfolio/Project-5/1401741642220_.pic.jpg', alt: 'Cook Street Development Progress' },
+  { src: '/images/portfolio/Project-5/1381741642217_.pic.jpg', alt: 'Cook Street Engineering Work' },
+  { src: '/images/portfolio/Project-5/1361741642214_.pic.jpg', alt: 'Cook Street Project View' },
+  { src: '/images/portfolio/Project-5/1311741642207_.pic.jpg', alt: 'Cook Street Site Development' },
+  { src: '/images/portfolio/Project-5/1291741642204_.pic.jpg', alt: 'Cook Street Construction Stage' }
 ];
 
 export default function CookStreetPage() {

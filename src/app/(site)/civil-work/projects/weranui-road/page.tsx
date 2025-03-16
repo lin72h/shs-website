@@ -13,9 +13,25 @@ const weranuiImages = [
   { src: '/images/portfolio/Project-2/x_571741642098_.pic.jpg', alt: 'Weranui Road Development Overview' },
   { src: '/images/portfolio/Project-2/x_521741642091_.pic.jpg', alt: 'Weranui Road Construction Progress' },
   { src: '/images/portfolio/Project-2/x_501741642088_.pic.jpg', alt: 'Weranui Road Site Development' },
-  { src: '/images/portfolio/Project-2/x_551741642096_.pic.jpg', alt: 'Weranui Road Infrastructure Work' },
-  { src: '/images/portfolio/Project-2/x_541741642094_.pic.jpg', alt: 'Weranui Road Development View' },
-  { src: '/images/portfolio/Project-2/x_561741642097_.pic.jpg', alt: 'Weranui Road Construction' },
+  { src: '/images/portfolio/Project-2/x_551741642095_.pic.jpg', alt: 'Weranui Road Infrastructure Work' },
+  { src: '/images/portfolio/Project-2/x_481741642085_.pic.jpg', alt: 'Weranui Road Development View' },
+  { src: '/images/portfolio/Project-2/x_461741642083_.pic.jpg', alt: 'Weranui Road Construction' },
+  { src: '/images/portfolio/Project-2/x_421741642079_.pic.jpg', alt: 'Weranui Road Engineering Work' },
+  { src: '/images/portfolio/Project-2/x_411741642077_.pic.jpg', alt: 'Weranui Road Project Progress' },
+  { src: '/images/portfolio/Project-2/x_361741641712_.pic.jpg', alt: 'Weranui Road Site View' },
+  { src: '/images/portfolio/Project-2/x_381741642067_.pic.jpg', alt: 'Weranui Road Development Stage' },
+  { src: '/images/portfolio/Project-2/581741642099_.pic.jpg', alt: 'Weranui Road Construction Site' },
+  { src: '/images/portfolio/Project-2/541741642094_.pic.jpg', alt: 'Weranui Road Project View' },
+  { src: '/images/portfolio/Project-2/561741642097_.pic.jpg', alt: 'Weranui Road Development Progress' },
+  { src: '/images/portfolio/Project-2/531741642092_.pic.jpg', alt: 'Weranui Road Aerial Perspective' },
+  { src: '/images/portfolio/Project-2/491741642087_.pic.jpg', alt: 'Weranui Road Construction Work' },
+  { src: '/images/portfolio/Project-2/511741642090_.pic.jpg', alt: 'Weranui Road Project Development' },
+  { src: '/images/portfolio/Project-2/471741642084_.pic.jpg', alt: 'Weranui Road Site Development' },
+  { src: '/images/portfolio/Project-2/451741642081_.pic.jpg', alt: 'Weranui Road Engineering Progress' },
+  { src: '/images/portfolio/Project-2/431741642080_.pic.jpg', alt: 'Weranui Road Construction Phase' },
+  { src: '/images/portfolio/Project-2/401741642076_.pic.jpg', alt: 'Weranui Road Development Project' },
+  { src: '/images/portfolio/Project-2/371741641882_.pic.jpg', alt: 'Weranui Road Progress View' },
+  { src: '/images/portfolio/Project-2/391741642074_.pic.jpg', alt: 'Weranui Road Site Works' }
 ];
 
 export default function WeranuiRoadPage() {
