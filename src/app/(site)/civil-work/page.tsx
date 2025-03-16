@@ -486,7 +486,7 @@ export default function CivilWorkPage() {
           <SectionTitle
             mainTitle="FEATURED PROJECT"
             title="Weranui Road"
-            paragraph="Development project at 18 Weranui Road, Waiwera completed in October 2017"
+            paragraph="Development project at 18 Weranui Road, Waiwera completed in February 2023"
             center={true}
             marginBottom="60px"
           />
@@ -497,7 +497,7 @@ export default function CivilWorkPage() {
               <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
               <p className="text-base leading-relaxed text-body-color">
                 Located at 18 Weranui Road in Waiwera (Lot 3 DP 428671), this development project was completed
-                in October 2017. The project required sophisticated engineering solutions to address the site&apos;s
+                in February 2023. The project required sophisticated engineering solutions to address the site&apos;s
                 specific requirements while maintaining the highest standards of quality.
               </p>
               
@@ -521,7 +521,7 @@ export default function CivilWorkPage() {
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                       </svg>
-                      <span>Completion: October 2017</span>
+                      <span>Completion: February 2023</span>
                     </li>
                   </ul>
                 </div>
