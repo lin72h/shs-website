@@ -23,37 +23,62 @@ export default function CharterEngineering() {
       {/* Expert Civil Engineering Solutions Section */}
       <section className="pb-16 pt-16">
         <div className="container">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {/* Content Column */}
-            <div className="flex flex-col space-y-6">
-              <h2 className="text-3xl font-bold text-dark">Expert Civil Engineering Solutions</h2>
-              <p className="text-base leading-relaxed text-body-color">
-                As a Chartered Civil Engineer with over 13 years&apos; experience in land development design, we specialize in 
-                Subdivision Civil Engineering Design and construction monitoring. Our unique expertise spans both consultancy 
-                and contracting roles, enabling us to provide comprehensive solutions from initial design through to 
-                construction completion.
-              </p>
-              <p className="text-base leading-relaxed text-body-color">
-                Our distinctive strength lies in our ability to undertake the full civil engineering design of subdivisions 
-                while also possessing the expertise to lead construction teams through project execution. We have developed 
-                a particular specialization in rehabilitating projects that have faced challenges due to poor management or 
-                design inadequacies. Through strategic intervention and expert oversight, we transform these challenging 
-                situations into highly profitable outcomes.
-              </p>
-              <p className="text-base leading-relaxed text-body-color">
-                This dual perspective of design and construction, combined with our proven track record in project recovery, 
-                ensures that we deliver practical, efficient, and commercially viable solutions for every project we undertake.
-              </p>
+          <div className="mx-auto max-w-4xl">
+            <div className="mb-10 text-center">
+              <h2 className="mb-6 text-4xl font-bold text-dark lg:text-5xl">Expert Civil Engineering Solutions</h2>
+              <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-primary"></div>
             </div>
+            
+            <div className="space-y-8">
+              <div className="rounded-lg bg-white p-8 shadow-lg">
+                <div className="mb-6 flex items-center space-x-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark">Expertise & Experience</h3>
+                </div>
+                <p className="text-lg leading-relaxed text-body-color">
+                  As a Chartered Civil Engineer with over 13 years&apos; experience in land development design, we specialize in 
+                  Subdivision Civil Engineering Design and construction monitoring. Our unique expertise spans both consultancy 
+                  and contracting roles, enabling us to provide comprehensive solutions from initial design through to 
+                  construction completion.
+                </p>
+              </div>
 
-            <div className="relative h-[400px] overflow-hidden rounded-lg">
-              <Image 
-                src="/images/news/news-4.jpg"
-                alt="Civil Engineering Services"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-primary/20"></div>
+              <div className="rounded-lg bg-white p-8 shadow-lg">
+                <div className="mb-6 flex items-center space-x-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark">Our Distinctive Strength</h3>
+                </div>
+                <p className="text-lg leading-relaxed text-body-color">
+                  Our distinctive strength lies in our ability to undertake the full civil engineering design of subdivisions 
+                  while also possessing the expertise to lead construction teams through project execution. We have developed 
+                  a particular specialization in rehabilitating projects that have faced challenges due to poor management or 
+                  design inadequacies. Through strategic intervention and expert oversight, we transform these challenging 
+                  situations into highly profitable outcomes.
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-white p-8 shadow-lg">
+                <div className="mb-6 flex items-center space-x-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark">Comprehensive Solutions</h3>
+                </div>
+                <p className="text-lg leading-relaxed text-body-color">
+                  This dual perspective of design and construction, combined with our proven track record in project recovery, 
+                  ensures that we deliver practical, efficient, and commercially viable solutions for every project we undertake.
+                </p>
+              </div>
             </div>
           </div>
         </div>
