@@ -21,67 +21,78 @@ export default function ProjectManagement() {
       />
 
       {/* Hero Section with Overview */}
-      <section className="pb-16 pt-16">
+      <section className="pb-12 pt-12">
         <div className="container">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {/* Content Column */}
-            <div className="flex flex-col space-y-6">
-              <h2 className="text-3xl font-bold text-dark">Land Development Project Management</h2>
-              <p className="text-base leading-relaxed text-body-color">
-                Our comprehensive project management services ensure your land development projects are delivered 
-                on time, within budget, and to the highest quality standards. We handle all aspects of the 
-                project lifecycle, from initial planning and resource consent to final completion.
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-8 text-center">
+              <h2 className="mb-4 text-4xl font-bold text-dark lg:text-5xl">Land Development Project Management</h2>
+              <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-primary"></div>
+              <p className="mx-auto max-w-3xl text-lg text-body-color">
+                Delivering comprehensive project management services that ensure successful delivery of land development 
+                projects through strategic planning, efficient execution, and careful monitoring.
               </p>
-              
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Development Teams Management</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Design Management</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Resource Consent Process</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Tendering & Contracting</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Engineer to the Project</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-body-color">Project Completion</span>
-                </div>
-              </div>
             </div>
             
-            {/* Image Column */}
-            <div className="relative h-[400px] overflow-hidden rounded-lg">
-              <Image 
-                src="/images/news/news-3.jpg"
-                alt="Land Development Project Management"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-primary/20"></div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="rounded-lg bg-white p-6 shadow-lg">
+                <div className="mb-4 flex items-center space-x-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark">Project Planning & Oversight</h3>
+                </div>
+                <p className="mb-4 text-body-color">
+                  Our comprehensive project management services ensure your land development projects are delivered 
+                  on time, within budget, and to the highest quality standards. We handle all aspects of the 
+                  project lifecycle, from initial planning to final completion.
+                </p>
+                <ul className="space-y-2 text-sm text-body-color">
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Development Teams Management</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Design Management & Coordination</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Resource Consent Process Management</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg bg-white p-6 shadow-lg">
+                <div className="mb-4 flex items-center space-x-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-dark">Project Execution & Delivery</h3>
+                </div>
+                <p className="mb-4 text-body-color">
+                  We provide expert oversight throughout the execution phase, ensuring quality control, 
+                  efficient resource allocation, and successful project completion through our proven 
+                  project management methodologies.
+                </p>
+                <ul className="space-y-2 text-sm text-body-color">
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Tendering & Contract Management</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Engineer to the Project Services</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    <span>Project Completion & Handover</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
