@@ -51,14 +51,6 @@ export default function StateHighwayPage() {
       {/* Project Content */}
       <section className="pb-20 pt-16">
         <div className="container">
-          <SectionTitle
-            mainTitle="FEATURED PROJECT"
-            title="791 State Highway 16"
-            paragraph="Strategic commercial development with comprehensive infrastructure solutions in Kumeu, Auckland"
-            center={true}
-            marginBottom="60px"
-          />
-
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Project Overview */}
             <div className="flex flex-col space-y-6">

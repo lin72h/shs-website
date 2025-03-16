@@ -54,14 +54,6 @@ export default function WeranuiRoadPage() {
       {/* Project Content */}
       <section className="pb-20 pt-16">
         <div className="container">
-          <SectionTitle
-            mainTitle="FEATURED PROJECT"
-            title="Weranui Road"
-            paragraph="Development project at 18 Weranui Road, Waiwera completed in February 2023"
-            center={true}
-            marginBottom="60px"
-          />
-
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Project Overview */}
             <div className="flex flex-col space-y-6">
