@@ -38,7 +38,7 @@ export default function CivilWorkPage() {
             
             {/* Don Buck Project */}
             <div className="group">
-              <div className="mb-8 overflow-hidden rounded-lg">
+              <div className="mb-4 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/don-buck">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -55,13 +55,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div>
-                <h3 className="mb-3 text-xl font-bold text-dark">
-                  <Link href="/civil-work/projects/don-buck" className="hover:text-primary">
-                    Don Buck Road Development
-                  </Link>
-                </h3>
-                <p className="mb-4 text-base text-body-color">
+              <div className="px-1">
+                <p className="mb-3 text-base text-body-color">
                   Major earthworks and civil engineering project for a multi-lot subdivision with mixed-use housing in Massey, Auckland.
                 </p>
                 <Link
@@ -80,7 +75,7 @@ export default function CivilWorkPage() {
 
             {/* Weranui Road Project */}
             <div className="group">
-              <div className="mb-8 overflow-hidden rounded-lg">
+              <div className="mb-4 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/weranui-road">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -97,13 +92,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div>
-                <h3 className="mb-3 text-xl font-bold text-dark">
-                  <Link href="/civil-work/projects/weranui-road" className="hover:text-primary">
-                    Weranui Road Development
-                  </Link>
-                </h3>
-                <p className="mb-4 text-base text-body-color">
+              <div className="px-1">
+                <p className="mb-3 text-base text-body-color">
                   Technical excellence in complex terrain at 18 Weranui Road, Waiwera, completed in February 2023.
                 </p>
                 <Link
@@ -122,7 +112,7 @@ export default function CivilWorkPage() {
 
             {/* Upper Harbour Drive Project */}
             <div className="group">
-              <div className="mb-8 overflow-hidden rounded-lg">
+              <div className="mb-4 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/upper-harbour-drive">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -139,13 +129,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div>
-                <h3 className="mb-3 text-xl font-bold text-dark">
-                  <Link href="/civil-work/projects/upper-harbour-drive" className="hover:text-primary">
-                    Upper Harbour Drive Development
-                  </Link>
-                </h3>
-                <p className="mb-4 text-base text-body-color">
+              <div className="px-1">
+                <p className="mb-3 text-base text-body-color">
                   Strategic infrastructure development project located in Auckland&apos;s growing North Shore area.
                 </p>
                 <Link
@@ -165,16 +150,20 @@ export default function CivilWorkPage() {
             {/* 791 State Highway 16 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
               <Link href="/civil-work/projects/state-highway-16">
-                <div className="relative h-[250px] w-full overflow-hidden">
+                <div className="relative h-[300px] w-full overflow-hidden">
                   <Image
                     src="/images/portfolio/Project-4/x_781741642126_.pic.jpg"
                     alt="791 State Highway 16 Project"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <h3 className="mb-2 text-xl font-bold text-white">791 State Highway 16</h3>
+                    <p className="text-sm text-white opacity-90">Kumeu, Auckland</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-xl font-bold text-dark">791 State Highway 16</h3>
+                <div className="p-6 pt-4">
                   <p className="mb-4 text-body-color">
                     Strategic commercial development with comprehensive infrastructure solutions in Kumeu, Auckland.
                   </p>
@@ -201,16 +190,20 @@ export default function CivilWorkPage() {
             {/* 88 Cook Street */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
               <Link href="/civil-work/projects/cook-street">
-                <div className="relative h-[250px] w-full overflow-hidden">
+                <div className="relative h-[300px] w-full overflow-hidden">
                   <Image
                     src="/images/portfolio/Project-5/xx_1301741642206_.pic.jpg"
                     alt="88 Cook Street Project"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <h3 className="mb-2 text-xl font-bold text-white">88 Cook Street</h3>
+                    <p className="text-sm text-white opacity-90">Auckland CBD</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-xl font-bold text-dark">88 Cook Street</h3>
+                <div className="p-6 pt-4">
                   <p className="mb-4 text-body-color">
                     Urban revitalization and mixed-use development in Auckland&apos;s CBD with innovative engineering solutions.
                   </p>
