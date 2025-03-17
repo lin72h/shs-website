@@ -37,8 +37,8 @@ export default function CivilWorkPage() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
             
             {/* Don Buck Project */}
-            <div className="group">
-              <div className="mb-4 overflow-hidden rounded-lg">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="mb-0 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/don-buck">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -55,8 +55,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div className="px-1">
-                <p className="mb-3 text-base text-body-color">
+              <div className="p-6 pt-4">
+                <p className="mb-4 text-base text-body-color">
                   Major earthworks and civil engineering project for a multi-lot subdivision with mixed-use housing in Massey, Auckland.
                 </p>
                 <Link
@@ -74,8 +74,8 @@ export default function CivilWorkPage() {
             </div>
 
             {/* Weranui Road Project */}
-            <div className="group">
-              <div className="mb-4 overflow-hidden rounded-lg">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="mb-0 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/weranui-road">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -92,8 +92,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div className="px-1">
-                <p className="mb-3 text-base text-body-color">
+              <div className="p-6 pt-4">
+                <p className="mb-4 text-base text-body-color">
                   Technical excellence in complex terrain at 18 Weranui Road, Waiwera, completed in February 2023.
                 </p>
                 <Link
@@ -111,8 +111,8 @@ export default function CivilWorkPage() {
             </div>
 
             {/* Upper Harbour Drive Project */}
-            <div className="group">
-              <div className="mb-4 overflow-hidden rounded-lg">
+            <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="mb-0 overflow-hidden rounded-lg">
                 <Link href="/civil-work/projects/upper-harbour-drive">
                   <div className="relative h-[300px] w-full">
                     <Image
@@ -129,8 +129,8 @@ export default function CivilWorkPage() {
                   </div>
                 </Link>
               </div>
-              <div className="px-1">
-                <p className="mb-3 text-base text-body-color">
+              <div className="p-6 pt-4">
+                <p className="mb-4 text-base text-body-color">
                   Strategic infrastructure development project located in Auckland&apos;s growing North Shore area.
                 </p>
                 <Link
