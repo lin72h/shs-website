@@ -52,11 +52,11 @@ export default function WeranuiRoadPage() {
       />
 
       {/* Project Content */}
-      <section className="pb-20 pt-16">
+      <section className="pb-20 pt-0 lg:pt-16">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
             {/* Project Overview - Second on mobile, First on desktop */}
-            <div className="order-2 lg:order-1 flex flex-col space-y-6">
+            <div className="order-2 lg:order-1 flex flex-col space-y-6 pt-4 lg:pt-0">
               <h3 className="text-2xl font-bold text-dark">Technical Excellence in Complex Terrain</h3>
               <p className="text-base leading-relaxed text-body-color">
                 Located at 18 Weranui Road in Waiwera (Lot 3 DP 428671), this development project was completed

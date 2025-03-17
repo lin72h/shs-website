@@ -8,11 +8,11 @@ type Props = {
 
 export default function PageTitle({ pageTitle, pageDescription, breadcrumbTitle }: Props) {
   return (
-    <section className="relative z-10 overflow-hidden bg-white pb-12 pt-32 sm:pt-36 md:pt-40">
+    <section className="relative z-10 overflow-hidden bg-white pb-6 md:pb-12 pt-32 sm:pt-36 md:pt-40">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-wrap items-center">
           <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-            <div className="mb-5">
+            <div className="mb-3 md:mb-5">
               <ul className="flex items-center">
                 <li className="flex items-center">
                   <Link
@@ -29,8 +29,8 @@ export default function PageTitle({ pageTitle, pageDescription, breadcrumbTitle 
               </ul>
             </div>
             
-            <div className="mb-12 max-w-[600px] md:mb-0">
-              <h1 className="mb-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl leading-tight tracking-tight whitespace-nowrap">
+            <div className="mb-6 md:mb-12 max-w-[600px] md:mb-0">
+              <h1 className="mb-3 md:mb-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl leading-tight tracking-tight whitespace-nowrap">
                 {pageTitle}
               </h1>
               <p className="text-lg font-medium leading-relaxed text-body-color">
