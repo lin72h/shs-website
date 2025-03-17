@@ -48,9 +48,11 @@ export default function CivilWorkPage() {
                       className="object-cover transition duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-6">
-                      <h3 className="mb-2 text-xl font-bold text-white">Don Buck Road</h3>
-                      <p className="text-sm text-white opacity-90">Massey, Auckland</p>
+                    <div className="absolute bottom-0 left-0 w-full">
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
+                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Don Buck Road</h3>
+                        <p className="text-xs sm:text-sm text-white opacity-90">Massey, Auckland</p>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -85,9 +87,11 @@ export default function CivilWorkPage() {
                       className="object-cover transition duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-6">
-                      <h3 className="mb-2 text-xl font-bold text-white">Weranui Road</h3>
-                      <p className="text-sm text-white opacity-90">Waiwera</p>
+                    <div className="absolute bottom-0 left-0 w-full">
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
+                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Weranui Road</h3>
+                        <p className="text-xs sm:text-sm text-white opacity-90">Waiwera</p>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -122,9 +126,11 @@ export default function CivilWorkPage() {
                       className="object-cover transition duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
-                    <div className="absolute bottom-0 left-0 w-full p-6">
-                      <h3 className="mb-2 text-xl font-bold text-white">Upper Harbour Drive</h3>
-                      <p className="text-sm text-white opacity-90">Auckland North Shore</p>
+                    <div className="absolute bottom-0 left-0 w-full">
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
+                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Upper Harbour Drive</h3>
+                        <p className="text-xs sm:text-sm text-white opacity-90">Auckland North Shore</p>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -158,9 +164,11 @@ export default function CivilWorkPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
-                  <div className="absolute bottom-0 left-0 w-full p-6">
-                    <h3 className="mb-2 text-xl font-bold text-white">791 State Highway 16</h3>
-                    <p className="text-sm text-white opacity-90">Kumeu, Auckland</p>
+                  <div className="absolute bottom-0 left-0 w-full">
+                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
+                      <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">791 State Highway 16</h3>
+                      <p className="text-xs sm:text-sm text-white opacity-90">Kumeu, Auckland</p>
+                    </div>
                   </div>
                 </div>
                 <div className="p-6 pt-4">
@@ -198,9 +206,11 @@ export default function CivilWorkPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
-                  <div className="absolute bottom-0 left-0 w-full p-6">
-                    <h3 className="mb-2 text-xl font-bold text-white">88 Cook Street</h3>
-                    <p className="text-sm text-white opacity-90">Auckland CBD</p>
+                  <div className="absolute bottom-0 left-0 w-full">
+                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
+                      <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">88 Cook Street</h3>
+                      <p className="text-xs sm:text-sm text-white opacity-90">Auckland CBD</p>
+                    </div>
                   </div>
                 </div>
                 <div className="p-6 pt-4">
@@ -343,6 +353,14 @@ export default function CivilWorkPage() {
           </div>
         </div>
       </section>
+
+      <style jsx global>{`
+        @supports not (backdrop-filter: blur(8px)) {
+          .backdrop-fallback {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+          }
+        }
+      `}</style>
     </>
   );
 } 
