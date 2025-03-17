@@ -292,21 +292,21 @@ export default function ProjectManagement() {
             marginBottom="60px"
           />
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 md:gap-4 lg:grid-cols-4 lg:gap-6">
             {/* Development Type 1 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-1.jpg"
                   alt="Urban Subdivision"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Urban Subdivision</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Comprehensive project management for urban subdivision developments</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Urban Subdivision</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Comprehensive project management for urban subdivision developments</p>
                   </div>
                 </div>
               </div>
@@ -314,18 +314,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 2 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-2.jpg"
                   alt="Rural Subdivision"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Rural Subdivision</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Expert management of rural land subdivision projects</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Rural Subdivision</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Expert management of rural land subdivision projects</p>
                   </div>
                 </div>
               </div>
@@ -333,18 +333,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 3 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-3.jpg"
                   alt="Housing Developments"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Housing Developments</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Full project management for residential housing developments</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Housing Developments</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Full project management for residential housing developments</p>
                   </div>
                 </div>
               </div>
@@ -352,18 +352,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 4 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-4.jpg"
                   alt="Business Developments"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Business Developments</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Specialized management for commercial and business developments</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Business Developments</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Specialized management for commercial and business developments</p>
                   </div>
                 </div>
               </div>
@@ -371,18 +371,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 5 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-5.jpg"
                   alt="New/Changed Land Uses"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">New/Changed Land Uses</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Management of land use changes and repurposing projects</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">New/Changed Land Uses</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Management of land use changes and repurposing projects</p>
                   </div>
                 </div>
               </div>
@@ -390,18 +390,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 6 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-6.jpg"
                   alt="Existing Use Rights"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Existing Use Rights</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Expert navigation of existing use rights applications and processes</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Existing Use Rights</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Expert navigation of existing use rights applications and processes</p>
                   </div>
                 </div>
               </div>
@@ -409,18 +409,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 7 */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-7.jpg"
                   alt="Private Plan Changes"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Private Plan Changes</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Management of private plan change processes and applications</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Private Plan Changes</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Management of private plan change processes and applications</p>
                   </div>
                 </div>
               </div>
@@ -428,18 +428,18 @@ export default function ProjectManagement() {
 
             {/* Development Type 8 - Due Diligence */}
             <div className="group relative overflow-hidden rounded-lg">
-              <div className="relative h-[250px] w-full overflow-hidden">
+              <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[250px] w-full overflow-hidden">
                 <Image
                   src="/images/news/news-8.jpg"
                   alt="Due Diligence"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/40 transition-opacity duration-300 group-hover:opacity-70"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">Due Diligence</h3>
-                  <div className="mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <p className="text-sm text-white">Comprehensive due diligence services for land development projects</p>
+                <div className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/20 to-primary/80"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-1.5 sm:p-3 md:p-4 lg:p-6">
+                  <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold text-white">Due Diligence</h3>
+                  <div className="hidden sm:block mt-1 sm:mt-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-xs sm:text-sm text-white">Comprehensive due diligence services for land development projects</p>
                   </div>
                 </div>
               </div>
