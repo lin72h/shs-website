@@ -122,24 +122,26 @@ export default function ImageGallery({ images, isOpen, onClose, initialImageInde
       {/* Thumbnail strip */}
       <div 
         ref={thumbnailsRef}
-        className="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2 overflow-x-auto rounded-lg bg-black/75 p-2"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg bg-black/75 p-2 w-[90vw] md:w-[80vw] max-w-[1200px] overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-black/30"
       >
-        {images.map((image, index) => (
-          <button
-            key={image.src}
-            onClick={() => setCurrentImageIndex(index)}
-            className={`relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all cursor-pointer ${
-              index === currentImageIndex ? 'border-primary' : 'border-transparent'
-            }`}
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              className="object-cover"
-            />
-          </button>
-        ))}
+        <div className="flex space-x-2 min-w-max">
+          {images.map((image, index) => (
+            <button
+              key={image.src}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all cursor-pointer ${
+                index === currentImageIndex ? 'border-primary' : 'border-transparent'
+              }`}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+              />
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
