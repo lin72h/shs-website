@@ -49,29 +49,23 @@ export default function CivilWorkPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
-                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
-                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Don Buck Road</h3>
-                        <p className="text-xs sm:text-sm text-white opacity-90">Massey, Auckland</p>
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                        <div>
+                          <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Don Buck Road</h3>
+                          <p className="text-xs sm:text-sm text-white opacity-90">Massey, Auckland</p>
+                        </div>
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
                       </div>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className="p-6 pt-4">
-                <p className="mb-4 text-base text-body-color">
+                <p className="text-base text-body-color">
                   Major earthworks and civil engineering project for a multi-lot subdivision with mixed-use housing in Massey, Auckland.
                 </p>
-                <Link
-                  href="/civil-work/projects/don-buck"
-                  className="inline-flex items-center text-sm font-medium text-primary hover:opacity-80"
-                >
-                  View Project Details
-                  <span className="ml-2">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
 
@@ -88,29 +82,23 @@ export default function CivilWorkPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
-                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
-                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Weranui Road</h3>
-                        <p className="text-xs sm:text-sm text-white opacity-90">Waiwera</p>
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                        <div>
+                          <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Weranui Road</h3>
+                          <p className="text-xs sm:text-sm text-white opacity-90">Waiwera</p>
+                        </div>
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
                       </div>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className="p-6 pt-4">
-                <p className="mb-4 text-base text-body-color">
+                <p className="text-base text-body-color">
                   Technical excellence in complex terrain at 18 Weranui Road, Waiwera, completed in February 2023.
                 </p>
-                <Link
-                  href="/civil-work/projects/weranui-road"
-                  className="inline-flex items-center text-sm font-medium text-primary hover:opacity-80"
-                >
-                  View Project Details
-                  <span className="ml-2">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
 
@@ -127,29 +115,23 @@ export default function CivilWorkPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
-                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
-                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Upper Harbour Drive</h3>
-                        <p className="text-xs sm:text-sm text-white opacity-90">Auckland North Shore</p>
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                        <div>
+                          <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Upper Harbour Drive</h3>
+                          <p className="text-xs sm:text-sm text-white opacity-90">Auckland North Shore</p>
+                        </div>
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
                       </div>
                     </div>
                   </div>
                 </Link>
               </div>
               <div className="p-6 pt-4">
-                <p className="mb-4 text-base text-body-color">
+                <p className="text-base text-body-color">
                   Strategic infrastructure development project located in Auckland&apos;s growing North Shore area.
                 </p>
-                <Link
-                  href="/civil-work/projects/upper-harbour-drive"
-                  className="inline-flex items-center text-sm font-medium text-primary hover:opacity-80"
-                >
-                  View Project Details
-                  <span className="ml-2">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z" fill="currentColor" />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
 
@@ -165,32 +147,21 @@ export default function CivilWorkPage() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                   <div className="absolute bottom-0 left-0 w-full">
-                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
-                      <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">791 State Highway 16</h3>
-                      <p className="text-xs sm:text-sm text-white opacity-90">Kumeu, Auckland</p>
+                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                      <div>
+                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">791 State Highway 16</h3>
+                        <p className="text-xs sm:text-sm text-white opacity-90">Kumeu, Auckland</p>
+                      </div>
+                      <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
                 </div>
                 <div className="p-6 pt-4">
-                  <p className="mb-4 text-body-color">
+                  <p className="text-body-color">
                     Strategic commercial development with comprehensive infrastructure solutions in Kumeu, Auckland.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-primary">
-                    View Project Details
-                    <svg
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span>
                 </div>
               </Link>
             </div>
@@ -207,32 +178,21 @@ export default function CivilWorkPage() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                   <div className="absolute bottom-0 left-0 w-full">
-                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5">
-                      <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">88 Cook Street</h3>
-                      <p className="text-xs sm:text-sm text-white opacity-90">Auckland CBD</p>
+                    <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                      <div>
+                        <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">88 Cook Street</h3>
+                        <p className="text-xs sm:text-sm text-white opacity-90">Auckland CBD</p>
+                      </div>
+                      <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
                     </div>
                   </div>
                 </div>
                 <div className="p-6 pt-4">
-                  <p className="mb-4 text-body-color">
+                  <p className="text-body-color">
                     Urban revitalization and mixed-use development in Auckland&apos;s CBD with innovative engineering solutions.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-primary">
-                    View Project Details
-                    <svg
-                      className="ml-2 h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span>
                 </div>
               </Link>
             </div>
