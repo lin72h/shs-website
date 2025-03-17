@@ -58,8 +58,8 @@ export default function UpperHarbourDrivePage() {
       <section className="pb-20 pt-16">
         <div className="container">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {/* Project Overview */}
-            <div className="flex flex-col space-y-6">
+            {/* Project Overview - Second on mobile, First on desktop */}
+            <div className="order-2 lg:order-1 flex flex-col space-y-6">
               <h3 className="text-2xl font-bold text-dark">Project Overview</h3>
               <p className="text-base leading-relaxed text-body-color">
                 The Upper Harbour Drive development is a significant infrastructure project located in Auckland&apos;s 
@@ -128,8 +128,8 @@ export default function UpperHarbourDrivePage() {
               </div>
             </div>
 
-            {/* Project Images */}
-            <div className="grid gap-4">
+            {/* Project Images - First on mobile, Second on desktop */}
+            <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
                 className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
