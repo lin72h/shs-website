@@ -61,7 +61,27 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Building Construction",
-    href: "building-construction",
+    href: "",
     external: false,
+    submenu: [
+      {
+        id: uuid(),
+        title: "Overview",
+        href: "building-construction",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "347 Pinecrest Dr",
+        href: "building-construction/projects/347-pinecrest-dr",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "1 Parkway Drive",
+        href: "building-construction/projects/parkway-drive-rosedale",
+        external: false,
+      },
+    ],
   },
 ];
