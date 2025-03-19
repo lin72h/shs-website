@@ -54,7 +54,7 @@ export default function ParkwayDrivePage() {
                 Located at 1 Parkway Drive in Rosedale, Auckland, this commercial office building project 
                 demonstrates our expertise in modern commercial construction. The project featured state-of-the-art 
                 design, energy-efficient solutions, and flexible office spaces to meet the growing demands 
-                of businesses in Auckland's North Shore.
+                of businesses in Auckland&apos;s North Shore.
               </p>
               
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -272,8 +272,8 @@ export default function ParkwayDrivePage() {
           <div className="mt-16 rounded-lg bg-gray-50 p-8 text-center">
             <h3 className="mb-3 text-xl font-bold text-dark">Looking for Commercial Construction Services?</h3>
             <p className="mb-6 mx-auto max-w-2xl text-body-color">
-              Whether you're planning a new office building, retail space, or industrial facility, our team has the expertise 
-              to deliver exceptional results. Let's discuss how we can bring your commercial construction project to life.
+              Whether you&apos;re planning a new office building, retail space, or industrial facility, our team has the expertise 
+              to deliver exceptional results. Let&apos;s discuss how we can bring your commercial construction project to life.
             </p>
             <Link
               href="/contact"

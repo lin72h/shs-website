@@ -223,7 +223,7 @@ export default function PinecrestDrPage() {
                 <h3 className="mb-6 text-2xl font-bold text-dark">Residential Construction Approach</h3>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
                   The 347 Pinecrest Dr project presented an opportunity to showcase our residential construction 
-                  expertise. Working with the client's vision for a modern family home, we designed and built a 
+                  expertise. Working with the client&apos;s vision for a modern family home, we designed and built a 
                   residence that perfectly balances style, functionality, and energy efficiency.
                 </p>
                 <p className="mb-6 text-base leading-relaxed text-body-color">
