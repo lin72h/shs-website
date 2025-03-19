@@ -27,6 +27,17 @@ export default function CivilWorkPage() {
               design to consents, contract management, and construction. Browse our featured projects 
               below to see our expertise in action.
             </p>
+            <div className="mt-6">
+              <Link 
+                href="/charter-engineering" 
+                className="inline-flex items-center text-primary font-semibold hover:underline"
+              >
+                Explore our detailed Civil Engineering Services
+                <svg className="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -195,92 +206,6 @@ export default function CivilWorkPage() {
                   </p>
                 </div>
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Overview */}
-      <section className="bg-gray-50 pb-20 pt-16">
-        <div className="container">
-          <SectionTitle
-            title="Our Civil Engineering Services"
-            paragraph="Comprehensive solutions for your engineering and development needs"
-            center={true}
-            marginBottom="60px"
-          />
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Feasibility Studies</h3>
-              <p className="text-body-color">
-                Comprehensive evaluation of development potential, constraints, and opportunities to ensure project viability.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Engineering Design</h3>
-              <p className="text-body-color">
-                Innovative and practical design solutions for earthworks, stormwater management, and site infrastructure.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Consent Management</h3>
-              <p className="text-body-color">
-                Expert navigation of regulatory requirements and consent processes, ensuring compliance and project approval.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Contract Management</h3>
-              <p className="text-body-color">
-                Comprehensive oversight of construction contracts, ensuring quality, compliance, and efficient project delivery.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Earthworks Management</h3>
-              <p className="text-body-color">
-                Precise calculation and effective management of cut and fill operations, optimizing site development.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10">
-                <svg className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h3 className="mb-4 text-xl font-bold text-dark">Stormwater Solutions</h3>
-              <p className="text-body-color">
-                Advanced stormwater management systems designed for water quality, quantity control, and environmental protection.
-              </p>
             </div>
           </div>
         </div>

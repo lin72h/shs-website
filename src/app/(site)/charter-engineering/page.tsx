@@ -114,7 +114,7 @@ export default function CharterEngineering() {
             <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
                 <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
               <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Development Feasibility</h3>
@@ -278,6 +278,87 @@ export default function CharterEngineering() {
                   <span>
                     <Link href="/flood-reports" className="hover:text-primary">Comprehensive flood hazard reports</Link>
                   </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Service Card 7 - Consent Management (From Civil Work page) */}
+            <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Consent Management</h3>
+              <p className="mb-6 text-body-color">
+                Expert navigation of regulatory requirements and consent processes, ensuring compliance and project approval.
+              </p>
+              <ul className="space-y-2 text-sm text-body-color">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Resource consent applications</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Regulatory compliance strategies</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Consent condition management</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Service Card 8 - Contract Management (From Civil Work page) */}
+            <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Contract Management</h3>
+              <p className="mb-6 text-body-color">
+                Comprehensive oversight of construction contracts, ensuring quality, compliance, and efficient project delivery.
+              </p>
+              <ul className="space-y-2 text-sm text-body-color">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Tender preparation and evaluation</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Construction monitoring</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Quality assurance procedures</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Service Card 9 - Engineering Design (From Civil Work page) */}
+            <div className="group rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark group-hover:text-primary">Engineering Design</h3>
+              <p className="mb-6 text-body-color">
+                Innovative and practical design solutions for earthworks, stormwater management, and site infrastructure.
+              </p>
+              <ul className="space-y-2 text-sm text-body-color">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Infrastructure and services design</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Technical drawing preparation</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                  <span>Design optimization for efficiency</span>
                 </li>
               </ul>
             </div>
