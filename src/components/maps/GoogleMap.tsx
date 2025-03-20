@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, StreetViewPanorama } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
@@ -22,13 +22,19 @@ interface GoogleMapComponentProps {
     };
     title?: string;
   }>;
+  streetView?: boolean;
+  heading?: number;
+  pitch?: number;
 }
 
 const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
   center,
   zoom = 14,
   apiKey,
-  markers = []
+  markers = [],
+  streetView = false,
+  heading = 0,
+  pitch = 0
 }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
@@ -66,13 +72,37 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
       onUnmount={onUnmount}
       options={mapOptions}
     >
-      {markers.map((marker, index) => (
-        <Marker
-          key={index}
-          position={marker.position}
-          title={marker.title}
+      {!streetView && 
+        markers.map((marker, index) => (
+          <Marker
+            key={index}
+            position={marker.position}
+            title={marker.title}
+          />
+        ))
+      }
+      {streetView && (
+        <StreetViewPanorama
+          options={{
+            position: {
+              lat: center.lat,
+              lng: center.lng
+            },
+            visible: true,
+            enableCloseButton: false,
+            addressControl: false,
+            fullscreenControl: false,
+            panControl: false,
+            zoomControl: false,
+            motionTracking: false,
+            motionTrackingControl: false,
+            pov: {
+              heading: heading,
+              pitch: pitch
+            }
+          }}
         />
-      ))}
+      )}
     </GoogleMap>
   ) : <div>Loading...</div>;
 };
