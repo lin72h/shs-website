@@ -36,10 +36,10 @@ export default function PinecrestDrPage() {
     setIsGalleryOpen(true);
   };
 
-  // For Google Maps - Auckland coordinates with slight offset to represent Pinecrest Dr
+  // Exact coordinates for 347 Pinecrest Drive, Gulf Harbour, Auckland
   const pinecrestLocation = {
-    lat: -36.8509, 
-    lng: 174.7645
+    lat: -36.6198, 
+    lng: 174.7934
   };
 
   return (
@@ -154,11 +154,11 @@ export default function PinecrestDrPage() {
                   <GoogleMapComponent
                     center={pinecrestLocation}
                     apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={15}
+                    zoom={14}
                     markers={[
                       {
                         position: pinecrestLocation,
-                        title: "347 Pinecrest Dr, Auckland"
+                        title: "347 Pinecrest Drive, Gulf Harbour, Auckland 0930"
                       }
                     ]}
                   />

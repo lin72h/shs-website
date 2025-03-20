@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
-  height: '400px'
+  height: '100%'
 };
 
 interface GoogleMapComponentProps {
@@ -45,6 +45,16 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
     setMap(null);
   }, []);
 
+  const mapOptions = {
+    mapTypeControl: false,
+    streetViewControl: false,
+    fullscreenControl: false,
+    zoomControl: true,
+    zoomControlOptions: {
+      position: 7 // RIGHT_CENTER
+    }
+  };
+
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
@@ -52,6 +62,7 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
       zoom={zoom}
       onLoad={onLoad}
       onUnmount={onUnmount}
+      options={mapOptions}
     >
       {markers.map((marker, index) => (
         <Marker
