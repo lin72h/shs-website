@@ -184,6 +184,21 @@ export default function PinecrestDrPage() {
                   </div>
                 </div>
                 <div 
+                  className="relative h-[200px] overflow-hidden rounded-lg"
+                >
+                  <GoogleMapComponent
+                    center={pinecrestLocation}
+                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
+                    zoom={14}
+                    markers={[
+                      {
+                        position: pinecrestLocation,
+                        title: "347 Pinecrest Drive, Gulf Harbour, Auckland 0930"
+                      }
+                    ]}
+                  />
+                </div>
+                <div 
                   className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(3)}
                 >
@@ -200,21 +215,6 @@ export default function PinecrestDrPage() {
                       </svg>
                     </div>
                   </div>
-                </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg"
-                >
-                  <GoogleMapComponent
-                    center={pinecrestLocation}
-                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={14}
-                    markers={[
-                      {
-                        position: pinecrestLocation,
-                        title: "347 Pinecrest Drive, Gulf Harbour, Auckland 0930"
-                      }
-                    ]}
-                  />
                 </div>
               </div>
             </div>
