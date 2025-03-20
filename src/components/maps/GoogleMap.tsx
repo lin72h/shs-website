@@ -60,7 +60,8 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
     rotateControl: false,
     scaleControl: false,
     disableDefaultUI: true,
-    disableDoubleClickZoom: false
+    disableDoubleClickZoom: false,
+    gestureHandling: 'greedy'
   };
 
   return isLoaded ? (
