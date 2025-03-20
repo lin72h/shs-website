@@ -96,6 +96,10 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
             zoomControl: false,
             motionTracking: false,
             motionTrackingControl: false,
+            linksControl: false,
+            clickToGo: true,
+            scrollwheel: false,
+            disableDefaultUI: true,
             pov: {
               heading: heading,
               pitch: pitch
