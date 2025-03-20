@@ -49,10 +49,12 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControl: true,
-    zoomControlOptions: {
-      position: 7 // RIGHT_CENTER
-    }
+    zoomControl: false,
+    panControl: false,
+    rotateControl: false,
+    scaleControl: false,
+    disableDefaultUI: true,
+    disableDoubleClickZoom: false
   };
 
   return isLoaded ? (
