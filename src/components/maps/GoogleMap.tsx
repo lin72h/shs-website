@@ -25,6 +25,7 @@ interface GoogleMapComponentProps {
   streetView?: boolean;
   heading?: number;
   pitch?: number;
+  enableControls?: boolean;
 }
 
 const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
@@ -34,7 +35,8 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
   markers = [],
   streetView = false,
   heading = 0,
-  pitch = 0
+  pitch = 0,
+  enableControls = false
 }) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
@@ -51,17 +53,54 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
     setMap(null);
   }, []);
 
+  // Set map options based on whether controls are enabled
   const mapOptions = {
-    mapTypeControl: false,
-    streetViewControl: false,
-    fullscreenControl: false,
-    zoomControl: false,
+    mapTypeControl: enableControls,
+    streetViewControl: enableControls,
+    fullscreenControl: enableControls,
+    zoomControl: enableControls,
     panControl: false,
-    rotateControl: false,
-    scaleControl: false,
-    disableDefaultUI: true,
+    rotateControl: enableControls,
+    scaleControl: enableControls,
+    disableDefaultUI: !enableControls,
     disableDoubleClickZoom: false,
-    gestureHandling: 'greedy'
+    gestureHandling: 'greedy',
+    // Configure positions for controls when enabled
+    ...(enableControls && {
+      mapTypeControlOptions: {
+        position: 3, // RIGHT_TOP
+      },
+      zoomControlOptions: {
+        position: 9, // RIGHT_BOTTOM
+      },
+      fullscreenControlOptions: {
+        position: 3, // RIGHT_TOP
+      }
+    })
+  };
+
+  // Street view options
+  const streetViewOptions = {
+    position: {
+      lat: center.lat,
+      lng: center.lng
+    },
+    visible: true,
+    enableCloseButton: enableControls,
+    addressControl: enableControls,
+    fullscreenControl: enableControls,
+    panControl: enableControls,
+    zoomControl: enableControls,
+    motionTracking: false,
+    motionTrackingControl: enableControls,
+    linksControl: enableControls,
+    clickToGo: true,
+    scrollwheel: true,
+    disableDefaultUI: !enableControls,
+    pov: {
+      heading: heading,
+      pitch: pitch
+    }
   };
 
   return isLoaded ? (
@@ -84,28 +123,7 @@ const GoogleMapComponent: React.FC<GoogleMapComponentProps> = ({
       }
       {streetView && (
         <StreetViewPanorama
-          options={{
-            position: {
-              lat: center.lat,
-              lng: center.lng
-            },
-            visible: true,
-            enableCloseButton: false,
-            addressControl: false,
-            fullscreenControl: false,
-            panControl: false,
-            zoomControl: false,
-            motionTracking: false,
-            motionTrackingControl: false,
-            linksControl: false,
-            clickToGo: true,
-            scrollwheel: false,
-            disableDefaultUI: true,
-            pov: {
-              heading: heading,
-              pitch: pitch
-            }
-          }}
+          options={streetViewOptions}
         />
       )}
     </GoogleMap>

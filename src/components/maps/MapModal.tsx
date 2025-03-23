@@ -123,6 +123,7 @@ const MapModal: React.FC<MapModalProps> = ({
             streetView={isStreetView}
             heading={heading}
             pitch={pitch}
+            enableControls={true}
           />
         </div>
       </div>
