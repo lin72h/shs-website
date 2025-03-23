@@ -79,7 +79,7 @@ const MapModal: React.FC<MapModalProps> = ({
   if (!isOpen || typeof document === 'undefined') return null;
 
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70">
       {/* Backdrop */}
       <div 
         className="absolute inset-0" 
