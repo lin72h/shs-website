@@ -82,6 +82,12 @@ export const navbarData: NavbarItem[] = [
         href: "building-construction/projects/parkway-drive-rosedale",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "30 Westgate Drive",
+        href: "building-construction/projects/westgate-dr",
+        external: false,
+      },
     ],
   },
 ];
