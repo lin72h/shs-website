@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 import GoogleMapComponent from '@/components/maps/GoogleMap';
+import StaticMapThumbnail from '@/components/maps/StaticMapThumbnail'; 
+import MapModal from '@/components/maps/MapModal';
 
 // 347 Pinecrest Dr images configuration
 const pinecrestImages = [
@@ -30,7 +32,9 @@ const pinecrestImages = [
 export default function PinecrestDrPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+  const [isStreetViewModalOpen, setIsStreetViewModalOpen] = useState(false);
+  
   const openGallery = (index: number) => {
     setCurrentImageIndex(index);
     setIsGalleryOpen(true);
@@ -47,6 +51,9 @@ export default function PinecrestDrPage() {
     lat: -36.6249731,
     lng: 174.8017324
   };
+
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
+  const projectTitle = "347 Pinecrest Dr Residence";
 
   return (
     <>
@@ -189,31 +196,22 @@ export default function PinecrestDrPage() {
                     </div>
                   </div>
                 </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg"
-                >
-                  <GoogleMapComponent
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
                     center={pinecrestLocation}
-                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={15}
-                    markers={[
-                      {
-                        position: pinecrestLocation,
-                        title: "347 Pinecrest Drive, Gulf Harbour, Auckland 0930"
-                      }
-                    ]}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsMapModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={false}
                   />
                 </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg"
-                >
-                  <GoogleMapComponent
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
                     center={streetViewLocation}
-                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={15}
-                    streetView={true}
-                    heading={310}
-                    pitch={0}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsStreetViewModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={true}
                   />
                 </div>
               </div>
@@ -248,7 +246,8 @@ export default function PinecrestDrPage() {
                       <h5 className="font-semibold text-dark">Open Living Concept</h5>
                     </div>
                     <p className="pl-11 text-sm text-body-color">
-                      Seamless flow between kitchen, dining and living areas for modern family living.
+                      The home features an open floor plan that connects the kitchen, dining, and living areas, 
+                      creating an expansive, light-filled space perfect for both everyday living and entertaining.
                     </p>
                   </div>
                   <div className="rounded-lg bg-gray-50 p-4">
@@ -256,10 +255,11 @@ export default function PinecrestDrPage() {
                       <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">
                         <span>2</span>
                       </div>
-                      <h5 className="font-semibold text-dark">Natural Light Focus</h5>
+                      <h5 className="font-semibold text-dark">Natural Light Maximization</h5>
                     </div>
                     <p className="pl-11 text-sm text-body-color">
-                      Strategic placement of large windows to maximize daylight throughout the home.
+                      Strategic placement of large windows and skylights throughout the home bring in abundant 
+                      natural light, reducing the need for artificial lighting during daylight hours.
                     </p>
                   </div>
                   <div className="rounded-lg bg-gray-50 p-4">
@@ -267,10 +267,11 @@ export default function PinecrestDrPage() {
                       <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">
                         <span>3</span>
                       </div>
-                      <h5 className="font-semibold text-dark">Premium Finishes</h5>
+                      <h5 className="font-semibold text-dark">Energy-Efficient Systems</h5>
                     </div>
                     <p className="pl-11 text-sm text-body-color">
-                      High-quality materials and detailed craftwork in every room of the home.
+                      The home includes high-efficiency HVAC systems, LED lighting throughout, 
+                      and proper insulation to minimize energy consumption and environmental impact.
                     </p>
                   </div>
                 </div>
@@ -323,7 +324,7 @@ export default function PinecrestDrPage() {
         </div>
       </section>
 
-      {/* Image Gallery Component */}
+      {/* Image Gallery Modal */}
       {isGalleryOpen && (
         <ImageGallery
           images={pinecrestImages}
@@ -332,6 +333,34 @@ export default function PinecrestDrPage() {
           initialImageIndex={currentImageIndex}
         />
       )}
+
+      {/* Map Modal */}
+      <MapModal
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+        center={pinecrestLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={false}
+        markers={[
+          {
+            position: pinecrestLocation,
+            title: "347 Pinecrest Drive, Gulf Harbour, Auckland 0930"
+          }
+        ]}
+      />
+
+      {/* Street View Modal */}
+      <MapModal
+        isOpen={isStreetViewModalOpen}
+        onClose={() => setIsStreetViewModalOpen(false)}
+        center={streetViewLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={true}
+        heading={310}
+        pitch={0}
+      />
     </>
   );
 } 
