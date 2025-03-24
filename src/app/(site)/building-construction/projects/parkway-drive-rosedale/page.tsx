@@ -39,7 +39,7 @@ export default function ParkwayDrivePage() {
     setIsInteriorGalleryOpen(true);
   };
 
-  // Coordinates for 1 Parkway Drive, Rosedale, Auckland
+  // Coordinates for 1 Parkway Dr, Auckland
   const parkwayDriveLocation = {
     lat: -36.746212,
     lng: 174.737122
@@ -52,14 +52,14 @@ export default function ParkwayDrivePage() {
   };
 
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
-  const projectTitle = "1 Parkway Drive Office Building";
+  const projectTitle = "1 Parkway Dr Office Building";
 
   return (
     <>
       <PageTitle
-        pageTitle="1 Parkway Drive Office Building"
-        pageDescription="Commercial office development with contemporary design in Rosedale, Auckland"
-        breadcrumbTitle="Building Construction / 1 Parkway Drive"
+        pageTitle="1 Parkway Dr Office Building"
+        pageDescription="Commercial office development with contemporary design in Auckland"
+        breadcrumbTitle="Building Construction / 1 Parkway Dr"
       />
 
       {/* Project Content */}
@@ -70,7 +70,7 @@ export default function ParkwayDrivePage() {
             <div className="order-2 lg:order-1 flex flex-col space-y-6 pt-4 lg:pt-0">
               <h3 className="text-2xl font-bold text-dark">Commercial Building Excellence</h3>
               <p className="text-base leading-relaxed text-body-color">
-                Located at 1 Parkway Drive in Rosedale, Auckland, this commercial office building project 
+                Located at 1 Parkway Dr in Auckland, this commercial office building project 
                 demonstrates our expertise in modern commercial construction. The project featured state-of-the-art 
                 design, energy-efficient solutions, and flexible office spaces to meet the growing demands 
                 of businesses in Auckland&apos;s North Shore.
@@ -84,7 +84,7 @@ export default function ParkwayDrivePage() {
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span>Location: 1 Parkway Drive, Rosedale</span>
+                      <span>Location: 1 Parkway Dr, Auckland</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <svg className="h-5 w-5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -353,7 +353,7 @@ export default function ParkwayDrivePage() {
         markers={[
           {
             position: parkwayDriveLocation,
-            title: "1 Parkway Drive, Rosedale, Auckland"
+            title: "1 Parkway Dr, Auckland"
           }
         ]}
       />
