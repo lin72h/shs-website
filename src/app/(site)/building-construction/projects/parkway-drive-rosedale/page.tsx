@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
+import StaticMapThumbnail from '@/components/maps/StaticMapThumbnail'; 
+import MapModal from '@/components/maps/MapModal';
 
 // 1 Parkway Drive, Rosedale images configuration
 const parkwayDriveImages = [
@@ -24,6 +26,8 @@ export default function ParkwayDrivePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isInteriorGalleryOpen, setIsInteriorGalleryOpen] = useState(false);
   const [currentInteriorImageIndex, setCurrentInteriorImageIndex] = useState(0);
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+  const [isStreetViewModalOpen, setIsStreetViewModalOpen] = useState(false);
 
   const openGallery = (index: number) => {
     setCurrentImageIndex(index);
@@ -34,6 +38,21 @@ export default function ParkwayDrivePage() {
     setCurrentInteriorImageIndex(index);
     setIsInteriorGalleryOpen(true);
   };
+
+  // Coordinates for 1 Parkway Drive, Rosedale, Auckland
+  const parkwayDriveLocation = {
+    lat: -36.746212,
+    lng: 174.737122
+  };
+  
+  // Street view specific coordinates (slightly adjusted for better view)
+  const streetViewLocation = {
+    lat: -36.746212,
+    lng: 174.737122
+  };
+
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
+  const projectTitle = "1 Parkway Drive Office Building";
 
   return (
     <>
@@ -176,6 +195,24 @@ export default function ParkwayDrivePage() {
                     </div>
                   </div>
                 </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
+                    center={parkwayDriveLocation}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsMapModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={false}
+                  />
+                </div>
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
+                    center={streetViewLocation}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsStreetViewModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={true}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -304,6 +341,34 @@ export default function ParkwayDrivePage() {
           initialImageIndex={currentInteriorImageIndex}
         />
       )}
+
+      {/* Map Modal */}
+      <MapModal
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+        center={parkwayDriveLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={false}
+        markers={[
+          {
+            position: parkwayDriveLocation,
+            title: "1 Parkway Drive, Rosedale, Auckland"
+          }
+        ]}
+      />
+
+      {/* Street View Modal */}
+      <MapModal
+        isOpen={isStreetViewModalOpen}
+        onClose={() => setIsStreetViewModalOpen(false)}
+        center={streetViewLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={true}
+        heading={310}
+        pitch={0}
+      />
     </>
   );
 } 
