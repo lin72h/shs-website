@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
-import GoogleMapComponent from '@/components/maps/GoogleMap';
+import StaticMapThumbnail from '@/components/maps/StaticMapThumbnail';
+import MapModal from '@/components/maps/MapModal';
 
 // Westgate Dr exterior images configuration
 const westgateExteriorImages = [
@@ -27,6 +28,8 @@ export default function WestgateDrPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isInteriorGalleryOpen, setIsInteriorGalleryOpen] = useState(false);
   const [currentInteriorImageIndex, setCurrentInteriorImageIndex] = useState(0);
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+  const [isStreetViewModalOpen, setIsStreetViewModalOpen] = useState(false);
 
   const openGallery = (index: number) => {
     setCurrentImageIndex(index);
@@ -49,6 +52,9 @@ export default function WestgateDrPage() {
     lat: -36.8129276,
     lng: 174.6080894
   };
+
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
+  const projectTitle = "30 Westgate Dr Commercial Complex";
 
   return (
     <>
@@ -191,31 +197,22 @@ export default function WestgateDrPage() {
                     </div>
                   </div>
                 </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg"
-                >
-                  <GoogleMapComponent
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
                     center={westgateLocation}
-                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={15}
-                    markers={[
-                      {
-                        position: westgateLocation,
-                        title: "30 Westgate Drive, Westgate, Auckland 0614"
-                      }
-                    ]}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsMapModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={false}
                   />
                 </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg"
-                >
-                  <GoogleMapComponent
+                <div className="relative h-[200px] overflow-hidden rounded-lg">
+                  <StaticMapThumbnail
                     center={streetViewLocation}
-                    apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
-                    zoom={15}
-                    streetView={true}
-                    heading={310}
-                    pitch={0}
+                    projectTitle={projectTitle}
+                    onClick={() => setIsStreetViewModalOpen(true)}
+                    apiKey={apiKey}
+                    isStreetView={true}
                   />
                 </div>
               </div>
@@ -346,6 +343,34 @@ export default function WestgateDrPage() {
           initialImageIndex={currentInteriorImageIndex}
         />
       )}
+
+      {/* Map Modal */}
+      <MapModal
+        isOpen={isMapModalOpen}
+        onClose={() => setIsMapModalOpen(false)}
+        center={westgateLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={false}
+        markers={[
+          {
+            position: westgateLocation,
+            title: "30 Westgate Drive, Westgate, Auckland 0614"
+          }
+        ]}
+      />
+
+      {/* Street View Modal */}
+      <MapModal
+        isOpen={isStreetViewModalOpen}
+        onClose={() => setIsStreetViewModalOpen(false)}
+        center={streetViewLocation}
+        projectTitle={projectTitle}
+        apiKey={apiKey}
+        isStreetView={true}
+        heading={310}
+        pitch={0}
+      />
     </>
   );
 } 
