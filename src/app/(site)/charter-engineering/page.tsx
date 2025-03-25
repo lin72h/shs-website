@@ -98,6 +98,70 @@ export default function CharterEngineering() {
         </div>
       </section>
 
+      {/* Featured Engineering Projects */}
+      <section className="pb-20">
+        <div className="container">
+          <SectionTitle
+            mainTitle="OUR PROJECTS"
+            title="Featured Engineering Projects"
+            paragraph="Explore our successful chartered civil engineering projects"
+            center={true}
+            marginBottom="60px"
+          />
+          
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+            {/* Maderia Lane Project */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="mb-0 overflow-hidden rounded-lg">
+                <Link href="/charter-engineering/projects/maderia-lane">
+                  <div className="relative h-[300px] w-full">
+                    <Image
+                      src="/images/placeholder-image.jpg"
+                      alt="Maderia Lane Development"
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
+                    <div className="absolute bottom-0 left-0 w-full">
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                        <div>
+                          <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Maderia Lane</h3>
+                          <p className="text-xs sm:text-sm text-white opacity-90">Massey, Auckland</p>
+                        </div>
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="p-6 pt-4">
+                <div className="flex justify-between">
+                  <p className="text-base text-body-color">
+                    Land subdivision expertise in a residential property, transforming one lot into two.
+                  </p>
+                  <span className="ml-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary whitespace-nowrap">1 → 2 Lots</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* More Projects CTA */}
+          <div className="mt-12 text-center">
+            <p className="mb-6 text-lg text-body-color">
+              Interested in exploring how our chartered civil engineering expertise can benefit your project?
+            </p>
+            <Link
+              href="/contact"
+              className="rounded-md bg-primary px-8 py-4 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-primary/90"
+            >
+              Contact Us About Your Project
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Civil Engineering Services Section */}
       <section className="bg-gray-50 pb-20 pt-16">
         <div className="container">
