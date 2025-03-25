@@ -116,7 +116,7 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/maderia-lane">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/placeholder-image.jpg"
+                      src="/images/news/news-1.jpg"
                       alt="Maderia Lane Development"
                       fill
                       className="object-cover transition duration-500 group-hover:scale-110"

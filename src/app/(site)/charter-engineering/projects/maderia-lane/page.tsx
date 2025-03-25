@@ -10,12 +10,12 @@ import ImageGallery from '@/components/ImageGallery';
 // Maderia Lane images configuration
 // Replace these with actual images when available
 const maderiaLaneImages = [
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Development Aerial View' },
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Subdivision Plan' },
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Engineering Work' },
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Infrastructure' },
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Construction Progress' },
-  { src: '/images/placeholder-image.jpg', alt: 'Maderia Lane Final Development' },
+  { src: '/images/news/news-1.jpg', alt: 'Maderia Lane Development Aerial View' },
+  { src: '/images/news/news-2.jpg', alt: 'Maderia Lane Subdivision Plan' },
+  { src: '/images/news/news-3.jpg', alt: 'Maderia Lane Engineering Work' },
+  { src: '/images/news/news-4.jpg', alt: 'Maderia Lane Infrastructure' },
+  { src: '/images/news/news-5.jpg', alt: 'Maderia Lane Construction Progress' },
+  { src: '/images/news/news-6.jpg', alt: 'Maderia Lane Final Development' },
 ];
 
 export default function MaderiaLanePage() {
