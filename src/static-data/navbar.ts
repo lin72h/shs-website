@@ -5,8 +5,22 @@ export const navbarData: NavbarItem[] = [
   {
     id: uuid(),
     title: "Chartered Civil Engineering",
-    href: "charter-engineering",
+    href: "",
     external: false,
+    submenu: [
+      {
+        id: uuid(),
+        title: "Overview",
+        href: "charter-engineering",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Maderia Lane",
+        href: "charter-engineering/projects/maderia-lane",
+        external: false,
+      },
+    ],
   },
   {
     id: uuid(),
