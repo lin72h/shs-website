@@ -30,8 +30,8 @@ export default function MaderiaLanePage() {
   return (
     <>
       <PageTitle
-        pageTitle="Maderia Lane Subdivision"
-        pageDescription="Land subdivision project in Massey, transforming one lot into two"
+        pageTitle="Maderia Lane"
+        pageDescription="Land subdivision project in Massey, Auckland"
         breadcrumbTitle="Chartered Engineering / Maderia Lane"
       />
 
@@ -41,7 +41,7 @@ export default function MaderiaLanePage() {
           <div className="grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-2">
             {/* Project Overview - Second on mobile, First on desktop */}
             <div className="order-2 lg:order-1 flex flex-col space-y-6 pt-4 lg:pt-0">
-              <h3 className="text-2xl font-bold text-dark">Land Subdivision Excellence</h3>
+              <h3 className="text-2xl font-bold text-dark">Civil Engineering Excellence</h3>
               <p className="text-base leading-relaxed text-body-color">
                 Located at 6 Maderia Lane in Massey, Auckland, this precision land subdivision project 
                 showcases our expertise in chartered civil engineering. The project involved transforming 
@@ -196,14 +196,6 @@ export default function MaderiaLanePage() {
 
           {/* Project Details Section */}
           <div className="mt-16">
-            <SectionTitle
-              mainTitle="ENGINEERING DETAILS"
-              title="Subdivision Process"
-              paragraph="The technical aspects of transforming one lot into two"
-              center={true}
-              marginBottom="60px"
-            />
-
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-lg bg-white p-8 shadow-lg">
                 <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
