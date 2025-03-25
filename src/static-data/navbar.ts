@@ -20,6 +20,18 @@ export const navbarData: NavbarItem[] = [
         href: "charter-engineering/projects/maderia-lane",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "Lewis St.",
+        href: "charter-engineering/projects/lewis-st-blockhouse-bay",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Cook Street",
+        href: "charter-engineering/projects/cook-street-howick",
+        external: false,
+      },
     ],
   },
   {
