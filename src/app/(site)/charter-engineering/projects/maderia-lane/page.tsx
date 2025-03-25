@@ -205,7 +205,7 @@ export default function MaderiaLanePage() {
                 </div>
                 <h3 className="mb-4 text-xl font-bold text-dark">Site Assessment</h3>
                 <p className="text-body-color">
-                  Comprehensive evaluation of the site's topography, soil conditions, and existing infrastructure 
+                  Comprehensive evaluation of the site&apos;s topography, soil conditions, and existing infrastructure 
                   to determine optimal subdivision design and identify potential challenges.
                 </p>
               </div>
@@ -278,10 +278,10 @@ export default function MaderiaLanePage() {
               <svg className="mx-auto mb-6 h-12 w-12 text-primary/40" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <p className="mb-6 text-lg italic text-gray-700">
-                "The SHS Engineering team delivered exceptional results for our Maderia Lane subdivision project. 
-                Their technical expertise and attention to detail ensured a smooth process from initial assessment 
-                through to final approval. The project was completed efficiently and met all our requirements."
+              <p className="mb-6 font-medium italic text-body-color">
+                &quot;Charter Engineering&apos;s work on the Maderia Lane subdivision exceeded our expectations. Their innovative approach to 
+                stormwater management and careful consideration of the site&apos;s natural features resulted in a development that 
+                both meets our business objectives and preserves the area&apos;s environmental integrity.&quot;
               </p>
               <div>
                 <h4 className="font-semibold text-dark">Property Owner</h4>

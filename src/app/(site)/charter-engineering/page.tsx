@@ -137,11 +137,13 @@ export default function CharterEngineering() {
                 </Link>
               </div>
               <div className="p-6 pt-4">
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <p className="text-base text-body-color">
                     Land subdivision expertise in a residential property, transforming one lot into two.
                   </p>
-                  <span className="ml-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary whitespace-nowrap">1 → 2 Lots</span>
+                  <div className="ml-2 flex-shrink-0">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">1→2</span>
+                  </div>
                 </div>
               </div>
             </div>
