@@ -230,7 +230,7 @@ export default function CookStreetHowickPage() {
                 <h3 className="mb-4 text-xl font-bold text-dark">Environmental Compliance</h3>
                 <p className="text-body-color">
                   Rigorous adherence to heightened coastal environmental standards, with specialized consent applications 
-                  and documentation to address Auckland Council's coastal development requirements.
+                  and documentation to address Auckland Council&apos;s coastal development requirements.
                 </p>
               </div>
               <div className="rounded-lg bg-white p-8 shadow-lg">
@@ -254,7 +254,7 @@ export default function CookStreetHowickPage() {
                 <h3 className="mb-4 text-xl font-bold text-dark">Community Integration</h3>
                 <p className="text-body-color">
                   Thoughtful engagement with the Howick community and historic preservation groups to ensure 
-                  the project enhanced rather than detracted from the neighborhood's established character.
+                  the project enhanced rather than detracted from the neighborhood&apos;s established character.
                 </p>
               </div>
               <div className="rounded-lg bg-white p-8 shadow-lg">
@@ -279,9 +279,9 @@ export default function CookStreetHowickPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="mb-6 font-medium italic text-body-color">
-                &quot;The engineering team demonstrated exceptional care for Howick's coastal environment and historic character 
+                &quot;The engineering team demonstrated exceptional care for Howick&apos;s coastal environment and historic character 
                 throughout this project. Their innovative stormwater solutions and attention to heritage considerations allowed us 
-                to create four premium residential lots while enhancing rather than compromising the neighborhood's special qualities.&quot;
+                to create four premium residential lots while enhancing rather than compromising the neighborhood&apos;s special qualities.&quot;
               </p>
               <div>
                 <h4 className="font-semibold text-dark">Coastal Property Developer</h4>
