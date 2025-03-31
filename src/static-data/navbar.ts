@@ -38,6 +38,24 @@ export const navbarData: NavbarItem[] = [
         href: "charter-engineering/projects/rose-bank-rd-avondale",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "Compass Way",
+        href: "charter-engineering/projects/compass-way-halfmoon-bay",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Jillian Drive",
+        href: "charter-engineering/projects/jillian-drive-ranui",
+        external: false,
+      },
+      {
+        id: uuid(),
+        title: "Punjab Street",
+        href: "charter-engineering/projects/punjab-street-khandallah",
+        external: false,
+      },
     ],
   },
   {
