@@ -68,13 +68,13 @@ export default function Navbar() {
         className={`${stickyMenu ? "sticky-navbar shadow-lg bg-white/95 backdrop-blur-sm" : ""} header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent transition-all duration-300`}
       >
         <div className="mx-auto w-full px-6 xl:container">
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex items-center justify-between py-3 xl:py-4">
             <div className="w-52 max-w-full px-4 xl:w-60">
               <Link href="/" className="header-logo block w-full py-2 xl:py-3">
                 <Image
-                  src="/images/logo/shs-logo2.PNG"
+                  src="/images/logo/shs-logo4.PNG"
                   alt="logo"
-                  className="w-full h-auto max-w-[280px] min-w-[180px] -mt-3"
+                  className="w-full h-auto max-w-[280px] min-w-[180px] -mt-3 max-sm:min-w-[100px] max-sm:max-w-[140px] max-md:max-w-[160px] max-sm:mt-0"
                   width={280}
                   height={112}
                   priority
