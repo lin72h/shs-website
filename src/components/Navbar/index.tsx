@@ -70,13 +70,13 @@ export default function Navbar() {
         <div className="mx-auto w-full px-6 xl:container">
           <div className="relative flex items-center justify-between">
             <div className="w-52 max-w-full px-4 xl:w-60">
-              <Link href="/" className="header-logo block w-full py-6 xl:py-7">
+              <Link href="/" className="header-logo block w-full py-2 xl:py-3">
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/shs-logo2.PNG"
                   alt="logo"
-                  className="w-full h-auto max-w-[180px] min-w-[100px]"
-                  width={180}
-                  height={72}
+                  className="w-full h-auto max-w-[280px] min-w-[180px] -mt-3"
+                  width={280}
+                  height={112}
                   priority
                 />
               </Link>
