@@ -32,6 +32,12 @@ export const navbarData: NavbarItem[] = [
         href: "charter-engineering/projects/cook-street-howick",
         external: false,
       },
+      {
+        id: uuid(),
+        title: "Rose Bank Rd",
+        href: "charter-engineering/projects/rose-bank-rd-avondale",
+        external: false,
+      },
     ],
   },
   {

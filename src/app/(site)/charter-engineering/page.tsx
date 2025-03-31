@@ -223,6 +223,44 @@ export default function CharterEngineering() {
                 </div>
               </div>
             </div>
+
+            {/* Rose Bank Rd, Avondale Project */}
+            <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="mb-0 overflow-hidden rounded-lg">
+                <Link href="/charter-engineering/projects/rose-bank-rd-avondale">
+                  <div className="relative h-[300px] w-full">
+                    <Image
+                      src="/images/news/news-4.jpg"
+                      alt="Rose Bank Rd Development"
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
+                    <div className="absolute bottom-0 left-0 w-full">
+                      <div className="backdrop-blur-sm bg-black/30 backdrop-fallback p-4 sm:p-5 flex justify-between items-center">
+                        <div>
+                          <h3 className="mb-0.5 sm:mb-1 text-lg sm:text-xl font-bold text-white">Rose Bank Rd</h3>
+                          <p className="text-xs sm:text-sm text-white opacity-90">Avondale, Auckland</p>
+                        </div>
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6 text-white flex-shrink-0 opacity-80 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="p-6 pt-4">
+                <div className="flex justify-between items-center">
+                  <p className="text-base text-body-color">
+                    Major subdivision development transforming one residential lot into five separate properties.
+                  </p>
+                  <div className="ml-2 flex-shrink-0">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">1→5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* More Projects CTA */}
