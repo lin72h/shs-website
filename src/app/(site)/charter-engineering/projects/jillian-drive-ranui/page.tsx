@@ -8,14 +8,66 @@ import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 
 // Jillian Drive images configuration
-// Replace these with actual images when available
+// Real project images from civil-projects/project-6 folder
 const jillianDriveImages = [
-  { src: '/images/news/news-2.jpg', alt: 'Jillian Drive Development Aerial View' },
-  { src: '/images/news/news-3.jpg', alt: 'Jillian Drive Subdivision Plan' },
-  { src: '/images/news/news-4.jpg', alt: 'Jillian Drive Engineering Work' },
-  { src: '/images/news/news-5.jpg', alt: 'Jillian Drive Infrastructure' },
-  { src: '/images/news/news-6.jpg', alt: 'Jillian Drive Construction Progress' },
-  { src: '/images/news/news-1.jpg', alt: 'Jillian Drive Final Development' },
+  // Main images for primary display
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.54.09.png', 
+    alt: 'Jillian Drive Subdivision - Main Engineering Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.35.png', 
+    alt: 'Jillian Drive Development - Lot Configuration Layout' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.42.png', 
+    alt: 'Jillian Drive Project - Infrastructure Design' 
+  },
+  // Additional engineering plans
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.46.png', 
+    alt: 'Jillian Drive Subdivision - Services Layout' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.50.png', 
+    alt: 'Jillian Drive Development - Detailed Engineering Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.53.png', 
+    alt: 'Jillian Drive Project - Site Assessment Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.57.png', 
+    alt: 'Jillian Drive Subdivision - Stormwater Management Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.54.01.png', 
+    alt: 'Jillian Drive Development - Access and Driveway Planning' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.54.05.png', 
+    alt: 'Jillian Drive Project - Utilities Connection Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.54.13.png', 
+    alt: 'Jillian Drive Subdivision - Detailed Site Overview' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.56.24.png', 
+    alt: 'Jillian Drive Project - Surveying Reference Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.56.28.png', 
+    alt: 'Jillian Drive Development - Construction Phase Planning' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.56.31.png', 
+    alt: 'Jillian Drive Subdivision - Final Implementation Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.53.24.png', 
+    alt: 'Jillian Drive Project - Planning Reference Document' 
+  }
 ];
 
 export default function JillianDrivePage() {
@@ -148,14 +200,15 @@ export default function JillianDrivePage() {
             <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
-                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                className="relative h-[350px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => openGallery(0)}
               >
                 <Image
                   src={jillianDriveImages[0].src}
                   alt={jillianDriveImages[0].alt}
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-100"
+                  priority
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
                   <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
@@ -167,30 +220,64 @@ export default function JillianDrivePage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(1)}
                 >
                   <Image
                     src={jillianDriveImages[1].src}
                     alt={jillianDriveImages[1].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(2)}
                 >
                   <Image
                     src={jillianDriveImages[2].src}
                     alt={jillianDriveImages[2].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Engineering Plans Gallery */}
+          <div className="mt-12">
+            <h3 className="mb-8 text-center text-2xl font-bold text-dark">Engineering Plans</h3>
+            <p className="mb-8 text-center text-body-color mx-auto max-w-3xl">
+              These comprehensive engineering plans detail our approach to the Jillian Drive subdivision project. 
+              The drawings illustrate the technical aspects of transforming a single residential lot into four 
+              separate properties, including lot configuration, infrastructure design, stormwater management, 
+              and utility planning.
+            </p>
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              {jillianDriveImages.slice(3, 11).map((image, index) => (
+                <div 
+                  key={`plan-${index + 3}`}
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openGallery(index + 3)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-20">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white/80 p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -298,6 +385,24 @@ export default function JillianDrivePage() {
             >
               Discuss Your Project With Us
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Info Section - Provides context for the engineering visualizations */}
+      <section className="pb-12 pt-0">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-lg bg-gray-50 p-6">
+              <h4 className="mb-3 text-lg font-semibold text-dark">About These Engineering Plans</h4>
+              <p className="text-sm text-body-color">
+                The engineering plans shown above detail our comprehensive approach to the Jillian Drive subdivision project in Ranui, Auckland. 
+                These technical drawings showcase the complex planning and design work required for transforming a single residential lot into 
+                four separate properties. The plans address critical aspects including lot boundary configuration, shared access design, 
+                stormwater management systems, and utility service connections. Each drawing represents a key component of our engineering 
+                solution that balances optimal land utilization with compliance to Auckland Council regulations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
