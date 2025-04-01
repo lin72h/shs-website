@@ -8,14 +8,54 @@ import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 
 // Lewis St images configuration
-// Replace these with actual images when available
+// Real project images from civil-projects/project-2 folder
 const lewisStImages = [
-  { src: '/images/news/news-1.jpg', alt: 'Lewis Street Development Aerial View' },
-  { src: '/images/news/news-2.jpg', alt: 'Lewis Street Subdivision Plan' },
-  { src: '/images/news/news-3.jpg', alt: 'Lewis Street Engineering Work' },
-  { src: '/images/news/news-4.jpg', alt: 'Lewis Street Infrastructure' },
-  { src: '/images/news/news-5.jpg', alt: 'Lewis Street Construction Progress' },
-  { src: '/images/news/news-6.jpg', alt: 'Lewis Street Final Development' },
+  // Priority images with x_ prefix first
+  { 
+    src: '/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.32.43.png', 
+    alt: 'Lewis Street Subdivision - Aerial Site Plan Overview' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.32.54.png', 
+    alt: 'Lewis Street Development - Detailed Engineering Layout' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.32.59.png', 
+    alt: 'Lewis Street Project - Infrastructure Design Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.33.03.png', 
+    alt: 'Lewis Street Subdivision - Comprehensive Site Development Plan' 
+  },
+  // Other supporting images
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.31.39.png', 
+    alt: 'Lewis Street Project - Initial Site Assessment' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.32.04.png', 
+    alt: 'Lewis Street Project - Lot Boundary Specifications' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.32.11.png', 
+    alt: 'Lewis Street Development - Stormwater Management Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.32.18.png', 
+    alt: 'Lewis Street Subdivision - Access Road Configuration' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.32.27.png', 
+    alt: 'Lewis Street Project - Utility Services Layout' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.32.50.png', 
+    alt: 'Lewis Street Development - Construction Phase Planning' 
+  },
+  { 
+    src: '/images/civil-projects/project-2/Screenshot 2025-04-01 at 18.33.11.png', 
+    alt: 'Lewis Street Subdivision - Final Implementation Design' 
+  },
 ];
 
 export default function LewisStBlockhouseBayPage() {
@@ -148,14 +188,15 @@ export default function LewisStBlockhouseBayPage() {
             <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
-                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                className="relative h-[350px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => openGallery(0)}
               >
                 <Image
                   src={lewisStImages[0].src}
                   alt={lewisStImages[0].alt}
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-100"
+                  priority
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
                   <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
@@ -167,28 +208,69 @@ export default function LewisStBlockhouseBayPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(1)}
                 >
                   <Image
                     src={lewisStImages[1].src}
                     alt={lewisStImages[1].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(2)}
                 >
                   <Image
                     src={lewisStImages[2].src}
                     alt={lewisStImages[2].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
+                </div>
+              </div>
+              {/* Additional Image Previews */}
+              <div className="grid grid-cols-3 gap-4">
+                <div 
+                  className="relative h-[120px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openGallery(3)}
+                >
+                  <Image
+                    src={lewisStImages[3].src}
+                    alt={lewisStImages[3].alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
+                </div>
+                <div 
+                  className="relative h-[120px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openGallery(4)}
+                >
+                  <Image
+                    src={lewisStImages[4].src}
+                    alt={lewisStImages[4].alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
+                </div>
+                <div 
+                  className="relative h-[120px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02] group"
+                  onClick={() => openGallery(5)}
+                >
+                  <Image
+                    src={lewisStImages[5].src}
+                    alt={lewisStImages[5].alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 flex items-center justify-center">
+                    <span className="text-white font-medium text-sm">+{lewisStImages.length - 5} more</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -311,6 +393,23 @@ export default function LewisStBlockhouseBayPage() {
           initialImageIndex={currentImageIndex}
         />
       )}
+
+      {/* Image Info Section - Provides context for the engineering visualizations */}
+      <section className="pb-12 pt-0">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-lg bg-gray-50 p-6">
+              <h4 className="mb-3 text-lg font-semibold text-dark">About These Engineering Visualizations</h4>
+              <p className="text-sm text-body-color">
+                The images above showcase various technical aspects of the Lewis Street subdivision project. These engineering 
+                visualizations include site plans, infrastructure designs, utility layouts, and development configurations that 
+                were essential to successfully transforming a single property into four distinct residential lots. Each drawing 
+                represents a specific element of our comprehensive civil engineering approach.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
