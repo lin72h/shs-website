@@ -8,14 +8,12 @@ import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 
 // Maderia Lane images configuration
-// Replace these with actual images when available
+// Real project image from civil-projects/project-1 folder
 const maderiaLaneImages = [
-  { src: '/images/news/news-1.jpg', alt: 'Maderia Lane Development Aerial View' },
-  { src: '/images/news/news-2.jpg', alt: 'Maderia Lane Subdivision Plan' },
-  { src: '/images/news/news-3.jpg', alt: 'Maderia Lane Engineering Work' },
-  { src: '/images/news/news-4.jpg', alt: 'Maderia Lane Infrastructure' },
-  { src: '/images/news/news-5.jpg', alt: 'Maderia Lane Construction Progress' },
-  { src: '/images/news/news-6.jpg', alt: 'Maderia Lane Final Development' },
+  { 
+    src: '/images/civil-projects/project-1/Screenshot 2025-04-01 at 18.43.20.png', 
+    alt: 'Maderia Lane Subdivision - Engineering Plan and Layout' 
+  }
 ];
 
 export default function MaderiaLanePage() {
@@ -148,14 +146,15 @@ export default function MaderiaLanePage() {
             <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
-                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                className="relative h-[400px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => openGallery(0)}
               >
                 <Image
                   src={maderiaLaneImages[0].src}
                   alt={maderiaLaneImages[0].alt}
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-100"
+                  priority
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
                   <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
@@ -163,32 +162,6 @@ export default function MaderiaLanePage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
                     </svg>
                   </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
-                  onClick={() => openGallery(1)}
-                >
-                  <Image
-                    src={maderiaLaneImages[1].src}
-                    alt={maderiaLaneImages[1].alt}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
-                </div>
-                <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
-                  onClick={() => openGallery(2)}
-                >
-                  <Image
-                    src={maderiaLaneImages[2].src}
-                    alt={maderiaLaneImages[2].alt}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
               </div>
             </div>
@@ -311,6 +284,24 @@ export default function MaderiaLanePage() {
           initialImageIndex={currentImageIndex}
         />
       )}
+
+      {/* Image Info Section - Provides context for the engineering visualization */}
+      <section className="pb-12 pt-0">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-lg bg-gray-50 p-6">
+              <h4 className="mb-3 text-lg font-semibold text-dark">About This Engineering Plan</h4>
+              <p className="text-sm text-body-color">
+                The engineering plan above illustrates the Maderia Lane subdivision project in Massey, Auckland. 
+                This technical drawing shows the detailed layout for transforming a single residential lot into 
+                two separate properties, including boundary delineations, access considerations, and infrastructure 
+                planning. This comprehensive approach enabled the successful development of two fully-compliant 
+                residential lots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
