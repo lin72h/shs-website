@@ -8,23 +8,92 @@ import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 
 // Compass Way images configuration
-// Replace these with actual images when available
+// Real project images from civil-projects/project-5 folder
+
+// Engineering plans and technical drawings
 const compassWayImages = [
-  { src: '/images/news/news-1.jpg', alt: 'Compass Way Development Aerial View' },
-  { src: '/images/news/news-2.jpg', alt: 'Compass Way Subdivision Plan' },
-  { src: '/images/news/news-3.jpg', alt: 'Compass Way Engineering Work' },
-  { src: '/images/news/news-4.jpg', alt: 'Compass Way Infrastructure' },
-  { src: '/images/news/news-5.jpg', alt: 'Compass Way Construction Progress' },
-  { src: '/images/news/news-6.jpg', alt: 'Compass Way Final Development' },
+  // Main high-priority image
+  { 
+    src: '/images/civil-projects/project-5/x_Screenshot 2025-04-01 at 18.48.49.png', 
+    alt: 'Compass Way Development - Main Site Layout Plan' 
+  },
+  // Regular engineering images
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.09.png', 
+    alt: 'Compass Way Subdivision - Lot Boundary Layout' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.17.png', 
+    alt: 'Compass Way Development - Infrastructure Planning' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.21.png', 
+    alt: 'Compass Way Project - Utility Services Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.24.png', 
+    alt: 'Compass Way Subdivision - Access and Driveway Planning' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.26.png', 
+    alt: 'Compass Way Development - Stormwater Management Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.29.png', 
+    alt: 'Compass Way Project - Coastal Considerations Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.32.png', 
+    alt: 'Compass Way Development - Site Grading Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.37.png', 
+    alt: 'Compass Way Subdivision - Environmental Control Measures' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.40.png', 
+    alt: 'Compass Way Project - Detailed Engineering Specifications' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.45.png', 
+    alt: 'Compass Way Development - Construction Sequence Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/Screenshot 2025-04-01 at 18.49.48.png', 
+    alt: 'Compass Way Project - Final Site Layout' 
+  }
+];
+
+// 3D rendering images showing visualization of the development
+const compassWay3dImages = [
+  { 
+    src: '/images/civil-projects/project-5/3d_Screenshot 2025-04-01 at 18.48.55.png', 
+    alt: 'Compass Way 3D Visualization - Aerial Perspective' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/3d_Screenshot 2025-04-01 at 18.49.00.png', 
+    alt: 'Compass Way 3D Rendering - Development Overview' 
+  },
+  { 
+    src: '/images/civil-projects/project-5/3d_Screenshot 2025-04-01 at 18.49.04.png', 
+    alt: 'Compass Way 3D Model - Landscape Integration View' 
+  }
 ];
 
 export default function CompassWayPage() {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isRenderingGalleryOpen, setIsRenderingGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentRenderingIndex, setCurrentRenderingIndex] = useState(0);
 
   const openGallery = (index: number) => {
     setCurrentImageIndex(index);
     setIsGalleryOpen(true);
+  };
+  
+  const openRenderingGallery = (index: number) => {
+    setCurrentRenderingIndex(index);
+    setIsRenderingGalleryOpen(true);
   };
 
   return (
@@ -148,14 +217,15 @@ export default function CompassWayPage() {
             <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
-                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                className="relative h-[350px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => openGallery(0)}
               >
                 <Image
                   src={compassWayImages[0].src}
                   alt={compassWayImages[0].alt}
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-100"
+                  priority
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
                   <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
@@ -167,30 +237,91 @@ export default function CompassWayPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(1)}
                 >
                   <Image
                     src={compassWayImages[1].src}
                     alt={compassWayImages[1].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(2)}
                 >
                   <Image
                     src={compassWayImages[2].src}
                     alt={compassWayImages[2].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* 3D Renderings Section */}
+          <div className="mt-12">
+            <h3 className="mb-8 text-center text-2xl font-bold text-dark">3D Visualization</h3>
+            <p className="mb-8 text-center text-body-color mx-auto max-w-3xl">
+              These 3D renderings illustrate the Compass Way development project upon completion, 
+              showing how the engineering design translates into real-world implementation with 
+              optimized lot configurations, infrastructure integration, and coastal environmental considerations.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {compassWay3dImages.map((image, index) => (
+                <div 
+                  key={`3d-${index}`}
+                  className="relative h-[250px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openRenderingGallery(index)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-20">
+                    <div className="absolute bottom-3 right-3 rounded-full bg-white/80 p-1.5">
+                      <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Engineering Plans Gallery */}
+          <div className="mt-12">
+            <h3 className="mb-8 text-center text-2xl font-bold text-dark">Engineering Plans</h3>
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              {compassWayImages.slice(3, 11).map((image, index) => (
+                <div 
+                  key={`plan-${index + 3}`}
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  onClick={() => openGallery(index + 3)}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-contain bg-gray-100"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-20">
+                    <div className="absolute bottom-2 right-2 rounded-full bg-white/80 p-1.5">
+                      <svg className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -302,6 +433,24 @@ export default function CompassWayPage() {
         </div>
       </section>
 
+      {/* Image Info Section - Provides context for the engineering visualizations */}
+      <section className="pb-12 pt-6">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-lg bg-gray-50 p-6">
+              <h4 className="mb-3 text-lg font-semibold text-dark">About These Project Visualizations</h4>
+              <p className="text-sm text-body-color">
+                The engineering plans and 3D renderings above illustrate the Compass Way subdivision project in Halfmoon Bay, Auckland. 
+                These technical visualizations show our comprehensive approach to transforming a single residential lot into two separate 
+                properties in a coastal setting. The detailed engineering plans address specialized coastal considerations, environmental 
+                protection measures, and infrastructure requirements, while the 3D renderings provide a realistic visualization of how the 
+                completed development will integrate with the surrounding coastal landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Image Gallery Modal */}
       {isGalleryOpen && (
         <ImageGallery
@@ -309,6 +458,16 @@ export default function CompassWayPage() {
           isOpen={isGalleryOpen}
           onClose={() => setIsGalleryOpen(false)}
           initialImageIndex={currentImageIndex}
+        />
+      )}
+
+      {/* Rendering Gallery Modal */}
+      {isRenderingGalleryOpen && (
+        <ImageGallery
+          images={compassWay3dImages}
+          isOpen={isRenderingGalleryOpen}
+          onClose={() => setIsRenderingGalleryOpen(false)}
+          initialImageIndex={currentRenderingIndex}
         />
       )}
     </>
