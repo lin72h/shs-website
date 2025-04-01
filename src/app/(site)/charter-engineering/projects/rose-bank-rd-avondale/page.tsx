@@ -8,14 +8,20 @@ import { useState } from 'react';
 import ImageGallery from '@/components/ImageGallery';
 
 // Rose Bank Rd images configuration
-// Replace these with actual images when available
+// Real project images from civil-projects/project-4 folder
 const roseBankRdImages = [
-  { src: '/images/news/news-1.jpg', alt: 'Rose Bank Rd Development Aerial View' },
-  { src: '/images/news/news-2.jpg', alt: 'Rose Bank Rd Subdivision Plan' },
-  { src: '/images/news/news-3.jpg', alt: 'Rose Bank Rd Engineering Work' },
-  { src: '/images/news/news-4.jpg', alt: 'Rose Bank Rd Infrastructure' },
-  { src: '/images/news/news-5.jpg', alt: 'Rose Bank Rd Construction Progress' },
-  { src: '/images/news/news-6.jpg', alt: 'Rose Bank Rd Final Development' },
+  { 
+    src: '/images/civil-projects/project-4/Screenshot 2025-04-01 at 18.44.29.png', 
+    alt: 'Rose Bank Rd Subdivision - Main Engineering Layout Plan' 
+  },
+  { 
+    src: '/images/civil-projects/project-4/Screenshot 2025-04-01 at 18.44.35.png', 
+    alt: 'Rose Bank Rd Development - Detailed Infrastructure Design' 
+  },
+  { 
+    src: '/images/civil-projects/project-4/Screenshot 2025-04-01 at 18.44.38.png', 
+    alt: 'Rose Bank Rd Project - Utility and Services Layout' 
+  }
 ];
 
 export default function RoseBankRdPage() {
@@ -148,14 +154,15 @@ export default function RoseBankRdPage() {
             <div className="order-1 lg:order-2 grid gap-4">
               {/* Main Featured Image */}
               <div 
-                className="relative h-[300px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                className="relative h-[350px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                 onClick={() => openGallery(0)}
               >
                 <Image
                   src={roseBankRdImages[0].src}
                   alt={roseBankRdImages[0].alt}
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-100"
+                  priority
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10">
                   <div className="absolute bottom-4 right-4 rounded-full bg-white p-2">
@@ -167,26 +174,26 @@ export default function RoseBankRdPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(1)}
                 >
                   <Image
                     src={roseBankRdImages[1].src}
                     alt={roseBankRdImages[1].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
                 <div 
-                  className="relative h-[200px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
+                  className="relative h-[180px] overflow-hidden rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
                   onClick={() => openGallery(2)}
                 >
                   <Image
                     src={roseBankRdImages[2].src}
                     alt={roseBankRdImages[2].alt}
                     fill
-                    className="object-cover"
+                    className="object-contain bg-gray-100"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity hover:bg-opacity-10"></div>
                 </div>
@@ -311,6 +318,25 @@ export default function RoseBankRdPage() {
           initialImageIndex={currentImageIndex}
         />
       )}
+
+      {/* Image Info Section - Provides context for the engineering visualizations */}
+      <section className="pb-12 pt-0">
+        <div className="container">
+          <div className="mx-auto max-w-3xl">
+            <div className="rounded-lg bg-gray-50 p-6">
+              <h4 className="mb-3 text-lg font-semibold text-dark">About These Engineering Plans</h4>
+              <p className="text-sm text-body-color">
+                The engineering plans above illustrate the Rose Bank Rd subdivision project in Avondale, Auckland. 
+                These technical drawings demonstrate our comprehensive approach to transforming a single residential lot into 
+                five separate properties. The plans show the detailed layout configurations, infrastructure design, 
+                and utility service arrangements that were essential for this complex subdivision. Our engineering 
+                solutions addressed challenges of space optimization, access requirements, and compliance with 
+                Auckland Council regulations for multi-lot developments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 } 
