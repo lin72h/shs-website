@@ -116,10 +116,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/maderia-lane">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-1.jpg"
+                      src="/images/civil-projects/project-1/Screenshot 2025-04-01 at 18.43.20.png"
                       alt="Maderia Lane Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -154,10 +154,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/lewis-st-blockhouse-bay">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-2.jpg"
+                      src="/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.32.43.png"
                       alt="Lewis Street Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -192,10 +192,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/cook-street-howick">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-3.jpg"
+                      src="/images/civil-projects/project-3/Screenshot 2025-04-01 at 18.42.34.png"
                       alt="Cook Street Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -230,10 +230,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/rose-bank-rd-avondale">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-4.jpg"
+                      src="/images/civil-projects/project-4/Screenshot 2025-04-01 at 18.44.29.png"
                       alt="Rose Bank Rd Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -268,10 +268,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/compass-way-halfmoon-bay">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-5.jpg"
+                      src="/images/civil-projects/project-5/3d_Screenshot 2025-04-01 at 18.48.55.png"
                       alt="Compass Way Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -306,10 +306,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/jillian-drive-ranui">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-6.jpg"
+                      src="/images/civil-projects/project-6/Screenshot 2025-04-01 at 18.54.09.png"
                       alt="Jillian Drive Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -344,10 +344,10 @@ export default function CharterEngineering() {
                 <Link href="/charter-engineering/projects/punjab-street-khandallah">
                   <div className="relative h-[300px] w-full">
                     <Image
-                      src="/images/news/news-1.jpg"
+                      src="/images/civil-projects/project-4/Screenshot 2025-04-01 at 18.44.38.png"
                       alt="Punjab Street Development"
                       fill
-                      className="object-cover transition duration-500 group-hover:scale-110"
+                      className="object-contain bg-gray-100"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition duration-300 group-hover:bg-opacity-50"></div>
                     <div className="absolute bottom-0 left-0 w-full">
@@ -755,7 +755,7 @@ export default function CharterEngineering() {
                 <div className="flex items-start space-x-4">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                     <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V8a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                   <div>
@@ -845,7 +845,7 @@ export default function CharterEngineering() {
             <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
-                  src="/images/news/news-5.jpg"
+                  src="/images/civil-projects/project-5/3d_Screenshot 2025-04-01 at 18.48.55.png"
                   alt="Land Development"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -906,7 +906,7 @@ export default function CharterEngineering() {
             <div className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
-                  src="/images/news/news-2.jpg"
+                  src="/images/civil-projects/project-2/x_Screenshot 2025-04-01 at 18.32.43.png"
                   alt="Civil Infrastructure"
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
