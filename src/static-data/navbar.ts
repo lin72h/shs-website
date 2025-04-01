@@ -16,6 +16,12 @@ export const navbarData: NavbarItem[] = [
       },
       {
         id: uuid(),
+        title: "Compass Way",
+        href: "charter-engineering/projects/compass-way-halfmoon-bay",
+        external: false,
+      },
+      {
+        id: uuid(),
         title: "Maderia Lane",
         href: "charter-engineering/projects/maderia-lane",
         external: false,
@@ -36,12 +42,6 @@ export const navbarData: NavbarItem[] = [
         id: uuid(),
         title: "Rose Bank Rd",
         href: "charter-engineering/projects/rose-bank-rd-avondale",
-        external: false,
-      },
-      {
-        id: uuid(),
-        title: "Compass Way",
-        href: "charter-engineering/projects/compass-way-halfmoon-bay",
         external: false,
       },
       {
