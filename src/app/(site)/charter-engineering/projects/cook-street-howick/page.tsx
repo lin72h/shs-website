@@ -296,7 +296,7 @@ export default function CookStreetHowickPage() {
                 This technical drawing shows the detailed layout for transforming a single residential lot into 
                 four separate properties in a coastal setting. The plan includes specialized considerations for 
                 heritage area compliance, coastal environmental protection, and sustainable infrastructure design 
-                that were critical to this unique project's success.
+                that were critical to this unique project&apos;s success.
               </p>
             </div>
           </div>
