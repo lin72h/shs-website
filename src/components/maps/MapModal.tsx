@@ -25,7 +25,7 @@ interface MapModalProps {
   }>;
 }
 
-const MapModal: React.FC<MapModalProps> = ({
+const MapModal = ({
   isOpen,
   onClose,
   center,
@@ -35,7 +35,7 @@ const MapModal: React.FC<MapModalProps> = ({
   heading = 0,
   pitch = 0,
   markers = [],
-}) => {
+}: MapModalProps): React.ReactNode => {
   const modalRef = useRef<HTMLDivElement>(null);
   
   // Handle escape key press
@@ -78,7 +78,7 @@ const MapModal: React.FC<MapModalProps> = ({
 
   if (!isOpen || typeof document === 'undefined') return null;
 
-  return createPortal(
+  return (createPortal(
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70">
       {/* Backdrop */}
       <div 
@@ -129,11 +129,11 @@ const MapModal: React.FC<MapModalProps> = ({
       </div>
     </div>,
     document.body
-  );
+  ) as React.ReactNode);
 };
 
 // Simple close icon component
-const CloseIcon: React.FC<{ className?: string }> = ({ className }) => (
+const CloseIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"

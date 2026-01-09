@@ -1,5 +1,9 @@
 // Combined HTTP + HTTPS Server for Next.js Standalone
 // Based on Next.js's own standalone server pattern
+
+// IMPORTANT: Set production mode BEFORE requiring any modules
+process.env.NODE_ENV = 'production';
+
 const path = require('path');
 const fs = require('fs');
 const { createServer: createHttpsServer } = require('https');
