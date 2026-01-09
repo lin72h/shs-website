@@ -12,14 +12,21 @@ A reusable guide for deploying Next.js apps to resource-constrained servers (Fre
 
 ---
 
-## Step 1: Enable Standalone Output
+## Step 1: Enable Standalone Output + Disable Image Optimization
+
+> **CRITICAL FOR FREEBSD**: You MUST disable image optimization. Next.js uses `sharp` (native Linux binaries) which don't work on FreeBSD. You'll see `ELF binary type "0" not known` errors otherwise.
 
 Add to `next.config.mjs`:
 
 ```javascript
 const nextConfig = {
   output: 'standalone',
-  // ... other config
+  images: {
+    unoptimized: true,  // REQUIRED for FreeBSD - disables sharp
+    remotePatterns: [
+      // your remote patterns...
+    ],
+  },
 };
 ```
 
@@ -30,65 +37,84 @@ const nextConfig = {
 Create `server-standalone.js` in project root:
 
 ```javascript
-const { createServer: createHttpsServer } = require('https');
-const { createServer: createHttpServer } = require('http');
-const { parse } = require('url');
+// Combined HTTP + HTTPS Server for Next.js Standalone
+// Based on Next.js's own standalone pattern
 const path = require('path');
 const fs = require('fs');
-const next = require('next');
+const { createServer: createHttpsServer } = require('https');
 
-const dev = false;
+const dir = __dirname;
+
+// Load config from standalone build (MUST be before requiring next)
+const { config: nextConfig } = require(path.join(dir, '.next/required-server-files.json'));
+process.env.__NEXT_PRIVATE_STANDALONE_CONFIG = JSON.stringify(nextConfig);
+
+// Now require next modules (after setting config)
+require('next');
+const { startServer } = require('next/dist/server/lib/start-server');
+
 const hostname = process.env.HOSTNAME || '0.0.0.0';
 const httpPort = parseInt(process.env.PORT || '8081', 10);
 const httpsPort = parseInt(process.env.HTTPS_PORT || '4431', 10);
-
-const app = next({ dev, hostname, port: httpPort });
-const handle = app.getRequestHandler();
 
 // Check if SSL certs exist
 const sslDir = path.join(__dirname, 'ssl');
 const hasSSL = fs.existsSync(path.join(sslDir, 'privkey.pem')) && 
                fs.existsSync(path.join(sslDir, 'fullchain.pem'));
 
-app.prepare().then(() => {
-  // Start HTTP server
-  createHttpServer(async (req, res) => {
-    try {
-      const parsedUrl = parse(req.url, true);
-      await handle(req, res, parsedUrl);
-    } catch (err) {
-      console.error('Error occurred handling', req.url, err);
-      res.statusCode = 500;
-      res.end('Internal Server Error');
-    }
-  }).listen(httpPort, hostname, (err) => {
-    if (err) throw err;
-    console.log(`> Ready on http://${hostname}:${httpPort}`);
-  });
+// Start the HTTP server using Next.js's startServer
+startServer({
+  dir,
+  isDev: false,
+  config: nextConfig,
+  hostname,
+  port: httpPort,
+  allowRetry: false,
+}).then((httpServer) => {
+  console.log(`> Ready on http://${hostname}:${httpPort}`);
 
-  // Start HTTPS server if SSL certs exist
+  // If SSL certs exist, create HTTPS proxy
   if (hasSSL) {
+    const http = require('http');
     const httpsOptions = {
       key: fs.readFileSync(path.join(sslDir, 'privkey.pem')),
       cert: fs.readFileSync(path.join(sslDir, 'fullchain.pem')),
     };
 
-    createHttpsServer(httpsOptions, async (req, res) => {
-      try {
-        const parsedUrl = parse(req.url, true);
-        await handle(req, res, parsedUrl);
-      } catch (err) {
-        console.error('Error occurred handling', req.url, err);
-        res.statusCode = 500;
-        res.end('Internal Server Error');
-      }
-    }).listen(httpsPort, hostname, (err) => {
-      if (err) throw err;
+    const httpsServer = createHttpsServer(httpsOptions, (req, res) => {
+      const options = {
+        hostname: '127.0.0.1',
+        port: httpPort,
+        path: req.url,
+        method: req.method,
+        headers: req.headers,
+      };
+
+      const proxyReq = http.request(options, (proxyRes) => {
+        res.writeHead(proxyRes.statusCode, proxyRes.headers);
+        proxyRes.pipe(res, { end: true });
+      });
+
+      proxyReq.on('error', (err) => {
+        console.error('HTTPS proxy error:', err.message);
+        res.statusCode = 502;
+        res.end('Bad Gateway');
+      });
+
+      req.pipe(proxyReq, { end: true });
+    });
+
+    httpsServer.listen(httpsPort, hostname, () => {
       console.log(`> Ready on https://${hostname}:${httpsPort}`);
     });
   }
+}).catch((err) => {
+  console.error(err);
+  process.exit(1);
 });
 ```
+
+> **IMPORTANT**: This uses Next.js's `startServer` function which is the correct way for standalone builds. Using `next()` directly will fail with "Cannot find module webpack" errors.
 
 ---
 
@@ -131,11 +157,11 @@ Make executable: `chmod +x deploy.sh`
 
 ---
 
-## Step 4: Handle Prisma (If Used)
+## Step 4: Handle Prisma (If Used But Not Needed)
 
-If your project uses Prisma and you DON'T need it, stub the module:
+If your project has Prisma but you don't use it, you MUST stub it out or you'll get FreeBSD binary errors.
 
-**`src/app/libs/prismaDB.ts`:**
+**Stub `src/app/libs/prismaDB.ts`:**
 ```typescript
 // Prisma is disabled
 export const prisma = null;
@@ -155,26 +181,33 @@ export async function POST() {
 
 ---
 
-## Step 5: Fix Common TypeScript Issues
+## Common Errors & Fixes
 
-### react-clipboard.js children error
-Replace with native clipboard API:
-```tsx
-const handleCopy = async () => {
-  await navigator.clipboard.writeText(text);
-};
-// Use <button onClick={handleCopy}> instead of <Clipboard>
-```
+### 1. `ELF binary type "0" not known`
+**Cause**: Linux binaries (sharp for image optimization) running on FreeBSD.
+**Fix**: Add `images: { unoptimized: true }` to next.config.mjs
+
+### 2. `Cannot find module 'next/dist/compiled/webpack/webpack'`
+**Cause**: Using `next()` instead of `startServer()` in custom server.
+**Fix**: Use the server-standalone.js pattern shown above with `startServer`.
+
+### 3. `404 on /_next/image` routes
+**Cause**: Image optimization not working with custom NextServer config.
+**Fix**: Either use `startServer()` pattern OR add `unoptimized: true`.
+
+### 4. `react-clipboard.js` TypeScript errors
+**Cause**: Library doesn't support children prop in newer versions.
+**Fix**: Replace with native `navigator.clipboard.writeText()`.
 
 ---
 
 ## Deployment
 
 ```bash
-# Build locally
+# Build locally (on Mac)
 ./deploy.sh
 
-# Transfer to server
+# Transfer to FreeBSD server
 scp deploy-*.tar.gz user@server:/path/
 
 # On server
@@ -199,16 +232,18 @@ standalone/
 ├── .next/             # Compiled app
 ├── node_modules/      # Minimal deps only (~80 packages)
 ├── public/            # Static assets
-├── ssl/               # SSL certs (if present)
+├── ssl/               # SSL certs (privkey.pem, fullchain.pem)
 └── .env               # Environment variables
 ```
 
 ---
 
-## Key Points
+## Key Points Summary
 
-1. **All heavy work happens locally** - build on your Mac, not the server
+1. **All heavy work happens locally** - build on Mac, not the server
 2. **No npm install on server** - everything is bundled
 3. **Single command to run** - just `node server.js`
 4. **~240MB package** (vs ~500MB+ full node_modules)
 5. **HTTP + HTTPS from same server.js** - ports configurable via env
+6. **ALWAYS use `unoptimized: true`** for FreeBSD deployments
+7. **Use `startServer()`** not `next()` for standalone custom servers
