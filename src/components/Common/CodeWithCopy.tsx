@@ -2,7 +2,6 @@
 
 import Prism from "prismjs";
 import { useEffect, useState } from "react";
-import Clipboard from "react-clipboard.js";
 
 const copyIcon = (
   <svg
@@ -41,14 +40,19 @@ const CodeWithCopy = ({ code }: any) => {
     Prism.highlightAll();
   }, [code]);
 
-  const notify = () => {
-    setCopyText("Copied");
-    setCoping(true);
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(code?.code || "");
+      setCopyText("Copied");
+      setCoping(true);
 
-    setTimeout(() => {
-      setCopyText("Copy");
-      setCoping(false);
-    }, 1000);
+      setTimeout(() => {
+        setCopyText("Copy");
+        setCoping(false);
+      }, 1000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
   };
 
   if (!mounted) {
@@ -77,15 +81,15 @@ const CodeWithCopy = ({ code }: any) => {
       <code className={`language-${code?.language ? code?.language : "html"}`}>
         {code?.code}
       </code>
-      <Clipboard
+      <button
+        type="button"
         className={`absolute right-2 top-2 z-10 flex h-9 cursor-pointer items-center justify-center rounded-lg border border-solid bg-stroke px-5 text-sm text-black duration-300 hover:border-primary hover:bg-primary hover:text-white dark:bg-white dark:hover:bg-primary ${
           coping ? "cursor-wait" : "cursor-pointer"
         }`}
-        data-clipboard-text={code?.code}
-        onClick={notify}
+        onClick={handleCopy}
       >
         {copyIcon} <span className="pl-3">{copyText}</span>
-      </Clipboard>
+      </button>
     </pre>
   );
 };
